@@ -1,1 +1,49 @@
-hallo
+<% include partials/header %>
+    <div class="mainFlex">
+        
+        <div class="landing">
+            <div class="mainLogo"><img src="../public/images/stilbruchLogo.svg"></div>
+            <div class="mainSub">Webentwicklung</div>       
+        </div>
+
+        <div class="multiGrid myGrid">
+            <div class="gridHeader">Webentwicklung</div>
+            <div class="gridMainItems">web applikationen</div>
+            <div class="gridMainItems">backend programierung</div>
+            <div class="gridMainItems">ui / ux design</div>
+            <div class="gridMainItems">responsives page design</div>
+            <div class="gridMainItems">web sicherheit</div>
+            <div class="gridMainItems">datenbank managment</div>        
+        </div>
+
+        <div class="singleGrid myGrid">
+                <div class="gridHeader">Projekt</div>
+                <div class="gridMainItems project">
+                    <a class="projectImg" href="/"><img src="../public/images/projects/logo_radblocs.png"></a>
+                    <div class="projectInfo">app für effizientere medizinische befunde</div>
+                </div>
+        </div>
+
+        <div class="singleGrid myGrid">
+            <div class="gridHeader">Story</div>
+            <div class="gridMainItems story">
+                <span>"Als Arzt begann ich vor einigen Jahren mit der Entwicklung moderner Webapplikationen 
+                        um mir den sehr repititven Arbeitsalltag zu erleichtern und mehr Zeit für meine Patienten 
+                        zu finden. Dadurch wurde mir bewusst wie sehr moderne und inteligente (Web-)Technologien unsere 
+                        Arbeitswelt in Zukunft verändern werden. Als Webentwickler ist es heute mein Ziel, 
+                        konservative und repetitive Arbeitsprozesse zu minimieren um damit eine effektiviere und kreativere Arbeit
+                        zu ermöglichen. Nicht nur in der Medizin, ist dazu in Zukunft so mancher 
+                        <img src="../public/images/stilbruchLogo3.svg"> nötig."
+                </span>
+            </div>   
+        </div>
+
+        <div class="singleGrid myGrid">
+            <div class="gridHeader">Kontakt</div>
+            <div class="gridMainItems"><% include partials/contact %></div>
+        </div>
+
+    </div>
+
+
+<% include partials/footer %>
