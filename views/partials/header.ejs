@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ge">
 
     <head>
         <!-- Standard Meta -->
@@ -16,17 +16,33 @@
        	<!-- own stylesheet -->
         <link rel="stylesheet" type="text/css" href="/public/stylesheets/main.css">
 
+        <!-- cookieconsent-->
+        <link rel="stylesheet" type="text/css" href="/node_modules/cookieconsent/build/cookieconsent.min.css">
+
     </head>
     
     <body>
 	
 		<div class="navbar sticky">
             <a class="navItem navLogo" href="/"><img src="./public/images/t.svg"></a>
-            <a class="navItem" href="/">entwicklung</a>
-            <a class="navItem" href="/">projekte</a>
-            <a class="navItem" href="/">story</a>
-            <a class="navItem" href="/">kontakt</a>
+            <a class="navItem" id="e" >entwicklung</a>
+            <a class="navItem" id="p" >projekte</a>
+            <a class="navItem" id="s" >story</a>
+            <a class="navItem" id="k" >kontakt</a>
             <a class="navItem navMenu"><img src="/public/images/navMenu.svg"></a>
-            <a class="navItem navCancel" href="/"><img src="/public/images/navCancel.svg"></a>          
+            <a class="navItem navCancel"><img src="/public/images/navCancel.svg"></a>          
         </div>
+        
+        <% if (success && success.length > 0) { %>
+        <div class="flash">
+                <div>
+                    <%= success %>
+                </div>
+                <img class="cancel" src="/public/images/navCancel.svg">
+        </div>
+        <% }; %>
+
+        
+            
+        
         

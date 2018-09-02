@@ -1,14 +1,15 @@
 
-    <form class="kontakt" action="/" method="POST">
-            <label>Kontaktform</label>
+    <form id="kontakt" action="/contact" method="POST">
           
-            <input class="formInput" type="text" name="firstName" placeholder="vorname">
+            <input class="formInput" type="text" name="firstName" minlength="2" required placeholder="vorname">
           
-            <input class="formInput" type="text" name="lastName" placeholder="nachname">
+            <input class="formInput" type="text" name="lastName" minlength="2" required placeholder="nachname">
           
-            <input class="formInput" type="email" name="email" placeholder="email">
+            <input class="formInput" type="email" name="email" required placeholder="email">
             
-            <textarea class="formInput" name="message" placeholder="hier bitte ihre nachricht schreiben"></textarea>
+            <textarea class="formInput" name="message" required placeholder="bitte hier ihre nachricht schreiben"></textarea>
           
             <button class="button" type="submit">nachricht senden</button>
+
+            <div class="kontaktMail">oder email an: <a href="mailto:info@stilbruch.design"> info@stilbruch.design</a></div>
     </form>
