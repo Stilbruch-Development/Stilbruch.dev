@@ -1,5 +1,8 @@
 /* +++++++++++++++++++++++++++++++++++++++++++++++ html/body element +++++++++++++++++++++++++++++++++++++++++++++++ */
 html, body {
+    background: -webkit-gradient(linear, left top, right bottom, from(#181818), to(#404040));
+    background: -webkit-linear-gradient(top left, #181818, #404040);
+    background: -o-linear-gradient(top left, #181818, #404040);
     background: linear-gradient(to bottom right, #181818, #404040);
     background-color: #181818;
     min-height: 100vh;
@@ -20,8 +23,10 @@ html, body {
 /* +++++++++++++++++++++++++++++++++++++++++++++++ navigation bar +++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .navbar {
+    display: -ms-grid;
     display: grid;
-    grid-template-areas: "logo entwicklung projekte story kontakt";
+        grid-template-areas: "logo entwicklung projekte story kontakt";
+    -ms-grid-columns: 0.5fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     grid-auto-rows: 50px;
@@ -32,7 +37,8 @@ html, body {
 .navItem {
     border: 1px solid #FF0000;
     border-radius: 131px;
-    box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+    -webkit-box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+            box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
     background: rgba(255, 0, 0, 0);
     text-align: center;
     color: #FF0000;
@@ -43,7 +49,8 @@ html, body {
 
 .navItem:hover {
     background: rgba(95, 95, 95, 0.7);
-    box-shadow: 5px 10px 20px rgba(0,0,0, 0.8);
+    -webkit-box-shadow: 5px 10px 20px rgba(0,0,0, 0.8);
+            box-shadow: 5px 10px 20px rgba(0,0,0, 0.8);
 }
 
 .navMenu, .navCancel {
@@ -62,6 +69,7 @@ html, body {
 }
 
 .sticky {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
@@ -72,16 +80,27 @@ html, body {
 }
 
 .flash {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     border-radius: 20px;
     background: rgba(95, 95, 95, 0.9);
     color: #FF0000;
     font-size: 2em;
     text-shadow: 5px 5px 10px rgba(0,0,0, 1);
+    position: -webkit-sticky;
     position: sticky;
     top: 10vh;
     margin: 0 2vw;
@@ -102,15 +121,28 @@ html, body {
     border: 0;
     margin: 1em 0 0 0;
     height: 2px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0)), color-stop(red), to(rgba(255, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(255, 0, 0, 0), red, rgba(255, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(255, 0, 0, 0), red, rgba(255, 0, 0, 0));
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0), red, rgba(255, 0, 0, 0));
   }
 
   .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   
   .footerItem {
@@ -128,20 +160,38 @@ html, body {
 /* +++++++++++++++++++++++++++++++++++++++++++++++ main section +++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .mainFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
 }
 /* landing */
 
 .landing { 
     height: 100vh;
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;  
 }
 
 .mainSub {
@@ -158,8 +208,9 @@ html, body {
 /* grid sections */
 
 .myGrid {
+    display: -ms-grid;
     display: grid;
-    grid-template-areas: "h i i "
+        grid-template-areas: "h i i "
                          "h i i "
                          "h i i ";
     padding: 5vw 2vw;
@@ -167,22 +218,38 @@ html, body {
 }
 
 .gridHeader {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
     grid-area: h;
     font-size: 6.8vw;
-    writing-mode: vertical-rl; 
-    transform: rotate(180deg);
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl; 
+    -webkit-transform: rotate(180deg); 
+        -ms-transform: rotate(180deg); 
+            transform: rotate(180deg);
     text-shadow: -5px -5px 10px rgba(0,0,0, 1);
     color: #FF0000;
 }
 
 .gridMainItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border: 1px solid #FF0000;
     border-radius: 8px;
-    box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+    -webkit-box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+            box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
     background: rgba(255, 0, 0, 0);
     color: #FF0000;
     font-size: 4vw;
@@ -191,21 +258,36 @@ html, body {
 }
 
 .multiGrid, .singleGrid { 
-    grid-template: 15vw 15vw 15vw / 10vw auto auto;
+    -ms-grid-rows: 15vw 10px 15vw 10px 15vw; 
+    -ms-grid-columns: 10vw 10px auto 10px auto; 
+        grid-template: 15vw 15vw 15vw / 10vw auto auto;
     grid-gap: 10px;    
 }
 
 .singleGrid .gridMainItems {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-area: i;  
 }
 
 /* project */
 
 .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;  
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;  
 }
 
 .projectImg {
@@ -248,17 +330,27 @@ html, body {
 /* kontakt */
 
 #kontakt {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100%
 }
 
 .formInput {
     border: 1px solid #FF0000;
     border-radius: 8px;
-    box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+    -webkit-box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+            box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
     background: rgba(255, 0, 0, 0);
     color: rgb(255, 0, 0);
     font-size: 0.7em;
@@ -266,7 +358,8 @@ html, body {
     width: 60vw;
     height: 1.4em;
     padding: 0.2em 1em;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 input, textarea {
@@ -277,7 +370,8 @@ input, textarea {
 textarea {
     height: 7em !important;
     font-size: 0.5em !important;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 20px !important;
     text-align: left;
 }
@@ -292,6 +386,21 @@ input:focus {
     text-align: center !important;
 }
 
+::-webkit-input-placeholder {
+    color: rgba(255, 0, 0, 0.6);
+    text-align: center;
+}
+
+:-ms-input-placeholder {
+    color: rgba(255, 0, 0, 0.6);
+    text-align: center;
+}
+
+::-ms-input-placeholder {
+    color: rgba(255, 0, 0, 0.6);
+    text-align: center;
+}
+
 ::placeholder {
     color: rgba(255, 0, 0, 0.6);
     text-align: center;
@@ -301,7 +410,8 @@ input:focus {
     margin: 0.1em;
     border: 1px solid #FF0000;
     border-radius: 8px;
-    box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+    -webkit-box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+            box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
     background: rgba(255, 0, 0, 0);
     color: rgb(255, 0, 0);
     font-size: 0.6em;
@@ -317,7 +427,8 @@ input:focus {
 
 .button:hover {
     background: rgba(95, 95, 95, 0.7);
-    box-shadow: 5px 10px 20px rgba(0,0,0, 0.8) ;
+    -webkit-box-shadow: 5px 10px 20px rgba(0,0,0, 0.8) ;
+            box-shadow: 5px 10px 20px rgba(0,0,0, 0.8) ;
 }
 
 .kontaktMail {
@@ -331,13 +442,23 @@ input:focus {
 /* ++++++++++++++++++++++++++++++++++++++++++++++  impressum  ++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .impressum {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border: 1px solid #FF0000;
     border-radius: 8px;
-    box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+    -webkit-box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+            box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
     background: rgba(255, 0, 0, 0);
     color: #FF0000;
     font-size: 4vw;
@@ -419,9 +540,15 @@ input:focus {
    }
 
    .navbar {
+       display: -webkit-box;
+       display: -ms-flexbox;
        display: flex;
-       flex-direction: row;
-       justify-content: space-around;
+       -webkit-box-orient: horizontal;
+       -webkit-box-direction: normal;
+           -ms-flex-direction: row;
+               flex-direction: row;
+       -ms-flex-pack: distribute;
+           justify-content: space-around;
        height: 50px;
    }
 
@@ -442,7 +569,9 @@ input:focus {
    /* grid section */
 
    .singleGrid, .multiGrid {
-    grid-template: 35vw 35vw 35vw / 10vw auto auto;
+    -ms-grid-rows: 35vw 35vw 35vw;
+    -ms-grid-columns: 10vw auto auto;
+        grid-template: 35vw 35vw 35vw / 10vw auto auto;
    }
 
    .gridMainItems {
@@ -465,7 +594,8 @@ input:focus {
         width: 70vw;
         height: 2.0em;
         padding: 0.2em 1em;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
     }
 
     textarea {
@@ -485,4 +615,3 @@ input:focus {
         font-size: 0.7em;
     }
 }
-
