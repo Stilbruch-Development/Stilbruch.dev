@@ -1,5 +1,5 @@
 $(window).resize(function(){
-  location.reload();
+  // location.reload();
   $('html').css({"height": $(document).height()});
 });
 
