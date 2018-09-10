@@ -66,6 +66,9 @@ $(function(){
   });
 });
 
+
+// links to page location
+
 var nav = $('.navbar').height() + 15;
 
 $("#e").on("click", function(x) {
