@@ -66,15 +66,15 @@ $(function(){
   });
 });
 
-var nav = $('.navbar').height() + 30;
+var nav = $('.navbar').height() + 15;
 
 $("#e").on("click", function(x) {
 
   x.preventDefault();
   if (window.location.href != "http://localhost:3000/datenschutz" && window.location.href != "http://localhost:3000/impressum") {
     $("body, html").animate({ 
-      scrollTop: $(".eGrid .gridHeader").offset().top - nav
-    }, 300);
+      scrollTop: $(".eGrid").offset().top - nav
+    }, 500);
   } else {
     window.location.href = "/";
   }
@@ -86,8 +86,8 @@ $("#p").on("click", function(x) {
   x.preventDefault();
   if (window.location.href != "http://localhost:3000/datenschutz" && window.location.href != "http://localhost:3000/impressum") {
     $("body, html").animate({ 
-      scrollTop: $(".pGrid .gridHeader").offset().top - nav
-    }, 300);
+      scrollTop: $(".pGrid").offset().top - nav
+    }, 500);
   } else {
     window.location.href = "/";
   }
@@ -99,8 +99,8 @@ $("#s").on("click", function(x) {
   x.preventDefault();
   if (window.location.href != "http://localhost:3000/datenschutz" && window.location.href != "http://localhost:3000/impressum") {
     $("body, html").animate({ 
-      scrollTop: $(".sGrid .gridHeader").offset().top - nav
-    }, 300);
+      scrollTop: $(".sGrid").offset().top - nav
+    }, 500);
   } else {
     window.location.href = "/";
   }
@@ -112,8 +112,8 @@ $("#k, .fk").on("click", function(x) {
   x.preventDefault();
   if (window.location.href != "http://localhost:3000/datenschutz" && window.location.href != "http://localhost:3000/impressum") {
     $("body, html").animate({ 
-      scrollTop: $(".kGrid .gridHeader").offset().top - nav
-    }, 300);
+      scrollTop: $(".kGrid").offset().top - nav
+    }, 500);
   } else {
     window.location.href = "/";
   }

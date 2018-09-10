@@ -153,6 +153,28 @@
     #kontakt img {
         width: 90%;
     }
+
+ /* impressum */
+    .regText p{
+        font-size: 1.1em;
+        margin: 1em 0.2em;
+    }
+    
+    .impressum h1 {
+        font-size: 1.6em;
+    }
+
+    .impressum h2 {
+        font-size: 1.2em;
+    }
+
+    .impressumMain img {
+        width: 60vw;
+    }
+
+    .bold {
+        font-size: 1.2em !important;
+    }
 }   
     
     
