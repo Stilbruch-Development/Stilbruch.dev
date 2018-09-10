@@ -1,0 +1,171 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++ media querries +++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* screen < 550 px */
+@media (max-width: 550px) {
+
+    /* ++++++++++++++++++++++ navbar ++++++++++++++++++++++ */    
+    .navItem:not(.navLogo):not(.navMenu) {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 50px;
+    }
+
+    .navMenu {
+        display: block;
+        min-width: 45vw;
+    }
+
+    .navLogo {
+        min-width: 45vw;
+    }
+    /* ++++++++++++++++++++++ footer ++++++++++++++++++++++ */
+
+    /* ++++++++++++++++++++++ main section ++++++++++++++++++++++ */
+
+    .myFlex {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+
+    .flexHeader {
+        height: 10vw;
+        width: 100%;
+        font-size: 10vw;
+        letter-spacing: 1.6vw;
+        padding-bottom: 3vw;
+        writing-mode: unset;
+        transform: none;
+        text-shadow: 5px 10px 20px rgba(0,0,0, 1);
+        color: #FF0000; 
+    } 
+    
+    .flexMainItems {
+        margin: 0;
+        width: 95vw;
+        height: auto;
+    }
+
+    /* section landing */
+
+    .landing {
+        height: 90vh;
+    }
+
+    .mainLogo img {
+        width: 98vw;
+    }    
+
+    .mainSub {
+        font-size: 7vw;
+        margin: 2vw;
+    }    
+    
+    /* entwicklung */    
+
+    .eItem {
+        width: 95vw;
+        max-height: 10vh;
+        font-size: 2em;
+    }   
+
+    /* projekt */  
+
+    .flexMainItems img {
+        max-width: 98%;
+    }
+
+    .projectInfo {
+        font-size: 8vw;
+        height: 100%;
+    }
+
+    /* story */ 
+
+    .sGrid {
+        height: auto !important;
+    }
+
+    .story {
+        padding: 0.2vw;
+    }
+
+    .story span {
+        font-size: 6vw !important;
+        line-height: 1.2em;
+        text-align: justify;
+        }
+
+    .story img {
+        height: 1.3em;
+        vertical-align: bottom;
+    }
+
+    /* kontakt */
+
+    .formInput {
+        height: 12vw;
+        padding: 2vw 10wv;
+        margin: 2vw;
+        font-size: 10vw;
+        width: 90%;
+    }
+
+    textarea {
+        height: 40vw !important;
+        font-size: 4vw !important;
+    }
+
+    .button {
+        width: 85%;
+        font-size: 7vw;
+    }
+
+    .kontaktMail {
+        font-size: 7vw;
+        width: auto;
+        margin: 2vw;
+    }
+
+    #kontakt img {
+        width: 90%;
+    }
+}   
+    
+    
+/* screen < 1200 px */
+@media (max-width: 1200px) {
+    
+    .navbar {
+        grid-auto-rows: 40px;
+    }
+    .navItem {
+        font-size: 1.5em;
+        line-height: 1.6em;
+    }
+}
+
+/* screen > 1500 px */
+@media (min-width: 1500px) {
+    .flexHeader {
+        font-size: 3.5vw;
+    }
+
+    .story span {
+        font-size: 0.6em !important;
+        line-height: 1.5em;
+        text-align: justify;
+        padding: 1em;
+    }
+        
+    .story img {
+        height: 1.5em;
+        vertical-align: bottom;
+    }
+}

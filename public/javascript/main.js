@@ -1,12 +1,12 @@
-$(window).resize(function(){
-  // location.reload();
-  $('html').css({"height": $(document).height()});
-});
-
 $(document).ready(function(){
 /* ++++++++++++++++++++++++++++++++++++++++++++++  global  ++++++++++++++++++++++++++++++++++++++++++++++ */
-
 $('html').css({"height": $(document).height()});
+$('html').css({"width": $(document).width()});
+
+$(window).resize(function(){
+  $('html').css({"height": $(document).height()});
+  $('html').css({"width": $(document).width()});
+});
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++  navigation bar  ++++++++++++++++++++++++++++++++++++++++++++++ */
 $(".navMenu ").on("click", function(){

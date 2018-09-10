@@ -6,41 +6,45 @@
             <div class="mainSub">Webentwicklung</div>       
         </div>
 
-        <div class="multiGrid myGrid eGrid">
-            <div class="gridHeader">Webentwicklung</div>
-            <div class="gridMainItems">web applikationen</div>
-            <div class="gridMainItems">backend programierung</div>
-            <div class="gridMainItems">ui / ux design</div>
-            <div class="gridMainItems">responsives page design</div>
-            <div class="gridMainItems">web sicherheit</div>
-            <div class="gridMainItems">datenbank managment</div>        
-        </div>
+        <div class="myFlex eGrid">
+            <div class="flexHeader">Webentwicklung</div>
+            <div class="entwicklung">
+                <div class="eItem">backend programierung</div>
+                <div class="eItem">web applikationen</div>
+                <div class="eItem">ui / ux design</div>
+            </div>
+            <div class="entwicklung">
+                <div class="eItem">responsives page design</div>
+                <div class="eItem">web sicherheit</div>
+                <div class="eItem">datenbank managment</div>
+            </div>            
+        </div>        
 
-        <div class="singleGrid myGrid pGrid">
-                <div class="gridHeader">Projekt</div>
-                <div class="gridMainItems project">
+        <div class="myFlex pGrid">
+                <div class="flexHeader">Projekt</div>
+                <div class="flexMainItems">
                     <a class="projectImg" href="https://www.radblocs.com"><img src="/public/images/projects/logo_radblocs.png"></a>
                     <div class="projectInfo">app für effizientere medizinische befunde</div>
                 </div>
         </div>
-
-        <div class="singleGrid myGrid sGrid">
-            <div class="gridHeader">Story</div>
-            <div class="gridMainItems story">
-                <span>"Als Arzt begann ich vor einigen Jahren mit der Entwicklung moderner Webapplikationen 
+        
+        <div class="myFlex sGrid">
+                <div class="flexHeader">Story</div>
+                <div class="flexMainItems story">
+                    <span>"Als Arzt begann ich vor einigen Jahren mit der Entwicklung moderner Webapplikationen 
                         um mir den sehr repititven Arbeitsalltag zu erleichtern und mehr Zeit für meine Patienten 
                         zu finden. Dadurch wurde mir bewusst wie sehr moderne und intelligente (Web-)Technologien unsere 
                         Arbeitswelt in Zukunft verändern werden. Als Arzt und Webentwickler ist es heute mein Ziel, 
                         konservative und repetitive Arbeitsprozesse zu minimieren um damit eine effektiviere und kreativere Arbeit
                         zu ermöglichen. Um das erreichen zu können wird in Zukunft, nicht nur in der Medizin, so mancher 
                         <img src="../public/images/stilbruchLogo3.svg"> nötig sein."
-                </span>
-            </div>   
+                    </span>
+                </div>
         </div>
 
-        <div class="singleGrid myGrid kGrid">
-            <div class="gridHeader">Kontaktform</div>
-            <div class="gridMainItems"><% include partials/contact %></div>
+        <div class="myFlex kGrid">
+            <div class="flexHeader">Kontaktform</div>
+            <div class="flexMainItems"><% include partials/contact %></div>
         </div>
 
     </div>

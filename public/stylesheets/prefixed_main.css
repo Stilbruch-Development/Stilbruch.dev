@@ -167,14 +167,14 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
-/* landing */
+/* section landing */
 
 .landing { 
     height: 100vh;
@@ -205,24 +205,40 @@ html, body {
     width: 90vw;
 }
 
-/* grid sections */
+/* flex sections */
 
-.myGrid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "h i i "
-                         "h i i "
-                         "h i i ";
-    padding: 5vw 2vw;
-    text-align: center;
+.myFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin: 5vw 0.5vw;
+    width: 100vw;
+    height: auto;
 }
 
-.gridHeader {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 1;
-    grid-area: h;
-    font-size: 6.8vw;
+.flexHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 8vw;
+    font-size: 4.5vw;
+    letter-spacing: 1.5vh;
     -webkit-writing-mode: vertical-rl;
         -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl; 
@@ -230,10 +246,10 @@ html, body {
         -ms-transform: rotate(180deg); 
             transform: rotate(180deg);
     text-shadow: -5px -5px 10px rgba(0,0,0, 1);
-    color: #FF0000;
+    color: #FF0000;    
 }
 
-.gridMainItems {
+.flexMainItems {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -241,11 +257,62 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 2vw 2vw;
+    padding: 2vw;
+    text-align: center;
+    width: 100vw;
+    border: 1px solid #FF0000;
+    border-radius: 8px;
+    -webkit-box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+            box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+    background: rgba(255, 0, 0, 0);
+    color: #FF0000;
+    font-size: 4vw;
+    text-shadow: 5px 5px 10px rgba(0,0,0, 1);   
+}
+
+/* entwicklung section */
+
+.entwicklung {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    height: 100%;
+    text-align: center;
+}
+
+.eItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    word-wrap: break-word;
+    margin: 1vw 1vw;
+    padding: 1vw;
+    height: 28vh;
+    text-align: center;
     border: 1px solid #FF0000;
     border-radius: 8px;
     -webkit-box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
@@ -254,27 +321,22 @@ html, body {
     color: #FF0000;
     font-size: 4vw;
     text-shadow: 5px 5px 10px rgba(0,0,0, 1);
-    overflow: hidden;
+    height: 20vh;    
 }
 
-.multiGrid, .singleGrid { 
-    -ms-grid-rows: 15vw 10px 15vw 10px 15vw; 
-    -ms-grid-columns: 10vw 10px auto 10px auto; 
-        grid-template: 15vw 15vw 15vw / 10vw auto auto;
-    grid-gap: 10px;    
+/* project section */
+
+.projectImg {
+  background: url("/public/images/projects/radblocs_background.jpg");
+  background-size: 100%;
+  border-radius: 8px;
 }
 
-.singleGrid .gridMainItems {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-area: i;  
+.flexMainItems img {
+  max-width: 90%;
 }
 
-/* project */
-
-.project {
+.projectInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,48 +344,43 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;  
-}
-
-.projectImg {
-  background: url("/public/images/projects/radblocs_background.jpg");
-  background-size: 100%;
-  border-radius: 8px;
-  border-bottom: 1px solid #FF0000;
-}
-
-.project img {
-  max-width: 70%;
-}
-
-.project a {
-  color: #FF0000;
-  font-size: 3.8vw;
-  text-shadow: 5px 5px 10px rgba(0,0,0, 1);
-  text-decoration: none;
-}
-
-.projectInfo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   margin: auto;
+  font-size: 5vw;
 }
 
 /* story */
 
+.story {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
 .story span {
-  font-size: 3vw !important;
-  line-height: 1.2em;
+  font-size: 0.7em !important;
+  line-height: 1.7em;
   text-align: justify;
-  padding: 0 1em;
+  padding: 1em;
 }
 
 .story img {
-  height: 1.2em;
+  height: 1.7em;
   vertical-align: bottom;
 }
 
@@ -337,13 +394,11 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100%
 }
 
 .formInput {
@@ -355,8 +410,9 @@ html, body {
     color: rgb(255, 0, 0);
     font-size: 0.7em;
     text-shadow: 5px 5px 10px rgba(0,0,0, 1);
-    width: 60vw;
+    width: 70vw;
     height: 1.4em;
+    margin: 0.6vw;
     padding: 0.2em 1em;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -407,18 +463,31 @@ input:focus {
 }
 
 .button {
-    margin: 0.1em;
+    margin: 2vw;
     border: 1px solid #FF0000;
     border-radius: 8px;
     -webkit-box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
             box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
     background: rgba(255, 0, 0, 0);
     color: rgb(255, 0, 0);
-    font-size: 0.6em;
+    font-size: 1em;
     font-family: inherit;
     text-shadow: 5px 5px 10px rgba(0,0,0, 1);
-    width: 60vw;
-    max-height: 5vw;
+    width: 50vw;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;    
 }
 
 .button:active {
@@ -505,113 +574,4 @@ input:focus {
 .bold {
     font-size: 0.5em !important;
     font-weight: bold !important;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++ media querries +++++++++++++++++++++++++++++++++++++++++++++++ */
-
-@media (min-width: 1400px) {
-    .gridMainItems {
-        font-size: 2.5vw;
-    }
-
-    .story span {
-        font-size: 2.5vw !important;
-        padding: 50px;
-    }
-}
-
-
-@media (max-width: 1200px) {
-    /* navbar */
-    .navbar {
-        grid-auto-rows: 40px;
-    }
-    .navItem {
-        font-size: 1.5em;
-        line-height: 1.8em;
-    }
-}
-
-
-@media (max-width: 550px) {
-   /* navbar */
-    .navItem:not(.navLogo):not(.navMenu){
-       display: none;
-   }
-
-   .navbar {
-       display: -webkit-box;
-       display: -ms-flexbox;
-       display: flex;
-       -webkit-box-orient: horizontal;
-       -webkit-box-direction: normal;
-           -ms-flex-direction: row;
-               flex-direction: row;
-       -ms-flex-pack: distribute;
-           justify-content: space-around;
-       height: 50px;
-   }
-
-   .navMenu {
-       display: block;
-       min-width: 45vw;
-   }
-
-   .navLogo {
-       min-width: 45vw;
-   }
-
-   /* landing */
-   .landing { 
-    height: 90vh;
-   }
-
-   /* grid section */
-
-   .singleGrid, .multiGrid {
-    -ms-grid-rows: 35vw 35vw 35vw;
-    -ms-grid-columns: 10vw auto auto;
-        grid-template: 35vw 35vw 35vw / 10vw auto auto;
-   }
-
-   .gridMainItems {
-       font-size: 6vw;
-   }
-
-    .story span {
-        font-size: 5vw !important;
-        text-align: justify;
-        line-height: 1em;
-   }
-
-   .project img {
-    max-width: 100%;
-  }
-
-   /* kontaktform */
-
-    .formInput {
-        width: 70vw;
-        height: 2.0em;
-        padding: 0.2em 1em;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-    }
-
-    textarea {
-        height: 10em !important;
-        font-size: 0.8em !important;
-        padding: 10px !important;
-    }
-
-    .button {
-        margin: 5px;
-        font-size: 0.8em;
-        width: 70vw;
-        max-height: 12vw;
-    }
-
-    .kontaktMail {
-        font-size: 0.7em;
-    }
 }
