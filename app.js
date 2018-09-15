@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 require('dotenv').config();
 app.set("view engine", "ejs");
-app.use("/public", express.static(__dirname + "/public"));
+app.use("/build/public", express.static(__dirname + "/build/public"));
 app.use("/views", express.static(__dirname + "/views"));
 app.use("/node_modules/cookieconsent", express.static(__dirname + "/node_modules/cookieconsent"));
 app.use(cookieParser());

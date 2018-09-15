@@ -233,7 +233,7 @@ html, body {
 /* project section */
 
 .projectImg {
-  background: url("/public/images/projects/radblocs_background.jpg");
+  background: url("/build/public/images/radblocs_background.compressed.jpg");
   background-size: 100%;
   border-radius: 8px;
 }

@@ -16,8 +16,8 @@
     	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One">
 
        	<!-- own stylesheet -->
-        <link rel="stylesheet" type="text/css" href="/public/stylesheets/prefixed_main.css">
-        <link rel="stylesheet" type="text/css" href="/public/stylesheets/prefixed_querries.css">
+        <link rel="stylesheet" type="text/css" href="/build/public/stylesheets/main.prefixed.min.css">
+        <link rel="stylesheet" type="text/css" href="/build/public/stylesheets/querries.prefixed.min.css">
 
         <!-- cookieconsent-->
         <link rel="stylesheet" type="text/css" href="/node_modules/cookieconsent/build/cookieconsent.min.css">
@@ -27,13 +27,13 @@
     <body>
 	
 		<div class="navbar sticky">
-            <a class="navItem navLogo" href="/"><img src="./public/images/t.svg"></a>
+            <a class="navItem navLogo" href="/"><img src="./build/public/images/t.compressed.svg"></a>
             <a class="navItem" id="e" >Entwicklung</a>
             <a class="navItem" id="p" >Projekte</a>
             <a class="navItem" id="s" >Story</a>
             <a class="navItem" id="k" >Kontakt</a>
-            <a class="navItem navMenu"><img src="/public/images/navMenu.svg"></a>
-            <a class="navItem navCancel"><img src="/public/images/navCancel.svg"></a>          
+            <a class="navItem navMenu"><img src="/build/public/images/navMenu.compressed.svg"></a>
+            <a class="navItem navCancel"><img src="/build/public/images/navCancel.compressed.svg"></a>          
         </div>
         
         <% if (success && success.length > 0) { %>
@@ -41,7 +41,7 @@
                 <div>
                     <%= success %>
                 </div>
-                <img class="cancel" src="/public/images/navCancel.svg">
+                <img class="cancel" src="/build/public/images/navCancel.compressed.svg">
         </div>
         <% }; %>
 
