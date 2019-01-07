@@ -1,17 +1,20 @@
-var gulp            = require ('gulp'),
-    uglify          = require ('gulp-uglify'),
-    rename          = require('gulp-rename'),
-    autoprefixer    = require('autoprefixer'),
-    postcss         = require ('gulp-postcss'),
-    imagemin        = require ('gulp-imagemin'),
-    cleanCss        = require ('gulp-clean-css')
-;
+var gulp = require('gulp'),
+  uglify = require('gulp-uglify-es').default,
+  rename = require('gulp-rename'),
+  autoprefixer = require('autoprefixer'),
+//   minifyejs = require('gulp-minify-ejs'),
+  postcss = require('gulp-postcss'),
+  imagemin = require('gulp-imagemin'),
+  cleanCss = require('gulp-clean-css'),
+  babel = require('gulp-babel');
+//   browserify = require('gulp-run-command').default;
 
 
 // minify javascript
 gulp.task ('scripts', function(){
 
     gulp.src('public/javascript/*.js')
+        .pipe(babel())
         .pipe(uglify())
         .pipe(rename(function (path) {
             path.basename += ".min";

@@ -1,53 +1,57 @@
 <% include partials/header %>
-    <div class="mainFlex">
-        
-        <div class="landing">
-            <div class="mainLogo"><img src="../build/public/images/stilbruchLogo.compressed.svg"></div>
-            <div class="mainSub">Webentwicklung</div>       
-        </div>
+<div class="mainFlex">
 
-        <div class="myFlex eGrid">
-            <div class="flexHeader">Webentwicklung</div>
-            <div class="entwicklung">
-                <div class="eItem"> Web-Applikationen</div>
-                <div class="eItem"> UI / UX Design</div>
-                <div class="eItem"> Web-Sicherheit</div>
-            </div>
-            <div class="entwicklung">
-                <div class="eItem"> Backend Programmierung</div>
-                <div class="eItem"> Responsive Webpages</div>
-                <div class="eItem"> Datenbank Managment</div>
-            </div>            
-        </div>        
-
-        <div class="myFlex pGrid">
-                <div class="flexHeader">Projekt</div>
-                <div class="flexMainItems">
-                    <a class="projectImg" href="https://www.radblocs.com"><img src="/build/public/images/logo_radblocs.compressed.png"></a>
-                    <div class="projectInfo">App für effizientere medizinische Befunde</div>
-                </div>
-        </div>
-        
-        <div class="myFlex sGrid">
-                <div class="flexHeader">Story</div>
-                <div class="flexMainItems story">
-                    <span>"Als Arzt begann ich vor einigen Jahren mit der Entwicklung moderner Webapplikationen 
-                        um mir den teils sehr repetitiven Arbeitsalltag zu erleichtern und mehr Zeit für meine Patienten 
-                        zu finden. Hierdurch wurde mir klar, wie sehr moderne und intelligente Web-Technologien unsere 
-                        Arbeitswelt in Zukunft verändern werden. Als Arzt <i>und</i> Webentwickler ist es daher in Zukunft mein Ziel, 
-                        konservative und repetitive Arbeitsprozesse zu minimieren um damit eine effektiviere und kreativere Arbeit
-                        zu ermöglichen. Hierzu wird allerdings, gerade in der Medizin, so mancher 
-                        <img src="../build/public/images/stilbruchLogo3.compressed.svg"> nötig sein."
-                    </span>
-                </div>
-        </div>
-
-        <div class="myFlex kGrid">
-            <div class="flexHeader">Kontaktform</div>
-            <div class="flexMainItems"><% include partials/contact %></div>
-        </div>
-
+    <div class="landing">
+        <div class="mainLogo"><img src="../build/public/images/stilbruchLogo.compressed.svg"></div>
+        <div class="mainSub">Webentwicklung</div>
     </div>
 
+    <div class="myFlex eGrid">
+        <div class="flexHeader">Mein Stack</div>
+        <div class="entwicklung">
+            <div class="eItem"> Web-Applikationen</div>
+            <div class="eItem"> Node.js</div>
+        </div>
+        <div class="entwicklung">
+            <div class="eItem"> Backend</div>
+            <div class="eItem"> Express</div>
+        </div>
+        <div class="entwicklung">
+            <div class="eItem"> Datenbank</div>
+            <div class="eItem"> MongoDB</div>
+        </div>
+        <div class="entwicklung">
+            <div class="eItem"> UI Design</div>
+            <div class="eItem"> React</div>
+        </div>
+    </div>
+
+    <div class="myFlex pGrid">
+        <div class="flexHeader">Aktuelles Projekt</div>
+        <div class="flexMainItems">
+            <a class="projectImg" href="https://www.radblocs.com"><img src="/build/public/images/logo_radblocs.compressed.png"></a>
+        </div>
+    </div>
+
+    <div class="myFlex sGrid">
+        <div class="flexHeader">Story</div>
+        <div class="flexMainItems story">
+            <span>"Als Arzt <i>und</i> Programmierer ist es mein Ziel, das klassische Feld der Medizin mit neuen
+                Technologien zu verknüpfen. Ich möchte zeigen, dass diese Verbindung in keine Richtung ein <img src="../build/public/images/stilbruchLogo3.compressed.svg">
+                sein muss. Vielmehr besteht das Potential konservative und repetitive Arbeitsprozesse in der Medizin zu
+                minimieren um damit die Patientenversorgung sicherer und effektiver und die Arbeit in der Medizin
+                kreativer und menschlicher zu machen."
+            </span>
+        </div>
+    </div>
+
+    <div class="myFlex kGrid">
+        <div class="flexHeader">Kontaktform</div>
+        <div class="flexMainItems">
+            <% include partials/contact %>
+        </div>
+    </div>
+
+</div>
 
 <% include partials/footer %>

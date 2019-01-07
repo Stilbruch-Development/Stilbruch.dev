@@ -2,7 +2,6 @@ var cookieParser    = require('cookie-parser'),
     nodemailer      = require('nodemailer'),
     bodyParser      = require ("body-parser"),
     express         = require ("express"),
-    session         = require('express-session'),
     flash           = require ("connect-flash"),
     app             = express();
 
@@ -50,11 +49,11 @@ app.get("/datenschutz", function(req, res){
 
 /* NODEMAILER CONTACT FORM */
 
-app.get("/contact", function (req, res){
+app.get("/kontakt", function (req, res){
     res.render("contact");
 });
 
-app.post('/contact', function (req, res){
+app.post('/kontakt', function (req, res){
 
     var newContact = {
 
@@ -62,8 +61,21 @@ app.post('/contact', function (req, res){
         lastName:   req.body.lastName,
         email:      req.body.email,
         text:       req.body.message,
-        subject:    "Contact Form Stilbruch.design"
+        subject:    "Kontakt von Stilbruch.design"
     };
+
+    const botContact = {
+        firstName: req.body.firstName1,
+        lastName: req.body.lastName1,
+        email: req.body.email1,
+        text: req.body.message1,
+      };
+    
+      const botArr = Object.values(botContact);
+    
+      function notEmpty(value) {
+        return value !== '';
+      }
 
     var message = '<h1>New message from the contact form:</h1><h3 style="font-weight: normal">First Name: <p style="font-weight: bold; font-size: 1.3em; display: inline">' + newContact.firstName + '</p></h3><h3 style="font-weight: normal">Last Name: <p style="font-weight: bold; font-size: 1.3em; display: inline">' + newContact.lastName + '</p></h3><h3 style="font-weight: normal">E-Mail: <p style="font-weight: bold; font-size: 1.3em; display: inline">' + newContact.email + '</p></h3><h3 style="font-weight: normal">Message: <p style="font-weight: bold; font-size: 1.3em;">' + newContact.text + '</p></h3>';  
 
@@ -87,16 +99,22 @@ app.post('/contact', function (req, res){
         html: message // html body
     };
 
-    // send mail with defined transport object
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-    });
+    if (botArr.some(notEmpty) === true) {
+        // req.flash('error', 'There was an error with your form submission. Please try again.');
+        res.redirect('/');
+        return undefined;
+      } else {
+        // send mail with defined transport object
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                return console.log(error);
+            }
+            console.log('Message sent: %s', info.messageId);
+        });
 
-    req.flash("success", "Vielen Dank, Ihre Nachricht wurde erfolgreich gesendet.");
-    res.redirect("/");
+        req.flash("success", "Vielen Dank, Ihre Nachricht wurde erfolgreich gesendet. Ich melde mich so schnell wie möglich.");
+        res.redirect("/");
+    }
 });
 
 /* +++++++++++++++++++++++++++ APP LISTEN +++++++++++++++++++++++++++ */
