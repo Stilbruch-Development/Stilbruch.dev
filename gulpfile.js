@@ -28,7 +28,7 @@ gulp.task ('scripts', function(){
 gulp.task('styles', function () {
 
     return gulp.src('public/stylesheets/*.css')
-        .pipe(postcss([ autoprefixer('last 7 versions') ]))
+        .pipe(postcss([ autoprefixer({ grid: "autoplace" })]))
         .pipe(cleanCss())
         .pipe(rename(function (path) {
             path.basename += ".prefixed.min";
