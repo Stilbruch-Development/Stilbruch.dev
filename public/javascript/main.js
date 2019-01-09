@@ -141,10 +141,10 @@ window.addEventListener("load", function(){
     "content": {
       href: "/datenschutz",
       header: 'Cookies auf dieser Webseite',
-      message: 'Diese Webseite verwendet Cookies um sie für Sie optimal zu gestalten und fortlaufend verbessern zu können.',
+      message: 'Diese Webseite verwendet Cookies um sie optimal gestalten und fortlaufend verbessern zu können.',
       dismiss: 'Habe ich vestanden.',
       allow: 'Ok, stimme zu.',
-      deny: 'ablehnen',
+      deny: 'Ablehnen',
       link: 'Mehr über Cookies und Datenschutz erfahren.',
       close: '&#x274c;',
       policy: 'Cookie Infos',
