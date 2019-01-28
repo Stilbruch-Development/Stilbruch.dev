@@ -1,2 +1,6 @@
 .env
 .vscode
+.eslintrc.json
+/node_modules
+.babelrc
+package-lock.json
