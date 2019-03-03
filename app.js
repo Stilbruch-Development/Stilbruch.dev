@@ -60,6 +60,10 @@ app.get('/kontakt', (req, res) => {
   res.render('contact');
 });
 
+app.post('/test', (req, res) => {
+  res.send(req.body);
+});
+
 app.post('/kontakt', (req, res) => {
   const newContact = {
     firstName: req.body.firstName,
@@ -135,4 +139,4 @@ app.post('/kontakt', (req, res) => {
 });
 
 /* +++++++++++++++++++++++++++ APP LISTEN +++++++++++++++++++++++++++ */
-app.listen(process.env.PORT || 3000, process.env.ID, () => console.log('Server started on port 3000 ...'));
+app.listen(process.env.PORT || 5000, process.env.ID, () => console.log('Server started on port 5000 ...'));
