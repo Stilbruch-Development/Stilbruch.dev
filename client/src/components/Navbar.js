@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import NavItem from './NavItem';
 import NavLogo from './NavLogo';
-import FlashCard from './FlashCard';
-import { sendForm } from '../actions/formActions';
 
 class Navbar extends Component {
-  componentDidMount() {
-    this.props.sendForm();
-  }
-
   render() {
-    const { form } = this.props;
     window.addEventListener('load', function() {
       const body = document.querySelector('body');
       const navbar = document.getElementsByClassName('navbar');
@@ -38,30 +29,15 @@ class Navbar extends Component {
     });
 
     return (
-      <div>
-        <div className="navbar sticky">
-          <NavLogo navLink="/#Start" />
-          <NavItem head="Entwicklung" navLink="/#Entwicklung" />
-          <NavItem head="Projekte" navLink="/#Projekte" />
-          <NavItem head="Story" navLink="/#Story" />
-          <NavItem head="Kontakt" navLink="/#Kontakt" />
-        </div>
-        {form.formSend ? <FlashCard /> : <div />}
+      <div className="navbar sticky">
+        <NavLogo navLink="/#Start" />
+        <NavItem head="Entwicklung" navLink="/#Entwicklung" />
+        <NavItem head="Projekte" navLink="/#Projekte" />
+        <NavItem head="Story" navLink="/#Story" />
+        <NavItem head="Kontakt" navLink="/#Kontakt" />
       </div>
     );
   }
 }
 
-Navbar.propTypes = {
-  sendForm: PropTypes.func.isRequired,
-  form: PropTypes.object.isRequired,
-};
-
-const mapStateToProps = state => ({
-  form: state.form,
-});
-
-export default connect(
-  mapStateToProps,
-  { sendForm }
-)(Navbar);
+export default Navbar;

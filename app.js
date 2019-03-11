@@ -1,12 +1,10 @@
-const cookieParser = require('cookie-parser');
+// const cookieParser = require('cookie-parser');
 
 const nodemailer = require('nodemailer');
 
 const bodyParser = require('body-parser');
 
 const express = require('express');
-
-const flash = require('connect-flash');
 
 const app = express();
 
@@ -15,54 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 require('dotenv').config();
 
-app.set('view engine', 'ejs');
-app.use('/build/public', express.static(`${__dirname}/build/public`));
-app.use('/views', express.static(`${__dirname}/views`));
-app.use('/node_modules/cookieconsent', express.static(`${__dirname}/node_modules/cookieconsent`));
-app.use(cookieParser());
-app.use(
-  require('express-session')({
-    secret: process.env.SESSIONSECRET,
-    cookie: { _expires: 30000000 },
-    resave: false,
-    saveUninitialized: false,
-  })
-);
-
-app.use(flash());
-
-/* +++++++++++++++++++++++++ GLOBAL ELEMENTS CONFIGURATION +++++++++++++++++++++++++ */
-app.use((req, res, next) => {
-  res.locals.error = req.flash('error');
-  res.locals.success = req.flash('success');
-  next();
-});
-
 /* ++++++++++++++++++++++++++++++ APP ROUTING ++++++++++++++++++++++++++++++ */
-/* ROOT ROUTE/ LANDING */
-app.get('/', (req, res) => {
-  res.render('landing');
-});
-
-/* IMPRESSUM ROUTE */
-app.get('/impressum', (req, res) => {
-  res.render('impressum');
-});
-
-/* DATENSCHUTZ ROUTE */
-app.get('/datenschutz', (req, res) => {
-  res.render('datenschutz');
-});
-
-/* NODEMAILER CONTACT FORM */
-
-app.get('/kontakt', (req, res) => {
-  res.render('contact');
-});
-
-app.post('/test', (req, res) => {
-  res.send(req.body);
-});
 
 app.post('/kontakt', (req, res) => {
   const newContact = {
@@ -72,19 +23,6 @@ app.post('/kontakt', (req, res) => {
     text: req.body.message,
     subject: 'Kontakt von Stilbruch.design',
   };
-
-  const botContact = {
-    firstName: req.body.firstName1,
-    lastName: req.body.lastName1,
-    email: req.body.email1,
-    text: req.body.message1,
-  };
-
-  const botArr = Object.values(botContact);
-
-  function notEmpty(value) {
-    return value !== '';
-  }
 
   const message = `<h1>New message from the contact form:</h1><h3 style="font-weight: normal">First Name: <p style="font-weight: bold; font-size: 1.3em; display: inline">${
     newContact.firstName
@@ -116,11 +54,6 @@ app.post('/kontakt', (req, res) => {
     html: message, // html body
   };
 
-  if (botArr.some(notEmpty) === true) {
-    // req.flash('error', 'There was an error with your form submission. Please try again.');
-    res.redirect('/');
-    return undefined;
-  }
   // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
@@ -130,10 +63,6 @@ app.post('/kontakt', (req, res) => {
     return undefined;
   });
 
-  req.flash(
-    'success',
-    'Vielen Dank, Ihre Nachricht wurde erfolgreich gesendet. Ich melde mich so schnell wie möglich.'
-  );
   res.redirect('/');
   return undefined;
 });
