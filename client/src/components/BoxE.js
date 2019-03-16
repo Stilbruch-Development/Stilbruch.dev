@@ -5,13 +5,13 @@ export default function BoxE() {
     <div className="myFlex eGrid navChange" id="Entwicklung">
       <div className="flexHeader">Tools & Skills</div>
       <div className="entwicklung">
-        <div className="eItem"> Web-Apps</div>
+        <div className="eItem"> Web & Mobile Apps</div>
         <div className="eItem"> Websites</div>
-        <div className="eItem"> UI Design</div>
+        <div className="eItem"> UI/UX Design</div>
         <div className="eItem"> Javascript</div>
-        <div className="eItem"> Datenbank</div>
-        <div className="eItem"> Front-/Backend</div>
-        <div className="eItem"> MERN Stack</div>
+        <div className="eItem"> React</div>
+        <div className="eItem"> MongoDB</div>
+        <div className="eItem"> Node.js</div>
       </div>
     </div>
   );

@@ -10,10 +10,11 @@ export default function BoxS() {
           {'Als Arzt'}
           <i> und </i>
           {
-            'Entwickler möchte ich die Möglichkeiten welche mit modernen Web-Technologien entstehen im Umfeld der Medizin implementieren. Durch medizinische Web-Applikationen können konservative und repetitive Arbeitsprozesse minimiert werden. Das macht die Patientenversorgung sichere und effektiver sowie die Arbeit in der Medizin kreativer und angenehmer. Dabei bin ich bereit auch unkonventionelle Wege zu gehen und nehme '
+            'Entwickler nutze ich die Möglichkeiten die mit modernen Technologien entstehen, um sie im Umfeld der Medizin einzusetzen. Durch medizinische Web-Applikationen z.B. können konservative und repetitive Arbeitsprozesse minimiert werden. Das macht die Patientenversorgung sichere und effektiver sowie die Arbeit in der Medizin kreativer und angenehmer. Dabei bin ich bereit auch unkonventionelle Wege zu gehen und nehme '
           }
           <img src={Stilbrüche} alt="logo" />
           {' bewusst in kauf!'}
+          <span style={{ padding: '0', display: 'block', fontSize: '3rem', fontStyle: 'italic', textAlign: 'right' }}>-- Dr. M. Hübner</span>
         </span>
       </div>
     </div>
