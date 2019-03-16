@@ -10,7 +10,7 @@ export default function BoxS() {
           {'Als Arzt'}
           <i> und </i>
           {
-            'Entwickler nutze ich die Möglichkeiten die mit modernen Technologien entstehen, um sie im Umfeld der Medizin einzusetzen. Durch medizinische Web-Applikationen z.B. können konservative und repetitive Arbeitsprozesse minimiert werden. Das macht die Patientenversorgung sichere und effektiver sowie die Arbeit in der Medizin kreativer und angenehmer. Dabei bin ich bereit auch unkonventionelle Wege zu gehen und nehme '
+            'Entwickler nutze ich die Möglichkeiten die mit modernen Technologien entstehen um sie im Umfeld der Medizin einzusetzen. Durch medizinische Web-Applikationen z.B. können konservative und repetitive Arbeitsprozesse minimiert werden. Das macht die Patientenversorgung sichere und effektiver sowie die Arbeit in der Medizin kreativer und angenehmer. Dabei bin ich bereit auch unkonventionelle Wege zu gehen und nehme '
           }
           <img src={Stilbrüche} alt="logo" />
           {' bewusst in kauf!'}
