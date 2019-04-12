@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Logo from '../images/stilbruchLogoDev.svg';
+import React, { Component } from "react";
+import Logo from "../images/stilbruchLogoDev.svg";
 
 export default class Landing extends Component {
   render() {

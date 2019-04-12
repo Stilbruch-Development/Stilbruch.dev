@@ -1,20 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++ html/body element +++++++++++++++++++++++++++++++++++++++++++++++ */
-html, body {
+html,
+body {
   background: linear-gradient(to bottom right, #181818, #404040);
   background-color: rgb(24, 24, 24);
-  font-family: 'Poiret One', cursive !important;
+  font-family: "Poiret One", cursive !important;
   color: #000000;
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 10px;
+  font-size: 1vw;
 }
 
 /* hides all scrollbars */
-.displayNone, ::-webkit-scrollbar {
+.displayNone,
+::-webkit-scrollbar {
   display: none !important;
 }
 
@@ -25,13 +27,12 @@ html, body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1rem 0 1.5rem 0;
-  border-radius: 20px;
+  padding: 1rem 1rem 1.5rem 1rem;
   z-index: 1;
 }
 
 .navItem a {
-  color: #FF0000 !important;
+  color: #ff0000 !important;
   text-decoration: none !important;
 }
 
@@ -40,17 +41,18 @@ html, body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
   border-radius: 131px;
-  box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8) 5px 10px 20px inset;
   background: rgba(0, 0, 0, 0);
   text-align: center;
-  color: #FF0000;
+  color: #ff0000;
   text-decoration: none;
-  font-size: 3.0vw;
-  text-shadow: 5px 5px 10px rgba(0,0,0, 1);
+  font-size: 3rem;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
   min-width: 20%;
-  height: 3.5vw;
+  height: 3.5rem;
   padding-bottom: 0.2vw;
 }
 
@@ -60,15 +62,11 @@ html, body {
 
 .navItem:hover {
   background: rgba(95, 95, 95, 0.7);
-  box-shadow: 5px 10px 20px rgba(0,0,0, 0.8);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8);
   cursor: pointer;
 }
 
-.navMenu {
-  display: none;
-}
-
-.navLogo img, .navCancel img {
+.navIcon img {
   height: 100%;
   margin-top: 1rem;
 }
@@ -89,7 +87,12 @@ hr {
   border: 0;
   margin: 1rem 0 0 0;
   height: 2px;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), red, rgba(255, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    red,
+    rgba(255, 0, 0, 0)
+  );
 }
 
 .footer {
@@ -98,19 +101,20 @@ hr {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 3rem 0 3rem 0;
 }
 
 .footerItem {
-  color: #FF0000;
+  color: #ff0000;
   text-decoration: none;
-  font-size: 2vw;
-  text-shadow: 5px 5px 10px rgba(0,0,0, 1);
+  font-size: 2rem;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
 }
 
-.footerLogo img{
+.footerLogo img {
   margin-top: 1rem;
   margin-right: 2rem;
-  height: 6vw;
+  height: 6rem;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++ main section +++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -132,15 +136,15 @@ hr {
 }
 
 .mainSub {
-  color: #FF0000;
-  font-size: 4vw;
-  letter-spacing: 0.8vw;
-  text-shadow: 2px 2px 10px rgba(0,0,0, 1);
-  margin: 4vw;
+  color: #ff0000;
+  font-size: 4rem;
+  letter-spacing: 0.8rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+  margin: 4rem;
 }
 
 .mainLogo img {
-  width: 90vw;
+  width: 90rem;
 }
 
 /* flex sections */
@@ -150,8 +154,8 @@ hr {
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  margin: 5vw 0.5vw;
-  width: 100vw;
+  margin: 5rem 0.5rem;
+  width: 90rem;
   height: auto;
 }
 
@@ -159,30 +163,31 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 8vw;
-  font-size: 4.5vw;
+  min-width: 8rem;
+  font-size: 4.5rem;
   letter-spacing: 1.5vh;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  text-shadow: -5px -5px 10px rgba(0,0,0, 1);
-  color: #FF0000;
+  text-shadow: -5px -5px 10px rgba(0, 0, 0, 1);
+  color: #ff0000;
 }
 
 .flexMainItems {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2vw 2vw;
-  padding: 2vw;
+  margin: 2rem 2rem;
+  padding: 2rem;
   text-align: center;
-  width: 100vw;
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
   border-radius: 8px;
-  box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8) 5px 10px 20px inset;
   background: rgba(255, 0, 0, 0);
-  color: #FF0000;
-  font-size: 4vw;
-  text-shadow: 5px 5px 10px rgba(0,0,0, 1);
+  color: #ff0000;
+  font-size: 4rem;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  min-width: 90%;
 }
 
 /* entwicklung section */
@@ -193,7 +198,6 @@ hr {
   justify-content: space-between;
   align-content: space-around;
   flex-wrap: wrap;
-  height: 100%;
 }
 
 .eItem {
@@ -202,46 +206,46 @@ hr {
   justify-content: center;
   align-items: center;
   word-wrap: break-word;
-  margin: 1vw 1vw;
-  padding: 1vw;
+  margin: 1rem 1rem;
+  padding: 1rem;
   text-align: center;
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
   border-radius: 8px;
-  box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8) 5px 10px 20px inset;
   background: rgba(255, 0, 0, 0);
-  color: #FF0000;
-  font-size: 4vw;
-  text-shadow: 5px 5px 10px rgba(0,0,0, 1);
-  height: 15vw;
-  min-width: 18vw;
+  color: #ff0000;
+  font-size: 4rem;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  height: 8rem;
+  flex-grow: 1;
 }
 
 /* project section */
 
 .projectImg {
-background: url("images/radblocs_background.jpg");
-background-size: 100%;
-border-radius: 8px;
+  background: url("images/radblocs_background.jpg");
+  background-size: 100%;
+  border-radius: 8px;
 }
 
 .flexMainItems img {
-max-width: 90%;
+  max-width: 90%;
 }
 
 .projectInfo {
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-margin: auto;
-font-size: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  font-size: 5rem;
 }
 
 /* story */
 
 .story {
   height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,55 +253,55 @@ font-size: 5vw;
 }
 
 .story span {
-font-size: 0.7em !important;
-line-height: 1.7em;
-text-align: justify;
-padding: 1em;
+  font-size: 2.5rem !important;
+  line-height: 1.5em;
+  text-align: justify;
+  padding: 1em;
 }
 
 .story img {
-height: 1.7em;
-vertical-align: bottom;
+  height: 1.5em;
+  vertical-align: bottom;
 }
 
 /* kontakt */
 
 #kontakt {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  margin: 3rem 0 3rem 0 !important;
 }
 
 .formInput {
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
   border-radius: 8px;
-  box-shadow: 5px 10px 20px rgba(0,0,0, 0.2), rgba(0,0,0, 0.2) 5px 10px 20px inset;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 5px 10px 20px inset;
   background: rgba(24, 24, 24, 0.5) !important;
   color: rgb(255, 0, 0) !important;
-  font-size: 0.7em;
-  text-shadow: 5px 5px 10px rgba(0,0,0, 1);
-  width: 70vw;
-  height: 1.4em;
-  margin: 0.6vw;
+  font-size: 2.5rem;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  width: 70rem;
+  height: 4.5rem;
+  margin: 0.6rem;
   padding: 0.2em 1em;
   box-sizing: border-box;
 }
 
-input, textarea {
+input,
+textarea {
   font-family: inherit;
   text-align: center;
 }
 
 textarea {
-  height: 7em !important;
-  font-size: 0.5em !important;
+  height: 15rem !important;
+  font-size: 2rem !important;
   box-sizing: border-box;
   padding: 20px !important;
   text-align: left;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   color: rgb(255, 0, 0);
   border: 2px solid rgb(255, 0, 0);
   outline: none;
@@ -313,18 +317,18 @@ input:focus {
 }
 
 .button {
-  margin: 2vw;
-  border: 1px solid #FF0000;
+  margin: 2rem;
+  border: 1px solid #ff0000;
   border-radius: 8px;
-  box-shadow: 5px 10px 20px rgba(0,0,0, 0.5);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
   background: rgba(95, 95, 95, 0.5);
   color: rgb(255, 0, 0);
   font-size: 3rem;
   font-family: inherit;
-  text-shadow: 5px 5px 10px rgba(0,0,0, 1);
-  width: 70vw;
-  height: 2em;
-  display: flex;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  width: 70rem;
+  height: 4rem;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -333,15 +337,15 @@ input:focus {
 
 .buttonBack {
   background: rgb(24, 24, 24, 0.3);
-  width: 50vw;
-  height: 1.5em
+  width: 50rem;
+  height: 5rem;
 }
 
 .button:active {
   outline: none;
   padding: 1.2rem 0 0.8rem 0;
-  box-shadow: 5px 10px 20px rgba(0,0,0, 0.1) !important;
-  text-shadow: 5px 5px 10px rgba(0,0,0, 0) !important;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1) !important;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0) !important;
 }
 
 .button:focus {
@@ -349,7 +353,7 @@ input:focus {
 }
 
 .button:hover {
-  box-shadow: 5px 10px 20px rgba(0,0,0, 0.8) ;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8);
   cursor: pointer;
 }
 
@@ -372,7 +376,6 @@ input:focus {
   margin-top: 0rem;
   color: rgb(255, 0, 0);
   background: rgba(255, 0, 0, 0.2);
-  width: 95%;
   border-radius: 10px;
   padding-top: 3px;
   padding-bottom: 5px;
@@ -382,7 +385,6 @@ input:focus {
   background: rgba(255, 0, 0, 0.2) !important;
 }
 
-
 /* ++++++++++++++++++++++++++++++++++++++++++++++  impressum  ++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .impressum {
@@ -390,17 +392,19 @@ input:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
   border-radius: 8px;
-  box-shadow: 5px 10px 20px rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 5px 10px 20px inset;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8) 5px 10px 20px inset;
   background: rgba(255, 0, 0, 0);
-  color: #FF0000;
-  font-size: 4vw;
-  text-shadow: 5px 5px 10px rgba(0,0,0, 1);
+  color: #ff0000;
+  font-size: 4rem;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
   overflow: hidden;
-  margin: 5vw 10vw;
+  margin: 5rem 10rem;
   padding-bottom: 0.9em;
   min-height: 65vh;
+  line-height: 4rem;
 }
 
 .impressum h1 {
@@ -417,15 +421,15 @@ input:focus {
 }
 
 .impressumMain img {
-  width: 40vw;
+  width: 40rem;
 }
 
-.regText p{
+.regText p {
   font-size: 0.6em;
-  margin: 1.4vw 0;
+  margin: 1.4rem 0;
 }
 
-.impressum a{
+.impressum a {
   text-decoration: underline;
   color: inherit;
   font-family: inherit;
@@ -435,8 +439,143 @@ input:focus {
   font-size: 0.7em !important;
   font-weight: bold !important;
 }
-/* +++++++++++++++++++++++++++++++++++++++++++++++ cookieconsent +++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++ media querry +++++++++++++++++++++++++++++++++++++++++++++++ */
 
+/* phone */
+@media (max-width: 600px) {
+  /* navigation bar */
 
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 1vw 15vw 1vw 15vw;
+  }
 
+  .navItem {
+    font-size: 8rem;
+    min-width: 100%;
+    height: 8vw;
+    margin: 1vw 0 1vw 0;
+  }
 
+  .navIcon img {
+    margin-top: 2vw;
+  }
+
+  /*  landig  */
+
+  .mainSub {
+    font-size: 6rem;
+    letter-spacing: 1rem;
+  }
+
+  .mainLogo img {
+    width: 95rem;
+  }
+
+  /*  main section  */
+
+  .myFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 5vw 0.5vw;
+    width: 100vw;
+    height: auto;
+  }
+
+  .flexHeader {
+    font-size: 12rem;
+    letter-spacing: unset;
+    writing-mode: unset;
+    transform: unset;
+  }
+
+  .eItem {
+    font-size: 8rem;
+    height: 15rem;
+  }
+
+  .story span {
+    font-size: 6.5rem !important;
+    text-align: left;
+  }
+
+  /* kontakt */
+
+  .formInput {
+    font-size: 6rem;
+    height: 8.5rem;
+    margin: 1rem;
+  }
+
+  textarea {
+    height: 30rem !important;
+    font-size: 5rem !important;
+  }
+
+  .button {
+    font-size: 6rem;
+    height: 9rem;
+  }
+  .buttonBack {
+    width: 70vw;
+    height: 9rem;
+  }
+
+  .formSend {
+    font-size: 6rem;
+  }
+
+  .formError {
+    font-size: 5rem;
+  }
+
+  /* footer */
+  .footerItem {
+    font-size: 6rem;
+  }
+
+  .footerLogo img {
+    height: 12rem;
+  }
+
+  /* impressum */
+  .impressum {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+
+  .impressumMain img {
+    width: 60vw;
+  }
+
+  /* cookie banner */
+  div.cookieConsent {
+    font-size: 5rem !important;
+  }
+
+  div.cookieConsent a {
+    font-size: 4rem !important;
+  }
+  div.cookieConsent button {
+    font-size: 6rem !important;
+  }
+}
+
+/* tablet portrait */
+@media (max-width: 900px) {
+}
+
+/* tablet landscape */
+@media (max-width: 1200px) {
+}
+
+/* desktop */
+@media (max-width: 1800px) {
+}
+
+/* >1800px = wide screen */

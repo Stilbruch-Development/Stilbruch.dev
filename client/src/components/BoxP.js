@@ -1,5 +1,5 @@
-import React from 'react';
-import LogoRadblocs from '../images/logo_radblocs.png';
+import React from "react";
+import LogoRadblocs from "../images/logo_radblocs.png";
 
 export default function BoxP() {
   return (

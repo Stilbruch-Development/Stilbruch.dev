@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { sendForm, formErrors, refreshForm } from '../actions/formActions';
-import validateForm from '../validation/contactForm';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { sendForm, formErrors, refreshForm } from "../actions/formActions";
+import validateForm from "../validation/contactForm";
 
 class FormC extends Component {
   constructor() {
     super();
     this.state = {
-      firstName: '',
-      firstName1: '',
-      lastName: '',
-      lastName1: '',
-      email: '',
-      email1: '',
-      message: '',
-      message1: '',
+      firstName: "",
+      firstName1: "",
+      lastName: "",
+      lastName1: "",
+      email: "",
+      email1: "",
+      message: "",
+      message1: ""
     };
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -33,7 +33,7 @@ class FormC extends Component {
       firstName: this.state.firstName,
       lastName: this.state.lastName,
       email: this.state.email,
-      message: this.state.message,
+      message: this.state.message
     };
 
     const validate = data => {
@@ -50,7 +50,7 @@ class FormC extends Component {
         firstName: form.firstName,
         lastName: form.lastName,
         email: form.email,
-        message: form.message,
+        message: form.message
       });
     } else {
       const errors = validate(form);
@@ -64,7 +64,13 @@ class FormC extends Component {
   }
 
   render() {
-    const { firstName, lastName, email, message, general } = this.props.form.errors;
+    const {
+      firstName,
+      lastName,
+      email,
+      message,
+      general
+    } = this.props.form.errors;
     let errorFirstName, errorLastName, errorEmail, errorMessage, errorGeneral;
 
     if (this.props.form.formError) {
@@ -185,7 +191,11 @@ class FormC extends Component {
         />
         {errorMessage}
 
-        <button onClick={this.handleFormSubmit} className="button" type="submit">
+        <button
+          onClick={this.handleFormSubmit}
+          className="button"
+          type="submit"
+        >
           <span>Nachricht senden</span>
         </button>
       </form>
@@ -194,7 +204,7 @@ class FormC extends Component {
 }
 
 const mapStateToProps = state => ({
-  form: state.form,
+  form: state.form
 });
 
 export default connect(
