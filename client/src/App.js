@@ -30,7 +30,6 @@ export default function App() {
             location="bottom"
             buttonText="Ok, stimme zu."
             cookieName="stilbruch.dev_cookie"
-            debug="true"
             style={{
               alignItems: "center",
               display: "flex",

@@ -12,6 +12,7 @@ body {
   border: 0;
   outline: 0;
   font-size: 1vw;
+  z-index: -1;
 }
 
 /* hides all scrollbars */
@@ -327,7 +328,7 @@ input:focus {
   font-family: inherit;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
   width: 70rem;
-  height: 4rem;
+  height: 5rem;
   /* display: flex; */
   flex-direction: column;
   justify-content: center;
