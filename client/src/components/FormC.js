@@ -185,7 +185,7 @@ class FormC extends Component {
           className="formInput"
           name="message"
           required
-          placeholder="Bitte schreiben Sie hier Ihre Nachricht."
+          placeholder="Bitte schreibe hier deine Nachricht."
           value={this.state.message}
           onChange={this.handleChange}
         />
