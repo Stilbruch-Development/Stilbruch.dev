@@ -1,4 +1,3 @@
-/*TEST*/
 const nodemailer = require("nodemailer");
 
 const bodyParser = require("body-parser");
