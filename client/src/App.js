@@ -9,12 +9,14 @@ import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Privacy from "./components/Privacy";
 import Terms from "./components/Terms";
+import GlobalStyle from "./components/styled_components/GlobalStyle";
 
 export default function App() {
   return (
     <Provider store={store}>
       <Router>
         <div>
+          <GlobalStyle />
           <Navbar />
           <Switch>
             <Route exact path="/" component={Main} />

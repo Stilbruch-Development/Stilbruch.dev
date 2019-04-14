@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+/* @import url("https://fonts.googleapis.com/css?family=Poiret+One"); */
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++ html/body element +++++++++++++++++++++++++++++++++++++++++++++++ */
-html,
+/* html,
 body {
   background: linear-gradient(to bottom right, #181818, #404040);
   background-color: rgb(24, 24, 24);
@@ -13,13 +13,13 @@ body {
   outline: 0;
   font-size: 1vw;
   z-index: -1;
-}
+} */
 
 /* hides all scrollbars */
-.displayNone,
+/* .displayNone,
 ::-webkit-scrollbar {
   display: none !important;
-}
+} */
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++ navigation bar +++++++++++++++++++++++++++++++++++++++++++++++ */
 

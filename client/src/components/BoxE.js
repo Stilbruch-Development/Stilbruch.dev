@@ -25,7 +25,7 @@ export default function BoxE() {
   `;
 
   return (
-    <div className="myFlex navChange" id="Entwicklung">
+    <MyFlex className="navChange" id="Entwicklung">
       <div className="flexHeader">Tools & Skills</div>
       <div className="entwicklung">
         <Item>Javascript</Item>
@@ -39,6 +39,6 @@ export default function BoxE() {
         <div className="eItem"> React Native</div>
         <div className="eItem"> HTML 5</div>
       </div>
-    </div>
+    </MyFlex>
   );
 }
