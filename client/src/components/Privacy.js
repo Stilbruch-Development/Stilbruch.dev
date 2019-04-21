@@ -1,12 +1,14 @@
 import React from "react";
+import { TermsMain } from "./styled_components/Terms";
+import { MainText } from "./styled_components/Terms";
 import { Link } from "react-router-dom";
 import adresseImg from "../images/adresse.svg";
 
 export default function Privacy() {
   return (
-    <div className="impressum navChange" id="top">
+    <TermsMain className="impressum navChange" id="top">
       <h1>Datenschutzerklärung</h1>
-      <div className="impressumMain regText">
+      <MainText className="impressumMain regText">
         <h2>Einleitung</h2>
         <p>
           Mit der folgenden Information möchte ich Ihnen, ggf. als "betroffene
@@ -629,7 +631,7 @@ export default function Privacy() {
           <Link to="/datenschutz">https://stilbruch.design/datenschutz</Link>
         </p>
         <p>von Ihnen abgerufen und ausgedruckt werden.</p>
-      </div>
-    </div>
+      </MainText>
+    </TermsMain>
   );
 }

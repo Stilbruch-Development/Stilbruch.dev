@@ -1,17 +1,17 @@
-import axios from 'axios';
-import { SEND_FORM, REFRESH_FORM, FORM_ERROR } from './types';
+import axios from "axios";
+import { SEND_FORM, REFRESH_FORM, FORM_ERROR } from "./types";
 
 export const sendForm = form => dispatch => {
   axios
-    .post('/kontakt', form)
+    .post("/test", form) /* /kontakt */
     .then(res => dispatch({ type: SEND_FORM, payload: res.data }))
     .catch(function(error) {
       if (error) {
         dispatch({
           type: FORM_ERROR,
           payload: {
-            general: `Uups! Etwas ist schief gegangen. Die Nachricht wurde nicht gesendet.`,
-          },
+            general: `Uups! Etwas ist schief gegangen. Die Nachricht wurde nicht gesendet.`
+          }
         });
       }
     });

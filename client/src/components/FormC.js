@@ -1,7 +1,60 @@
 import React, { Component } from "react";
+import styled, { css } from "styled-components";
 import { connect } from "react-redux";
 import { sendForm, formErrors, refreshForm } from "../actions/formActions";
 import validateForm from "../validation/contactForm";
+import Button from "./styled_components/Button";
+
+const Fields = css`
+  border: 1px solid #ff0000;
+  border-radius: 8px;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 5px 10px 20px inset;
+  background: rgba(24, 24, 24, 0.5);
+  color: rgb(255, 0, 0);
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  width: 70rem;
+  margin: 0.6rem;
+  box-sizing: border-box;
+  font-family: inherit;
+
+  :focus {
+    color: rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    outline: none;
+  }
+  ::placeholder {
+    color: rgba(255, 0, 0, 0.6);
+    text-align: center;
+  }
+`;
+
+const Input = styled.input`
+  ${Fields}
+  font-size: 2.5rem;
+  height: 4.5rem;
+  padding: 0.2em 1em;
+  text-align: center;
+`;
+
+const Textarea = styled.textarea`
+  ${Fields}
+  height: 15rem;
+  font-size: 2rem;
+  padding: 20px;
+  text-align: left;
+`;
+
+const FormError = styled.div`
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(255, 0, 0);
+  background: rgba(255, 0, 0, 0.2);
+  border-radius: 10px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+`;
 
 class FormC extends Component {
   constructor() {
@@ -75,23 +128,23 @@ class FormC extends Component {
 
     if (this.props.form.formError) {
       if (general) {
-        errorGeneral = <p className="formError">{general}</p>;
+        errorGeneral = <FormError>{general}</FormError>;
       }
 
       if (firstName) {
-        errorFirstName = <p className="formError">{firstName}</p>;
+        errorFirstName = <FormError>{firstName}</FormError>;
       }
 
       if (lastName) {
-        errorLastName = <p className="formError">{lastName}</p>;
+        errorLastName = <FormError>{lastName}</FormError>;
       }
 
       if (email) {
-        errorEmail = <p className="formError">{email}</p>;
+        errorEmail = <FormError>{email}</FormError>;
       }
 
       if (message) {
-        errorMessage = <p className="formError">{message}</p>;
+        errorMessage = <FormError>{message}</FormError>;
       }
     }
 
@@ -99,8 +152,8 @@ class FormC extends Component {
       <form className="navChange" id="kontakt" action="/test" method="POST">
         {/* form protection start */}
 
-        <input
-          className="formInput displayNone"
+        <Input
+          className="displayNone"
           type="text"
           name="firstName1"
           ref={c => {
@@ -110,8 +163,8 @@ class FormC extends Component {
           onChange={this.handleChange}
         />
 
-        <input
-          className="formInput displayNone"
+        <Input
+          className="displayNone"
           type="text"
           name="lastName1"
           ref={c => {
@@ -121,8 +174,8 @@ class FormC extends Component {
           onChange={this.handleChange}
         />
 
-        <input
-          className="formInput displayNone"
+        <Input
+          className="displayNone"
           type="email"
           name="email1"
           ref={c => {
@@ -132,8 +185,8 @@ class FormC extends Component {
           onChange={this.handleChange}
         />
 
-        <textarea
-          className="formInput displayNone"
+        <Textarea
+          className="displayNone"
           name="message1"
           ref={c => {
             this.message1 = c;
@@ -146,8 +199,7 @@ class FormC extends Component {
 
         {errorGeneral}
 
-        <input
-          className="formInput"
+        <Input
           type="text"
           name="firstName"
           minLength="2"
@@ -158,8 +210,7 @@ class FormC extends Component {
         />
         {errorFirstName}
 
-        <input
-          className="formInput"
+        <Input
           type="text"
           name="lastName"
           minLength="2"
@@ -170,8 +221,7 @@ class FormC extends Component {
         />
         {errorLastName}
 
-        <input
-          className="formInput"
+        <Input
           type="email"
           name="email"
           required
@@ -181,8 +231,7 @@ class FormC extends Component {
         />
         {errorEmail}
 
-        <textarea
-          className="formInput"
+        <Textarea
           name="message"
           required
           placeholder="Bitte schreibe hier deine Nachricht."
@@ -191,13 +240,9 @@ class FormC extends Component {
         />
         {errorMessage}
 
-        <button
-          onClick={this.handleFormSubmit}
-          className="button"
-          type="submit"
-        >
+        <Button onClick={this.handleFormSubmit} type="submit">
           <span>Nachricht senden</span>
-        </button>
+        </Button>
       </form>
     );
   }

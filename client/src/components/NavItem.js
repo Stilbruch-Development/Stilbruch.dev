@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { HashLink as Link } from "react-router-hash-link";
 import { connect } from "react-redux";
 import { refreshForm } from "../actions/formActions";
 import { closeNav } from "../actions/navActions";
+import StyledLink from "./styled_components/StyledLink";
 
 class NavItem extends Component {
   constructor() {
@@ -18,16 +18,15 @@ class NavItem extends Component {
 
   render() {
     return (
-      <Link
+      <StyledLink
         onClick={this.handleClick}
-        className="navItem"
         to={this.props.navLink}
         scroll={el =>
           el.scrollIntoView({ behavior: "smooth", block: "center" })
         }
       >
         {this.props.head}
-      </Link>
+      </StyledLink>
     );
   }
 }

@@ -1,21 +1,21 @@
-import { SEND_FORM, REFRESH_FORM, FORM_ERROR } from '../actions/types';
+import { SEND_FORM, REFRESH_FORM, FORM_ERROR } from "../actions/types";
 
 const initialState = {
   formData: {
-    firstName: '',
-    lastName: '',
-    email: '',
-    message: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: ""
   },
   errors: {
-    firstName: '',
-    lastName: '',
-    email: '',
-    message: '',
-    general: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+    general: ""
   },
   formSend: false,
-  formError: false,
+  formError: false
 };
 
 export default function(state = initialState, action) {
@@ -24,20 +24,20 @@ export default function(state = initialState, action) {
       return {
         ...state,
         formData: action.payload,
-        formSend: true,
+        formSend: true
       };
     case REFRESH_FORM:
       return {
         ...state,
         formSend: false,
-        formError: false,
+        formError: false
       };
     case FORM_ERROR:
       return {
         ...state,
         errors: action.payload,
         formSend: false,
-        formError: true,
+        formError: true
       };
     default:
       return state;

@@ -1,6 +1,7 @@
 import React from "react";
 import MyFlex from "./styled_components/MyFlex";
 import styled from "styled-components";
+import FlexHeader from "./styled_components/FlexHeader";
 
 export default function BoxE() {
   const Item = styled.div`
@@ -24,21 +25,29 @@ export default function BoxE() {
     flex-grow: 1;
   `;
 
+  const Entwicklung = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+  `;
+
   return (
     <MyFlex className="navChange" id="Entwicklung">
-      <div className="flexHeader">Tools & Skills</div>
-      <div className="entwicklung">
+      <FlexHeader>Tools & Skills</FlexHeader>
+      <Entwicklung>
         <Item>Javascript</Item>
-        <div className="eItem"> React</div>
-        <div className="eItem"> Node.js</div>
-        <div className="eItem"> Express</div>
-        <div className="eItem"> MongoDB</div>
-        <div className="eItem"> Redux</div>
-        <div className="eItem"> UI Design/ CSS</div>
-        <div className="eItem"> Semantic UI</div>
-        <div className="eItem"> React Native</div>
-        <div className="eItem"> HTML 5</div>
-      </div>
+        <Item>React</Item>
+        <Item>Node.js</Item>
+        <Item>Express</Item>
+        <Item>MongoDB</Item>
+        <Item>Redux</Item>
+        <Item>UI Design/ CSS</Item>
+        <Item>Semantic UI</Item>
+        <Item>React Native</Item>
+        <Item>HTML 5</Item>
+      </Entwicklung>
     </MyFlex>
   );
 }

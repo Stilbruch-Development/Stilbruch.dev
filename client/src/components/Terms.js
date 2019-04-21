@@ -1,16 +1,18 @@
 import React from "react";
 import adressImg from "../images/adresse.svg";
+import { TermsMain } from "./styled_components/Terms";
+import { MainText } from "./styled_components/Terms";
 
 export default function Terms() {
   return (
-    <div className="impressum navChange" id="top">
+    <TermsMain className="navChange" id="top">
       <h1>Impressum</h1>
-      <div className="impressumMain">
+      <MainText>
         <h2>Betreiber der Webseite und inhaltlich verantwortlich: </h2>
         <img src={adressImg} alt="adress" />
-      </div>
+      </MainText>
 
-      <div className="impressumMain regText">
+      <MainText>
         <h2>Haftungsausschluss:</h2>
         <p>
           Trotz sorgfältiger inhaltlicher Kontrolle kann keine Haftung für die
@@ -50,7 +52,7 @@ export default function Terms() {
           </a>
           ). Auch hieraus entsteht keinerlei Haftungsanspruch.
         </p>
-      </div>
-    </div>
+      </MainText>
+    </TermsMain>
   );
 }

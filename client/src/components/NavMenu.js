@@ -4,6 +4,7 @@ import { refreshForm } from "../actions/formActions";
 import { switchNav } from "../actions/navActions";
 import navMenu from "../images/navMenu.svg";
 import navCancel from "../images/navCancel.svg";
+import StyledLink from "./styled_components/StyledLink";
 
 class NavMenu extends Component {
   constructor() {
@@ -19,13 +20,13 @@ class NavMenu extends Component {
 
   render() {
     return (
-      <div onClick={this.handleClick} className="navItem navIcon">
+      <StyledLink onClick={this.handleClick}>
         {this.props.navbar.navbarOpen === true ? (
           <img src={navCancel} alt="cancel menue" />
         ) : (
           <img src={navMenu} alt="menu" />
         )}
-      </div>
+      </StyledLink>
     );
   }
 }

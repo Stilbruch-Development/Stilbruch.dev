@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { HashLink as Link } from "react-router-hash-link";
 import { connect } from "react-redux";
 import { refreshForm } from "../actions/formActions";
 import { closeNav } from "../actions/navActions";
 import tImage from "../images/t.svg";
+import StyledLink from "./styled_components/StyledLink";
 
 class NavLogo extends Component {
   constructor() {
@@ -19,14 +19,14 @@ class NavLogo extends Component {
 
   render() {
     return (
-      <Link
+      <StyledLink
         onClick={this.handleClick}
-        className="navItem navIcon navLogo"
+        navLogo
         to={this.props.navLink}
         scroll={el => el.scrollIntoView({ behavior: "smooth", block: "end" })}
       >
         <img src={tImage} alt="logo" />
-      </Link>
+      </StyledLink>
     );
   }
 }

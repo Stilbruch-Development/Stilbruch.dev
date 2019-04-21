@@ -4,6 +4,18 @@ import { closeNav, switchNav } from "../actions/navActions";
 import NavItem from "./NavItem";
 import NavLogo from "./NavLogo";
 import NavMenu from "./NavMenu";
+import styled from "styled-components";
+
+const NavMain = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+`;
 
 class Navbar extends Component {
   constructor() {
@@ -50,13 +62,12 @@ class Navbar extends Component {
   }
 
   render() {
-    console.log(this.state);
     window.addEventListener("load", function() {
       const body = document.querySelector("body");
-      const navbar = document.getElementsByClassName("navbar");
+      const navbar = document.querySelector(NavMain);
 
       function logScroll() {
-        const navBottom = navbar[0].getBoundingClientRect().bottom;
+        const navBottom = navbar.getBoundingClientRect().bottom;
 
         const element = document.getElementsByClassName("navChange");
         for (let i = 0; i < element.length; i += 1) {
@@ -64,19 +75,18 @@ class Navbar extends Component {
           const elementBottom = element[i].getBoundingClientRect().bottom;
 
           if (elementTop <= navBottom && elementBottom >= 0) {
-            navbar[0].style.background = "rgba(24, 24, 24, 0.9)";
+            navbar.style.background = "rgba(24, 24, 24, 0.9)";
             break;
           }
 
-          navbar[0].style.background = "rgba(24, 24, 24, 0)";
+          navbar.style.background = "rgba(24, 24, 24, 0)";
         }
       }
 
       body.onscroll = logScroll;
     });
-    console.log(this.props.navbar);
     return (
-      <div className="navbar sticky">
+      <NavMain>
         {this.state.mobileView === false ||
         this.props.navbar.navbarOpen === true ? (
           <NavLogo navLink="/#Start" />
@@ -98,7 +108,7 @@ class Navbar extends Component {
           <NavItem head="Kontakt" navLink="/#Kontakt" />
         ) : null}
         {this.state.mobileView && <NavMenu />}
-      </div>
+      </NavMain>
     );
   }
 }

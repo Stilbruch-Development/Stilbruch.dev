@@ -34,5 +34,17 @@ const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar {
     display: none !important;
   }
+
+  hr {
+    border: 0;
+    margin: 1rem 0 0 0;
+    height: 2px;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0),
+      red,
+      rgba(255, 0, 0, 0)
+    );
+  }
 `;
 export default GlobalStyle;

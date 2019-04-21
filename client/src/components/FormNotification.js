@@ -1,6 +1,21 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 import { connect } from "react-redux";
 import { refreshForm } from "../actions/formActions";
+import Button from "./styled_components/Button";
+
+const FormSend = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 3.2rem;
+  color: rgb(255, 0, 0);
+  background: rgba(95, 95, 95, 0.5);
+  width: 95%;
+  border-radius: 10px;
+  height: 100%;
+`;
 
 class FormNotification extends Component {
   constructor() {
@@ -15,21 +30,17 @@ class FormNotification extends Component {
 
   render() {
     return (
-      <div className="formSend">
+      <FormSend>
         <div>
           <p style={{ marginBottom: "0.5rem" }}>
             {" "}
             Nachricht wurde gesendet, vielen Dank!
           </p>
         </div>
-        <button
-          onClick={this.handleClick}
-          className="button buttonBack"
-          type="button"
-        >
+        <Button buttonBack onClick={this.handleClick}>
           <span>Zurück zur Kontaktform</span>
-        </button>
-      </div>
+        </Button>
+      </FormSend>
     );
   }
 }

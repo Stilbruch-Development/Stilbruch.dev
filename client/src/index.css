@@ -23,21 +23,23 @@ body {
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++ navigation bar +++++++++++++++++++++++++++++++++++++++++++++++ */
 
-.navbar {
+/* .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem 1rem 1.5rem 1rem;
   z-index: 1;
-}
+  position: sticky;
+  top: 0;
+} */
 
-.navItem a {
+/* .navItem a {
   color: #ff0000 !important;
   text-decoration: none !important;
-}
+} */
 
-.navItem {
+/* .navItem {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -55,36 +57,31 @@ body {
   min-width: 20%;
   height: 3.5rem;
   padding-bottom: 0.2vw;
-}
+} */
 
-.navLogo {
+/* .navLogo {
   min-width: 10% !important;
-}
+} */
 
-.navItem:hover {
+/* .navItem:hover {
   background: rgba(95, 95, 95, 0.7);
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8);
   cursor: pointer;
-}
+} */
 
-.navIcon img {
+/* .navIcon img {
   height: 100%;
   margin-top: 1rem;
-}
+} */
 
-.sticky {
-  position: sticky;
-  top: 0;
-}
-
-.navBackground {
+/* .navBackground {
   background: rgba(24, 24, 24, 0.8);
   z-index: 1;
-}
+} */
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++ footer +++++++++++++++++++++++++++++++++++++++++++++++ */
 
-hr {
+/* hr {
   border: 0;
   margin: 1rem 0 0 0;
   height: 2px;
@@ -94,18 +91,18 @@ hr {
     red,
     rgba(255, 0, 0, 0)
   );
-}
+} */
 
-.footer {
+/* .footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin: 3rem 0 3rem 0;
-}
+} */
 
-.footerItem {
+/* .footerItem {
   color: #ff0000;
   text-decoration: none;
   font-size: 2rem;
@@ -116,27 +113,27 @@ hr {
   margin-top: 1rem;
   margin-right: 2rem;
   height: 6rem;
-}
+} */
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++ main section +++++++++++++++++++++++++++++++++++++++++++++++ */
 
-.mainFlex {
+/* .mainFlex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 /* section landing */
 
-.landing {
+/* .landing {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.mainSub {
+/* .mainSub {
   color: #ff0000;
   font-size: 4rem;
   letter-spacing: 0.8rem;
@@ -146,11 +143,11 @@ hr {
 
 .mainLogo img {
   width: 90rem;
-}
+} */
 
 /* flex sections */
 
-.myFlex {
+/* .myFlex {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -158,9 +155,9 @@ hr {
   margin: 5rem 0.5rem;
   width: 90rem;
   height: auto;
-}
+} */
 
-.flexHeader {
+/* .flexHeader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,9 +168,9 @@ hr {
   transform: rotate(180deg);
   text-shadow: -5px -5px 10px rgba(0, 0, 0, 1);
   color: #ff0000;
-}
+} */
 
-.flexMainItems {
+/* .flexMainItems {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -189,19 +186,19 @@ hr {
   font-size: 4rem;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
   min-width: 90%;
-}
+} */
 
 /* entwicklung section */
 
-.entwicklung {
+/* .entwicklung {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: space-around;
   flex-wrap: wrap;
-}
+} */
 
-.eItem {
+/* .eItem {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -220,40 +217,40 @@ hr {
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
   height: 8rem;
   flex-grow: 1;
-}
+} */
 
 /* project section */
 
-.projectImg {
+/* .projectImg {
   background: url("images/radblocs_background.jpg");
   background-size: 100%;
   border-radius: 8px;
-}
+} */
 
-.flexMainItems img {
+/* .flexMainItems img {
   max-width: 90%;
-}
+} */
 
-.projectInfo {
+/* .projectInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   margin: auto;
   font-size: 5rem;
-}
+} */
 
 /* story */
 
-.story {
+/* .story {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.story span {
+/* .story span {
   font-size: 2.5rem !important;
   line-height: 1.5em;
   text-align: justify;
@@ -263,15 +260,11 @@ hr {
 .story img {
   height: 1.5em;
   vertical-align: bottom;
-}
+} */
 
 /* kontakt */
 
-#kontakt {
-  margin: 3rem 0 3rem 0 !important;
-}
-
-.formInput {
+/* .formInput {
   border: 1px solid #ff0000;
   border-radius: 8px;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2),
@@ -285,9 +278,9 @@ hr {
   margin: 0.6rem;
   padding: 0.2em 1em;
   box-sizing: border-box;
-}
+} */
 
-input,
+/* input,
 textarea {
   font-family: inherit;
   text-align: center;
@@ -299,9 +292,9 @@ textarea {
   box-sizing: border-box;
   padding: 20px !important;
   text-align: left;
-}
+} */
 
-input:focus,
+/* input:focus,
 textarea:focus {
   color: rgb(255, 0, 0);
   border: 2px solid rgb(255, 0, 0);
@@ -310,14 +303,14 @@ textarea:focus {
 
 input:focus {
   text-align: center !important;
-}
+} */
 
-::placeholder {
+/* ::placeholder {
   color: rgba(255, 0, 0, 0.6);
   text-align: center;
-}
+} */
 
-.button {
+/* .button {
   margin: 2rem;
   border: 1px solid #ff0000;
   border-radius: 8px;
@@ -329,7 +322,6 @@ input:focus {
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
   width: 70rem;
   height: 5rem;
-  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -340,9 +332,9 @@ input:focus {
   background: rgb(24, 24, 24, 0.3);
   width: 50rem;
   height: 5rem;
-}
+} */
 
-.button:active {
+/* .button:active {
   outline: none;
   padding: 1.2rem 0 0.8rem 0;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1) !important;
@@ -356,9 +348,9 @@ input:focus {
 .button:hover {
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8);
   cursor: pointer;
-}
+} */
 
-.formSend {
+/* .formSend {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -369,9 +361,9 @@ input:focus {
   width: 95%;
   border-radius: 10px;
   height: 100%;
-}
+} */
 
-.formError {
+/* .formError {
   font-size: 2rem;
   font-weight: bold;
   margin-top: 0rem;
@@ -380,15 +372,11 @@ input:focus {
   border-radius: 10px;
   padding-top: 3px;
   padding-bottom: 5px;
-}
-
-.inputError {
-  background: rgba(255, 0, 0, 0.2) !important;
-}
+} */
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++  impressum  ++++++++++++++++++++++++++++++++++++++++++++++ */
 
-.impressum {
+/* .impressum {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -439,7 +427,7 @@ input:focus {
 .bold {
   font-size: 0.7em !important;
   font-weight: bold !important;
-}
+} */
 /* +++++++++++++++++++++++++++++++++++++++++++++++ media querry +++++++++++++++++++++++++++++++++++++++++++++++ */
 
 /* phone */
