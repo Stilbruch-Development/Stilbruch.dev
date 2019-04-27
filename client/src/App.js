@@ -54,7 +54,6 @@ export default function App() {
           <Footer />
           <CookieWrap>
             <CookieConsent
-              debug={true}
               acceptOnScroll
               acceptOnScrollPercentage={70}
               location="bottom"
