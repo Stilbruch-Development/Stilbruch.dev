@@ -14,6 +14,23 @@ const StyledLink = styled(Link)`
     margin-right: 2rem;
     height: 6rem;
   }
+
+  /* phone */
+  @media (max-width: 600px) {
+    img {
+      height: 12rem;
+    }
+  }
+  /* tablet portrait */
+  @media (max-width: 900px) {
+  }
+  /* tablet landscape */
+  @media (max-width: 1200px) {
+  }
+  /* desktop */
+  @media (max-width: 1800px) {
+  }
+  /* >1800px = wide screen */
 `;
 
 export default class FooterLogo extends Component {

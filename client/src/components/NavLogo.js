@@ -21,7 +21,7 @@ class NavLogo extends Component {
     return (
       <StyledLink
         onClick={this.handleClick}
-        navLogo
+        style={{ minWidth: "10%" }}
         to={this.props.navLink}
         scroll={el => el.scrollIntoView({ behavior: "smooth", block: "end" })}
       >

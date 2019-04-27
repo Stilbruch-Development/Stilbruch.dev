@@ -27,6 +27,22 @@ const Fields = css`
     color: rgba(255, 0, 0, 0.6);
     text-align: center;
   }
+
+  /* phone */
+  @media (max-width: 600px) {
+  }
+  /* tablet portrait */
+  @media (max-width: 900px) {
+  }
+
+  /* tablet landscape */
+  @media (max-width: 1200px) {
+  }
+
+  /* desktop */
+  @media (max-width: 1800px) {
+  }
+  /* >1800px = wide screen */
 `;
 
 const Input = styled.input`
@@ -35,6 +51,25 @@ const Input = styled.input`
   height: 4.5rem;
   padding: 0.2em 1em;
   text-align: center;
+
+  /* phone */
+  @media (max-width: 600px) {
+    font-size: 6rem;
+    height: 8.5rem;
+    margin: 1rem;
+  }
+  /* tablet portrait */
+  @media (max-width: 900px) {
+  }
+
+  /* tablet landscape */
+  @media (max-width: 1200px) {
+  }
+
+  /* desktop */
+  @media (max-width: 1800px) {
+  }
+  /* >1800px = wide screen */
 `;
 
 const Textarea = styled.textarea`
@@ -43,6 +78,22 @@ const Textarea = styled.textarea`
   font-size: 2rem;
   padding: 20px;
   text-align: left;
+
+  /* phone */
+  @media (max-width: 600px) {
+    height: 30rem;
+    font-size: 5rem;
+  }
+  /* tablet portrait */
+  @media (max-width: 900px) {
+  }
+  /* tablet landscape */
+  @media (max-width: 1200px) {
+  }
+  /* desktop */
+  @media (max-width: 1800px) {
+  }
+  /* >1800px = wide screen */
 `;
 
 const FormError = styled.div`
@@ -54,6 +105,21 @@ const FormError = styled.div`
   border-radius: 10px;
   padding-top: 3px;
   padding-bottom: 5px;
+
+  /* phone */
+  @media (max-width: 600px) {
+    font-size: 5rem;
+  }
+  /* tablet portrait */
+  @media (max-width: 900px) {
+  }
+  /* tablet landscape */
+  @media (max-width: 1200px) {
+  }
+  /* desktop */
+  @media (max-width: 1800px) {
+  }
+  /* >1800px = wide screen */
 `;
 
 class FormC extends Component {
@@ -149,9 +215,9 @@ class FormC extends Component {
     }
 
     return (
-      <form className="navChange" id="kontakt" action="/test" method="POST">
+      <form className="navChange" id="kontakt" action="/kontakt" method="POST">
+        {/* for testing: "/test" */}
         {/* form protection start */}
-
         <Input
           className="displayNone"
           type="text"
@@ -162,7 +228,6 @@ class FormC extends Component {
           value={this.state.firstName1}
           onChange={this.handleChange}
         />
-
         <Input
           className="displayNone"
           type="text"
@@ -173,7 +238,6 @@ class FormC extends Component {
           value={this.state.lastName1}
           onChange={this.handleChange}
         />
-
         <Input
           className="displayNone"
           type="email"
@@ -184,7 +248,6 @@ class FormC extends Component {
           value={this.state.email1}
           onChange={this.handleChange}
         />
-
         <Textarea
           className="displayNone"
           name="message1"
@@ -194,11 +257,8 @@ class FormC extends Component {
           value={this.state.message1}
           onChange={this.handleChange}
         />
-
         {/* form protection end */}
-
         {errorGeneral}
-
         <Input
           type="text"
           name="firstName"
@@ -209,7 +269,6 @@ class FormC extends Component {
           onChange={this.handleChange}
         />
         {errorFirstName}
-
         <Input
           type="text"
           name="lastName"
@@ -220,7 +279,6 @@ class FormC extends Component {
           onChange={this.handleChange}
         />
         {errorLastName}
-
         <Input
           type="email"
           name="email"
@@ -230,7 +288,6 @@ class FormC extends Component {
           onChange={this.handleChange}
         />
         {errorEmail}
-
         <Textarea
           name="message"
           required
@@ -239,7 +296,6 @@ class FormC extends Component {
           onChange={this.handleChange}
         />
         {errorMessage}
-
         <Button onClick={this.handleFormSubmit} type="submit">
           <span>Nachricht senden</span>
         </Button>

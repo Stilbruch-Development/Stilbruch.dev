@@ -15,6 +15,27 @@ const NavMain = styled.div`
   z-index: 1;
   position: sticky;
   top: 0;
+
+  /* phone */
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 1vw 15vw 1vw 15vw;
+  }
+  /* tablet portrait */
+  @media (max-width: 900px) {
+  }
+
+  /* tablet landscape */
+  @media (max-width: 1200px) {
+  }
+
+  /* desktop */
+  @media (max-width: 1800px) {
+  }
+  /* >1800px = wide screen */
 `;
 
 class Navbar extends Component {

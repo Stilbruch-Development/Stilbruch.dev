@@ -48,6 +48,26 @@ const TermsMain = styled.div`
     font-weight: bold;
     margin-top: 3rem;
   }
+
+  /* phone */
+  @media (max-width: 600px) {
+    font-size: 7rem;
+    line-height: 7rem;
+
+    img {
+      width: 60rem;
+    }
+  }
+  /* tablet portrait */
+  @media (max-width: 900px) {
+  }
+  /* tablet landscape */
+  @media (max-width: 1200px) {
+  }
+  /* desktop */
+  @media (max-width: 1800px) {
+  }
+  /* >1800px = wide screen */
 `;
 
 const MainText = styled.div`

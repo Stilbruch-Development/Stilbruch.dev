@@ -11,6 +11,24 @@ export default function BoxS() {
     line-height: 1.5em;
     text-align: justify;
     padding: 1em;
+
+    /* phone */
+    @media (max-width: 600px) {
+      font-size: 6.5rem;
+      text-align: left;
+    }
+    /* tablet portrait */
+    @media (max-width: 900px) {
+    }
+
+    /* tablet landscape */
+    @media (max-width: 1200px) {
+    }
+
+    /* desktop */
+    @media (max-width: 1800px) {
+    }
+    /* >1800px = wide screen */
   `;
 
   const Logo = styled.img`
@@ -24,6 +42,23 @@ export default function BoxS() {
     font-size: 2.5rem;
     font-style: italic;
     text-align: right;
+
+    /* phone */
+    @media (max-width: 600px) {
+      font-size: 5rem;
+    }
+    /* tablet portrait */
+    @media (max-width: 900px) {
+    }
+
+    /* tablet landscape */
+    @media (max-width: 1200px) {
+    }
+
+    /* desktop */
+    @media (max-width: 1800px) {
+    }
+    /* >1800px = wide screen */
   `;
   return (
     <MyFlex className="myFlex sGrid navChange" id="Story">

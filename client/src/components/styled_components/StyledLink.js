@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { HashLink as Link } from "react-router-hash-link";
 
 const StyledLink = styled(Link)`
@@ -31,11 +31,29 @@ const StyledLink = styled(Link)`
     cursor: pointer;
   }
 
-  ${props =>
-    props.navLogo &&
-    css`
-      min-width: 10%;
-    `}
+  /* phone */
+  @media (max-width: 600px) {
+    font-size: 8rem;
+    min-width: 100%;
+    height: 8vw;
+    margin: 1vw 0 1vw 0;
+
+    img {
+      margin-top: 2vw;
+    }
+  }
+  /* tablet portrait */
+  @media (max-width: 900px) {
+  }
+
+  /* tablet landscape */
+  @media (max-width: 1200px) {
+  }
+
+  /* desktop */
+  @media (max-width: 1800px) {
+  }
+  /* >1800px = wide screen */
 `;
 
 export default StyledLink;

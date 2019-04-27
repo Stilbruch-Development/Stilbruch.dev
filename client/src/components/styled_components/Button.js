@@ -40,6 +40,29 @@ const Button = styled.button`
       width: 50rem;
       height: 5rem;
     `}
+
+  /* phone */
+  @media (max-width: 600px) {
+    font-size: 6rem;
+    height: 9rem;
+
+    ${props =>
+      props.buttonBack &&
+      css`
+        width: 70vw;
+        height: 9rem;
+      `}
+  }
+  /* tablet portrait */
+  @media (max-width: 900px) {
+  }
+  /* tablet landscape */
+  @media (max-width: 1200px) {
+  }
+  /* desktop */
+  @media (max-width: 1800px) {
+  }
+  /* >1800px = wide screen */
 `;
 
 export default Button;
