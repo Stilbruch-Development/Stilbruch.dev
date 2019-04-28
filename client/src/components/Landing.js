@@ -10,13 +10,13 @@ const LandingMain = styled.div`
   justify-content: center;
   align-items: center;
 
-  img {
+  svg {
     width: 80rem;
   }
 
   /* phone */
   @media (max-width: 600px) {
-    img {
+    svg {
       width: 95rem;
     }
   }
