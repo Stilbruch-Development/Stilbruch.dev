@@ -10,7 +10,7 @@ const LandingMain = styled.div`
   align-items: center;
 
   img {
-    width: 90rem;
+    width: 80rem;
   }
 
   /* phone */

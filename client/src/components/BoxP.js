@@ -6,12 +6,13 @@ import MyFlex from "./styled_components/MyFlex";
 import FlexHeader from "./styled_components/FlexHeader";
 import FlexMainItem from "./styled_components/FlexMainItem";
 
+const ProjectImage = styled.a`
+  background: url(${BackgroundImg});
+  background-size: 100%;
+  border-radius: 8px;
+`;
+
 export default function BoxP() {
-  const ProjectImage = styled.a`
-    background: url(${BackgroundImg});
-    background-size: 100%;
-    border-radius: 8px;
-  `;
   return (
     <MyFlex className="navChange" id="Projekte">
       <FlexHeader>Aktuelles Projekt</FlexHeader>
