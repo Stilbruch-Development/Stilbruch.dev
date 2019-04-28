@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Logo from "../images/stilbruchLogoDev.svg";
+// import Logo from "../images/stilbruchLogoDev.svg";
+import MainLogo from "../images/MainLogo";
 
 const LandingMain = styled.div`
   height: 100vh;
@@ -63,7 +64,8 @@ export default class Landing extends Component {
   render() {
     return (
       <LandingMain className="landing" id="Start">
-        <img className="navChange" src={Logo} alt="logo" />
+        {/* <img className="navChange" src={Logo} alt="logo" /> */}
+        <MainLogo />
         <LandingSub className="navChange">Webentwicklung</LandingSub>
       </LandingMain>
     );
