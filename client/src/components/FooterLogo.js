@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { HashLink as Link } from "react-router-hash-link";
-import Logo from "../images/t.svg";
+import tLogo from "../images/tLogo.svg";
 
 const StyledLink = styled(Link)`
   color: #ff0000;
@@ -37,7 +37,7 @@ export default class FooterLogo extends Component {
   render() {
     return (
       <StyledLink to={this.props.link}>
-        <img src={Logo} alt="logo" />
+        <img src={tLogo} alt="logo" />
       </StyledLink>
     );
   }

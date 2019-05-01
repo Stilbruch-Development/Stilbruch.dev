@@ -17,8 +17,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html, body {
-    background: linear-gradient(to bottom right, #181818, #505050);
-    background-color: rgb(24, 24, 24);
+    /* background: linear-gradient(to bottom right, #181818, #505050);
+    background-color: rgb(24, 24, 24); */
+    background-image: linear-gradient( 135deg, #181818 10%, #505050 90%);
     font-family: "Poiret One", Arial;
     color: #000000;
     margin: 0;

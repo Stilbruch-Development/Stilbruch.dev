@@ -1,22 +1,22 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-// import Logo from "../images/stilbruchLogoDev.svg";
-import MainLogo from "../images/MainLogo";
+import Logo from "../images/stilbruchLogoDev.svg";
 
 const LandingMain = styled.div`
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  svg {
+  img {
     width: 80rem;
   }
 
   /* phone */
   @media (max-width: 600px) {
-    svg {
+    img {
       width: 95rem;
     }
   }
@@ -64,8 +64,7 @@ export default class Landing extends Component {
   render() {
     return (
       <LandingMain className="landing" id="Start">
-        {/* <img className="navChange" src={Logo} alt="logo" /> */}
-        <MainLogo />
+        <img className="navChange" src={Logo} alt="logo" />
         <LandingSub className="navChange">Webentwicklung</LandingSub>
       </LandingMain>
     );

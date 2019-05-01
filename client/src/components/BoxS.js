@@ -66,10 +66,8 @@ export default function BoxS() {
       <FlexHeader>Story</FlexHeader>
       <FlexMainItem>
         <MainBox>
-          {"Als Arzt"}
-          <i> und </i>
           {
-            "Entwickler nutze ich die Möglichkeiten die mit modernen Webtechnologien entstehen um sie im Umfeld der Medizin einzusetzen. Intelligente Web-Applikationen minimieren konservative und repetitive Arbeitsprozesse in der Medizin und können die Patientenversorgung sichere und effektiver sowie die Arbeit kreativer und angenehmer machen. Als Webentwickler bin ich bereit auch unkonventionelle Wege zu gehen und nehme "
+            "Als autodidaktischer Webentwickler versuche ich die Probleme meines ärztlichen Alltages mit Hilfe von Programmcode und der Entwicklung intelligenter Software-Tools zu entgegnen. Funktionalität und Zuverlässigkeit sind mir dabei wichtiger als Komplexität und Design. Meine Web-Applikationen sollen konventionelle und repetitive Arbeitsprozesse reduzieren und erleichtern. Hierdurch kann die Patientenversorgung sicherer sowie effektiver und die Arbeit in der Medizin angenehmer werden. Dafür bin ich auch bereit unkonventionelle Wege zu gehen und nehme "
           }
           <Logo src={Stilbrüche} alt="logo" />
           {" bewusst in Kauf!"}

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { refreshForm } from "../actions/formActions";
 import { closeNav } from "../actions/navActions";
-import tImage from "../images/t.svg";
+import tLogo from "../images/tLogo.svg";
 import StyledLink from "./styled_components/StyledLink";
 
 class NavLogo extends Component {
@@ -25,7 +25,7 @@ class NavLogo extends Component {
         to={this.props.navLink}
         scroll={el => el.scrollIntoView({ behavior: "smooth", block: "end" })}
       >
-        <img src={tImage} alt="logo" />
+        <img src={tLogo} alt="logo" />
       </StyledLink>
     );
   }

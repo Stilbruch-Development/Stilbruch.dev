@@ -69,7 +69,7 @@ const Entwicklung = styled.div`
 export default function BoxE() {
   return (
     <MyFlex className="navChange" id="Entwicklung">
-      <FlexHeader>Tools & Skills</FlexHeader>
+      <FlexHeader>Entwicklung</FlexHeader>
       <Entwicklung>
         <Item>Javascript</Item>
         <Item>React</Item>

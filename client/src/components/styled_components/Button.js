@@ -5,7 +5,7 @@ const Button = styled.button`
   border: 1px solid #ff0000;
   border-radius: 8px;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
-  background: rgba(95, 95, 95, 0.5);
+  background: rgb(24, 24, 24, 0.2);
   color: rgb(255, 0, 0);
   font-size: 3rem;
   font-family: inherit;
@@ -30,6 +30,7 @@ const Button = styled.button`
 
   :hover {
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8);
+    background: rgb(24, 24, 24, 0.5);
     cursor: pointer;
   }
 
