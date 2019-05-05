@@ -34,10 +34,6 @@ const TermsMain = styled.div`
     font-family: inherit;
   }
 
-  img {
-    width: 40rem;
-  }
-
   p {
     font-size: 0.6em;
     margin: 1.4rem 0;
@@ -53,10 +49,6 @@ const TermsMain = styled.div`
   @media (max-width: 600px) {
     font-size: 7rem;
     line-height: 7rem;
-
-    img {
-      width: 60rem;
-    }
   }
   /* tablet portrait */
   @media (max-width: 900px) {

@@ -47,21 +47,5 @@ const GlobalStyle = createGlobalStyle`
       rgba(255, 0, 0, 0)
     );
   }
-
-  /* phone */
-  @media (max-width: 600px) {
-  }
-  /* tablet portrait */
-  @media (max-width: 900px) {
-  }
-
-  /* tablet landscape */
-  @media (max-width: 1200px) {
-  }
-
-  /* desktop */
-  @media (max-width: 1800px) {
-  }
-  /* >1800px = wide screen */
 `;
 export default GlobalStyle;

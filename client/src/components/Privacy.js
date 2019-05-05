@@ -2,7 +2,7 @@ import React from "react";
 import { TermsMain } from "./styled_components/Terms";
 import { MainText } from "./styled_components/Terms";
 import { Link } from "react-router-dom";
-import adresseImg from "../images/adresse.svg";
+import Adress from "../images/styled_images/Adress";
 
 export default function Privacy() {
   return (
@@ -45,7 +45,7 @@ export default function Privacy() {
         </p>
         <h2>Verantwortlichkeit</h2>
         <p className="bold">Verantwortlich im Sinne der DS-GVO:</p>
-        <img src={adresseImg} alt="adress" />
+        <Adress />
         <h2>Begriffsbestimmungen</h2>
         <p>
           Die Datenschutzerklärung beruht auf den Begrifflichkeiten, die durch

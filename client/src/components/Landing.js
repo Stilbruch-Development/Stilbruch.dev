@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Logo from "../images/stilbruchLogoDev.svg";
+import MainLogo from "../images/styled_images/MainLogo";
 
 const LandingMain = styled.div`
   height: 100vh;
@@ -9,29 +9,6 @@ const LandingMain = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  img {
-    width: 80rem;
-  }
-
-  /* phone */
-  @media (max-width: 600px) {
-    img {
-      width: 95rem;
-    }
-  }
-  /* tablet portrait */
-  @media (max-width: 900px) {
-  }
-
-  /* tablet landscape */
-  @media (max-width: 1200px) {
-  }
-
-  /* desktop */
-  @media (max-width: 1800px) {
-  }
-  /* >1800px = wide screen */
 `;
 
 const LandingSub = styled.div`
@@ -64,7 +41,7 @@ export default class Landing extends Component {
   render() {
     return (
       <LandingMain className="landing" id="Start">
-        <img className="navChange" src={Logo} alt="logo" />
+        <MainLogo />
         <LandingSub className="navChange">Webentwicklung</LandingSub>
       </LandingMain>
     );

@@ -1,5 +1,5 @@
 import React from "react";
-import adressImg from "../images/adresse.svg";
+import Adress from "../images/styled_images/Adress";
 import { TermsMain } from "./styled_components/Terms";
 import { MainText } from "./styled_components/Terms";
 
@@ -9,7 +9,7 @@ export default function Terms() {
       <h1>Impressum</h1>
       <MainText>
         <h2>Betreiber der Webseite und inhaltlich verantwortlich: </h2>
-        <img src={adressImg} alt="adress" />
+        <Adress />
       </MainText>
 
       <MainText>

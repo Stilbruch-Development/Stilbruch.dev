@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Stilbrüche from "../images/stilbrücheLogoShort.svg";
+import StilbruchLogo from "../images/styled_images/StilbruchLogo";
 import MyFlex from "./styled_components/MyFlex";
 import FlexHeader from "./styled_components/FlexHeader";
 import FlexMainItem from "./styled_components/FlexMainItem";
@@ -28,11 +28,6 @@ const MainBox = styled.span`
   @media (max-width: 1800px) {
   }
   /* >1800px = wide screen */
-`;
-
-const Logo = styled.img`
-  height: 1.5em;
-  vertical-align: bottom;
 `;
 
 const Signature = styled.span`
@@ -67,10 +62,10 @@ export default function BoxS() {
       <FlexMainItem>
         <MainBox>
           {
-            "Als autodidaktischer Webentwickler versuche ich die Probleme meines ärztlichen Alltages mit Hilfe von Programmcode und der Entwicklung intelligenter Software-Tools zu entgegnen. Funktionalität und Zuverlässigkeit sind mir dabei wichtiger als Komplexität und Design. Meine Web-Applikationen sollen konventionelle und repetitive Arbeitsprozesse reduzieren und erleichtern. Hierdurch kann die Patientenversorgung sicherer sowie effektiver und die Arbeit in der Medizin angenehmer werden. Dafür bin ich auch bereit unkonventionelle Wege zu gehen und nehme "
+            "Als selbst erlernter Webentwickler versuche ich den Problemen meines ärztlichen Alltages mit Hilfe von Programmcode und der Entwicklung intelligenter Software-Tools zu entgegnen. Funktionalität und Zuverlässigkeit sind mir dabei wichtiger als Komplexität und Design. Meine Webapplikationen reduzieren und erleichtern konventionelle und repetitive Arbeitsprozesse in der Medizin, was zu einer sichereren und effektiveren Patientenversorgung führt. Daneben wird die Arbeit in der Medizin angenehmer und kreativer. Die Verbindung der konservativen Medizin mit den vielfältigen Möglichkeiten der moderner Webentwicklung ist der "
           }
-          <Logo src={Stilbrüche} alt="logo" />
-          {" bewusst in Kauf!"}
+          <StilbruchLogo />
+          {" dem ich mich bewusst widme."}
           <Signature>-- Dr. M. Hübner</Signature>
         </MainBox>
       </FlexMainItem>

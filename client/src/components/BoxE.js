@@ -48,22 +48,6 @@ const Entwicklung = styled.div`
   justify-content: space-between;
   align-content: space-around;
   flex-wrap: wrap;
-
-  /* phone */
-  @media (max-width: 600px) {
-  }
-  /* tablet portrait */
-  @media (max-width: 900px) {
-  }
-
-  /* tablet landscape */
-  @media (max-width: 1200px) {
-  }
-
-  /* desktop */
-  @media (max-width: 1800px) {
-  }
-  /* >1800px = wide screen */
 `;
 
 export default function BoxE() {

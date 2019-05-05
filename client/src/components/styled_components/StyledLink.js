@@ -20,11 +20,6 @@ const StyledLink = styled(Link)`
   height: 3.5rem;
   padding-bottom: 0.2vw;
 
-  img {
-    height: 100%;
-    margin-top: 1rem;
-  }
-
   :hover {
     background: rgba(95, 95, 95, 0.7);
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8);
@@ -37,10 +32,6 @@ const StyledLink = styled(Link)`
     min-width: 100%;
     height: 8vw;
     margin: 1vw 0 1vw 0;
-
-    img {
-      margin-top: 2vw;
-    }
   }
   /* tablet portrait */
   @media (max-width: 900px) {
