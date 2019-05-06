@@ -11,6 +11,7 @@ const FlexHeader = styled.div`
   transform: rotate(180deg);
   text-shadow: -5px -5px 10px rgba(0, 0, 0, 1);
   color: #ff0000;
+  margin: 0;
 
   /* phone */
   @media (max-width: 600px) {
@@ -18,6 +19,8 @@ const FlexHeader = styled.div`
     letter-spacing: unset;
     writing-mode: unset;
     transform: unset;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    margin-bottom: 4rem;
   }
   /* tablet portrait */
   @media (max-width: 900px) {

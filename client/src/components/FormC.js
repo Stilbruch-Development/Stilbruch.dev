@@ -24,7 +24,7 @@ const Fields = css`
     outline: none;
   }
   ::placeholder {
-    color: rgba(255, 0, 0, 0.6);
+    color: rgba(255, 0, 0, 0.9);
     text-align: center;
   }
 

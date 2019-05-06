@@ -17,9 +17,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html, body {
-    /* background: linear-gradient(to bottom right, #181818, #505050);
-    background-color: rgb(24, 24, 24); */
-    background-image: linear-gradient( 135deg, #181818 10%, #505050 90%);
+    background-color: rgb(24, 24, 24);
+    background-image: linear-gradient( 135deg, rgb(24, 24, 24) 30%, rgb(68, 68, 68) 100%);
     font-family: "Poiret One", Arial;
     color: #000000;
     margin: 0;
@@ -47,5 +46,22 @@ const GlobalStyle = createGlobalStyle`
       rgba(255, 0, 0, 0)
     );
   }
+
+  /* phone */
+  @media (max-width: 600px) {
+    html, body {
+      background-image: linear-gradient( 135deg, rgb(24, 24, 24) 50%, rgb(68, 68, 68) 100%);
+    }
+  }
+  /* tablet portrait */
+  @media (max-width: 900px) {
+  }
+  /* tablet landscape */
+  @media (max-width: 1200px) {
+  }
+  /* desktop */
+  @media (max-width: 1800px) {
+  }
+  /* >1800px = wide screen */
 `;
 export default GlobalStyle;

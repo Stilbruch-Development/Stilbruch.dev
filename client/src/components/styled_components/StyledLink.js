@@ -8,8 +8,8 @@ const StyledLink = styled(Link)`
   align-items: center;
   border: 1px solid #ff0000;
   border-radius: 131px;
-  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.8) 5px 10px 20px inset;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5) 5px 10px 20px inset;
   background: rgba(0, 0, 0, 0);
   text-align: center;
   color: #ff0000;
@@ -22,7 +22,6 @@ const StyledLink = styled(Link)`
 
   :hover {
     background: rgba(95, 95, 95, 0.7);
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8);
     cursor: pointer;
   }
 
