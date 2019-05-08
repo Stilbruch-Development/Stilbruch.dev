@@ -21,7 +21,9 @@ const StyledLink = styled(Link)`
   padding-bottom: 0.2vw;
 
   :hover {
-    background: rgba(95, 95, 95, 0.7);
+    background: rgba(95, 95, 95, 0.5);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 5px 10px 20px inset;
     cursor: pointer;
   }
 

@@ -15,7 +15,7 @@ const ProjectImage = styled.a`
 export default function BoxP() {
   return (
     <MyFlex className="navChange" id="Projekte">
-      <FlexHeader>Aktuelles Projekt</FlexHeader>
+      <FlexHeader>Projekte</FlexHeader>
       <FlexMainItem>
         <ProjectImage href="https://www.radblocs.com">
           <img style={{ maxWidth: "90%" }} src={LogoRadblocs} alt="logo" />
