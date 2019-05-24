@@ -2,18 +2,18 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
-  /* poiret-one-regular - latin */
+  // poiret-one-regular - latin
   @font-face {
     font-family: 'Poiret One';
     font-style: normal;
     font-weight: 400;
-    src: url(${require("../../font/poiret-one-v7-latin-regular.eot")}); /* IE9 Compat Modes */
+    src: url(${require("../../font/poiret-one-v7-latin-regular.eot")});  // IE9 Compat Modes
     src: local('Poiret One'), local('PoiretOne-Regular'),
-        url(${require("../../font/poiret-one-v7-latin-regular.eot?#iefix")}) format('embedded-opentype'), /* IE6-IE8 */
-        url(${require("../../font/poiret-one-v7-latin-regular.woff2")}) format('woff2'), /* Super Modern Browsers */
-        url(${require("../../font/poiret-one-v7-latin-regular.woff")}) format('woff'), /* Modern Browsers */
-        url(${require("../../font/poiret-one-v7-latin-regular.ttf")}) format('truetype'), /* Safari, Android, iOS */
-        url(${require("../../font/poiret-one-v7-latin-regular.svg")}) format('svg'); /* Legacy iOS */
+        url(${require("../../font/poiret-one-v7-latin-regular.eot")}) format('embedded-opentype'), // IE6-IE8
+        url(${require("../../font/poiret-one-v7-latin-regular.woff2")}) format('woff2'), // Super Modern Browsers
+        url(${require("../../font/poiret-one-v7-latin-regular.woff")}) format('woff'), // Modern Browsers
+        url(${require("../../font/poiret-one-v7-latin-regular.ttf")}) format('truetype'), // Safari, Android, iOS
+        url(${require("../../font/poiret-one-v7-latin-regular.svg")}) format('svg'); // Legacy iOS
   }
 
   html, body {
@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
     z-index: -1;
   }
 
-  /* hides all scrollbars */
+  //hides all scrollbars
   .displayNone,
   ::-webkit-scrollbar {
     display: none !important;
@@ -47,21 +47,21 @@ const GlobalStyle = createGlobalStyle`
     );
   }
 
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     html, body {
       background-image: linear-gradient( 150deg, rgb(24, 24, 24) 50%, rgb(68, 68, 68) 100%);
     }
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
-  /* tablet landscape */
+  // tablet landscape
   @media (max-width: 1200px) {
   }
-  /* desktop */
+  // desktop
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen
 `;
 export default GlobalStyle;

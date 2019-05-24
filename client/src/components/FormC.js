@@ -27,22 +27,6 @@ const Fields = css`
     color: rgba(255, 0, 0, 0.9);
     text-align: center;
   }
-
-  /* phone */
-  @media (max-width: 600px) {
-  }
-  /* tablet portrait */
-  @media (max-width: 900px) {
-  }
-
-  /* tablet landscape */
-  @media (max-width: 1200px) {
-  }
-
-  /* desktop */
-  @media (max-width: 1800px) {
-  }
-  /* >1800px = wide screen */
 `;
 
 const Input = styled.input`
@@ -52,24 +36,22 @@ const Input = styled.input`
   padding: 0.2em 1em;
   text-align: center;
 
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     font-size: 6rem;
     height: 8.5rem;
     margin: 1rem;
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
-
-  /* tablet landscape */
+  // tablet landscape
   @media (max-width: 1200px) {
   }
-
-  /* desktop */
+  // desktop
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen
 `;
 
 const Textarea = styled.textarea`
@@ -79,21 +61,21 @@ const Textarea = styled.textarea`
   padding: 20px;
   text-align: left;
 
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     height: 30rem;
     font-size: 5rem;
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
-  /* tablet landscape */
+  // tablet landscape
   @media (max-width: 1200px) {
   }
-  /* desktop */
+  // desktop
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen
 `;
 
 const FormError = styled.div`
@@ -106,20 +88,20 @@ const FormError = styled.div`
   padding-top: 3px;
   padding-bottom: 5px;
 
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     font-size: 5rem;
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
-  /* tablet landscape */
+  // tablet landscape
   @media (max-width: 1200px) {
   }
-  /* desktop */
+  // desktop
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen
 `;
 
 class FormC extends Component {

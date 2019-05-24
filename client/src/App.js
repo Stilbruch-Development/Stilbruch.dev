@@ -13,7 +13,7 @@ import Terms from "./components/Terms";
 import GlobalStyle from "./components/styled_components/GlobalStyle";
 
 const CookieWrap = styled.div`
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     div.cookieConsent {
       font-size: 5rem !important;
@@ -25,21 +25,21 @@ const CookieWrap = styled.div`
       font-size: 6rem !important;
     }
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
-  /* tablet landscape */
+  // tablet landscape
   @media (max-width: 1200px) {
   }
-  /* desktop */
+  // desktop
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen
 `;
 
 export default function App() {
   return (
-    <Provider store={store}>
+    <Provider store={store} data-test="App_Component">
       <Router>
         <div>
           <GlobalStyle />

@@ -45,21 +45,21 @@ const TermsMain = styled.div`
     margin-top: 3rem;
   }
 
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     font-size: 7rem;
     line-height: 7rem;
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
-  /* tablet landscape */
+  // tablet landscape
   @media (max-width: 1200px) {
   }
-  /* desktop */
+  // desktop
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen
 `;
 
 const MainText = styled.div`

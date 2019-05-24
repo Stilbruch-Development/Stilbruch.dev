@@ -31,25 +31,23 @@ const Menu = styled.div`
     cursor: pointer;
   }
 
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     font-size: 8rem;
     min-width: 100%;
     height: 8vw;
     margin: 1vw 0 1vw 0;
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
-
-  /* tablet landscape */
+  // tablet landscape
   @media (max-width: 1200px) {
   }
-
-  /* desktop */
+  // desktop
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen
 `;
 
 class NavMenu extends Component {

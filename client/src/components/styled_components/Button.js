@@ -42,7 +42,7 @@ const Button = styled.button`
       height: 5rem;
     `}
 
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     font-size: 6rem;
     height: 9rem;
@@ -54,16 +54,16 @@ const Button = styled.button`
         height: 9rem;
       `}
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
-  /* tablet landscape */
+  // tablet landscape */
   @media (max-width: 1200px) {
   }
-  /* desktop */
+  // desktop */
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen */
 `;
 
 export default Button;

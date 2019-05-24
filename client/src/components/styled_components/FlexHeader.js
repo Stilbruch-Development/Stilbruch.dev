@@ -13,7 +13,7 @@ const FlexHeader = styled.div`
   color: #ff0000;
   margin: 0;
 
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     font-size: 12rem;
     letter-spacing: unset;
@@ -22,18 +22,18 @@ const FlexHeader = styled.div`
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
     margin-bottom: 4rem;
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
 
-  /* tablet landscape */
+  // tablet landscape
   @media (max-width: 1200px) {
   }
 
-  /* desktop */
+  // desktop
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen
 `;
 
 export default FlexHeader;

@@ -23,23 +23,23 @@ const Item = styled.div`
   height: 8rem;
   flex-grow: 1;
 
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     font-size: 8rem;
     height: 15rem;
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
 
-  /* tablet landscape */
+  // tablet landscape
   @media (max-width: 1200px) {
   }
 
-  /* desktop */
+  // desktop
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen */
 `;
 
 const Entwicklung = styled.div`

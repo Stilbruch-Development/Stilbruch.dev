@@ -11,23 +11,21 @@ const MainBox = styled.span`
   text-align: justify;
   padding: 1em;
 
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     font-size: 6.5rem;
     text-align: left;
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
-
-  /* tablet landscape */
+  // tablet landscape
   @media (max-width: 1200px) {
   }
-
-  /* desktop */
+  // desktop
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen
 `;
 
 const Signature = styled.span`
@@ -37,22 +35,20 @@ const Signature = styled.span`
   font-style: italic;
   text-align: right;
 
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     font-size: 5rem;
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
-
-  /* tablet landscape */
+  // tablet landscape
   @media (max-width: 1200px) {
   }
-
-  /* desktop */
+  // desktop
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen
 `;
 
 export default function BoxS() {

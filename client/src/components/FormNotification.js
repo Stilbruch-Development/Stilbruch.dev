@@ -16,20 +16,20 @@ const FormSend = styled.div`
   border-radius: 10px;
   height: 100%;
 
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     font-size: 6rem;
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
-  /* tablet landscape */
+  // tablet landscape
   @media (max-width: 1200px) {
   }
-  /* desktop */
+  // desktop
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen
 `;
 
 class FormNotification extends Component {

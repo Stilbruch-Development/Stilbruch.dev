@@ -16,7 +16,7 @@ const NavMain = styled.div`
   position: sticky;
   top: 0;
 
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     display: flex;
     flex-direction: column;
@@ -24,18 +24,16 @@ const NavMain = styled.div`
     align-items: stretch;
     padding: 1vw 15vw 1vw 15vw;
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
-
-  /* tablet landscape */
+  // tablet landscape
   @media (max-width: 1200px) {
   }
-
-  /* desktop */
+  // desktop
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen
 `;
 
 class Navbar extends Component {

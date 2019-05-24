@@ -9,25 +9,25 @@ const MyFlex = styled.div`
   width: 90rem;
   height: auto;
 
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100vw;
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
 
-  /* tablet landscape */
+  // tablet landscape */
   @media (max-width: 1200px) {
   }
 
-  /* desktop */
+  // desktop
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen */
 `;
 
 export default MyFlex;

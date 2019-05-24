@@ -9,20 +9,20 @@ const StyledLink = styled(Link)`
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
   padding-right: 1.3rem;
 
-  /* phone */
+  // phone
   @media (max-width: 600px) {
     font-size: 6rem;
   }
-  /* tablet portrait */
+  // tablet portrait
   @media (max-width: 900px) {
   }
-  /* tablet landscape */
+  // tablet landscape
   @media (max-width: 1200px) {
   }
-  /* desktop */
+  // desktop
   @media (max-width: 1800px) {
   }
-  /* >1800px = wide screen */
+  // >1800px = wide screen
 `;
 
 export default class FooterItem extends Component {
