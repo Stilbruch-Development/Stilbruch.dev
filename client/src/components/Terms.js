@@ -5,7 +5,7 @@ import { MainText } from "./styled_components/Terms";
 
 export default function Terms() {
   return (
-    <TermsMain className="navChange" id="top">
+    <TermsMain className="navChange" id="top" data-test="Terms_Component">
       <h1>Impressum</h1>
       <MainText>
         <h2>Betreiber der Webseite und inhaltlich verantwortlich: </h2>

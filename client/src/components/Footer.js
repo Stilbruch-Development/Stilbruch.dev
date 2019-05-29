@@ -15,7 +15,7 @@ const FooterMain = styled.div`
 export default class Footer extends Component {
   render() {
     return (
-      <FooterMain>
+      <FooterMain data-test="Footer_Component">
         <FooterLogo link="/#Start" />
         <FooterItem head="│ Kontakt " link="/#Kontakt" />
         <FooterItem head="│ Datenschutz " link="/datenschutz/#top" />

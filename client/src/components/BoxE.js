@@ -63,15 +63,17 @@ export default function BoxE() {
       <FlexHeader>Entwicklung</FlexHeader>
       <Entwicklung>
         <Item>Javascript</Item>
-        <Item>React</Item>
-        <Item>Node.js</Item>
-        <Item>Express</Item>
-        <Item>MongoDB</Item>
-        <Item>Redux</Item>
-        <Item>UI Design/ CSS</Item>
-        <Item>Semantic UI</Item>
-        <Item>React Native</Item>
         <Item>HTML 5</Item>
+        <Item>CSS</Item>
+        <Item>Node</Item>
+        <Item>Express</Item>
+        <Item>React</Item>
+        <Item>Styled-Components</Item>
+        <Item>Redux</Item>
+        <Item>MongoDB</Item>
+        <Item>Jest</Item>
+        <Item>React Native</Item>
+        <Item>VS Code</Item>
       </Entwicklung>
     </MyFlex>
   );

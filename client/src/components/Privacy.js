@@ -6,7 +6,11 @@ import Adress from "../images/styled_images/Adress";
 
 export default function Privacy() {
   return (
-    <TermsMain className="impressum navChange" id="top">
+    <TermsMain
+      className="impressum navChange"
+      id="top"
+      data-test="Privacy_Component"
+    >
       <h1>Datenschutzerklärung</h1>
       <MainText className="impressumMain regText">
         <h2>Einleitung</h2>
@@ -20,7 +24,7 @@ export default function Privacy() {
           möchten, ist teils eine Verarbeitung personenbezogener Daten
           erforderlich. Ist die Verarbeitung personenbezogener Daten
           erforderlich und besteht für eine solche Verarbeitung keine
-          gesetzliche Grundlage, holen wir generell eine Einwilligung von Ihnen
+          gesetzliche Grundlage, hole ich generell eine Einwilligung von Ihnen
           ein.
         </p>
         <p>

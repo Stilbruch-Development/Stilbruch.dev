@@ -25,7 +25,7 @@ app.post("/kontakt", (req, res) => {
     lastName: req.body.lastName,
     email: req.body.email,
     text: req.body.message,
-    subject: "Kontakt von Stilbruch.design"
+    subject: "Kontakt von Stilbruch.dev"
   };
 
   const message = `<h1>New message from the contact form:</h1><h3 style="font-weight: normal">First Name: <p style="font-weight: bold; font-size: 1.3em; display: inline">${
@@ -51,8 +51,8 @@ app.post("/kontakt", (req, res) => {
 
   // setup email data
   const mailOptions = {
-    from: '"Contact Form Stilbruch.design" <info@stilbruch.design>', // sender address
-    to: "info@stilbruch.design", // list of receivers
+    from: '"Kontaktform Stilbruch.dev" <info@stilbruch.dev>', // sender address
+    to: "info@stilbruch.dev", // list of receivers
     subject: newContact.subject, // Subject line
     text: newContact.message, // plain text body
     html: message // html body

@@ -1,4 +1,4 @@
-import { CLOSE_NAV, SWITCH_NAV} from './types';
+import { CLOSE_NAV, SWITCH_NAV } from "./types";
 
 export const closeNav = () => dispatch => {
   dispatch({ type: CLOSE_NAV });

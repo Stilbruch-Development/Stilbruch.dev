@@ -38,7 +38,7 @@ const LandingSub = styled.div`
 export default class Landing extends Component {
   render() {
     return (
-      <LandingMain className="landing" id="Start">
+      <LandingMain id="Start" data-test="Landing_Component">
         <MainLogo />
         <LandingSub className="navChange">Webentwicklung</LandingSub>
       </LandingMain>

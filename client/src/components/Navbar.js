@@ -36,7 +36,7 @@ const NavMain = styled.div`
   // >1800px = wide screen
 `;
 
-class Navbar extends Component {
+export class Navbar extends Component {
   constructor() {
     super();
     this.handleResize = this.handleResize.bind(this);
@@ -104,11 +104,12 @@ class Navbar extends Component {
 
       body.onscroll = logScroll;
     });
+
     return (
-      <NavMain>
+      <NavMain data-test="Navbar_Component">
         {this.state.mobileView === false ||
         this.props.navbar.navbarOpen === true ? (
-          <NavLogo navLink="/#Start" />
+          <NavLogo navLink="/#Start" data-test="NavLogo_Component" />
         ) : null}
         {this.state.mobileView === false ||
         this.props.navbar.navbarOpen === true ? (

@@ -58,7 +58,7 @@ export default function BoxS() {
       <FlexMainItem>
         <MainBox>
           {
-            "Als selbst erlernter Webentwickler versuche ich den Problemen meines ärztlichen Alltages mit Hilfe von Programmcode und der Entwicklung intelligenter Software-Tools zu entgegnen. Funktionalität und Zuverlässigkeit sind mir dabei wichtiger als Komplexität und Design. Meine Webapplikationen reduzieren und erleichtern konventionelle und repetitive Arbeitsprozesse in der Medizin, was zu einer sichereren und effektiveren Patientenversorgung führt. Daneben wird die Arbeit in der Medizin angenehmer und kreativer. Die Verbindung der konservativen Medizin mit den vielfältigen Möglichkeiten moderner Webentwicklung ist der "
+            "Als selbst erlernter Webentwickler versuche ich den Problemen meines ärztlichen Alltages mit Hilfe von Programmcode und der Entwicklung intelligenter Software-Tools zu entgegnen. Funktionalität und Zuverlässigkeit sind mir dabei wichtiger als Komplexität und Design. Meine Webapplikationen reduzieren und erleichtern konventionelle und repetitive Arbeitsprozesse in der Medizin. Das spart Zeit, verbessert die Patientenversorgung und macht einfach mehr Spaß. Die Verbindung konservativer Medizin mit den vielfältigen Möglichkeiten moderner Webentwicklung ist der "
           }
           <StilbruchLogo />
           {" dem ich mich widme."}
