@@ -1,17 +1,29 @@
 import React from "react";
-import Enzyme, { shallow } from "enzyme";
-import { findByTestAttr } from "../test/testUtils";
-import EnzymeAdapter from "enzyme-adapter-react-16";
+import { MemoryRouter } from "react-router-dom";
+import { render, fireEvent } from "@testing-library/react";
+import "jest-dom/extend-expect";
 import Footer from "./Footer";
 
-Enzyme.configure({ adapter: new EnzymeAdapter() });
+test("<Footer />", () => {
+  const { getByTestId, debug } = render(
+    <MemoryRouter>
+      <Footer />
+    </MemoryRouter>
+  );
 
-const setup = (props = {}) => {
-  return shallow(<Footer {...props} />);
-};
+  debug();
 
-test("Footer_Component renders without crashing", () => {
-  const wrapper = setup();
-  const Component = findByTestAttr(wrapper, "Footer_Component");
-  expect(Component.length).toBe(1);
+  const FooterMain = getByTestId("FooterMain");
+
+  expect(FooterMain).toBeInTheDocument();
+  expect(FooterMain).toBeVisible();
+  expect(FooterMain).toContainElement(getByTestId("FooterLogo"));
+  expect(FooterMain).toContainElement(getByTestId("FooterItemKontakt"));
+  expect(FooterMain).toContainElement(getByTestId("FooterItemDatenschutz"));
+  expect(FooterMain).toContainElement(getByTestId("FooterItemImpressum"));
+
+  fireEvent.click(getByTestId("FooterItemKontakt"));
+
+  const lLoc = getByTestId("FooterMain").getBoundingClientRect();
+  console.log(lLoc);
 });

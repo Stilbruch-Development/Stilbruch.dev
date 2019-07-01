@@ -33,6 +33,7 @@ export default class FooterItem extends Component {
         scroll={el =>
           el.scrollIntoView({ behavior: "instant", block: "start" })
         }
+        data-testid={this.props.dataTestId}
       >
         {this.props.head}
       </StyledLink>

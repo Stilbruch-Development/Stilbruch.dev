@@ -15,11 +15,23 @@ const FooterMain = styled.div`
 export default class Footer extends Component {
   render() {
     return (
-      <FooterMain data-test="Footer_Component">
-        <FooterLogo link="/#Start" />
-        <FooterItem head="│ Kontakt " link="/#Kontakt" />
-        <FooterItem head="│ Datenschutz " link="/datenschutz/#top" />
-        <FooterItem head="│ Impressum" link="/impressum/#top" />
+      <FooterMain data-testid="FooterMain">
+        <FooterLogo dataTestId="FooterLogo" link="/#Start" />
+        <FooterItem
+          dataTestId="FooterItemKontakt"
+          head="│ Kontakt "
+          link="/#Kontakt"
+        />
+        <FooterItem
+          dataTestId="FooterItemDatenschutz"
+          head="│ Datenschutz "
+          link="/datenschutz/#top"
+        />
+        <FooterItem
+          dataTestId="FooterItemImpressum"
+          head="│ Impressum"
+          link="/impressum/#top"
+        />
       </FooterMain>
     );
   }

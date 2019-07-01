@@ -13,7 +13,7 @@ const StyledLink = styled(Link)`
 export default class FooterLogo extends Component {
   render() {
     return (
-      <StyledLink to={this.props.link}>
+      <StyledLink to={this.props.link} data-testid={this.props.dataTestId}>
         <TLogo />
       </StyledLink>
     );
