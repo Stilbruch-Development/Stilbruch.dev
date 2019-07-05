@@ -4,7 +4,7 @@ import { HashLink as Link } from "react-router-hash-link";
 const StyledLink = styled(Link)`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   border: 1px solid #ff0000;
   border-radius: 131px;

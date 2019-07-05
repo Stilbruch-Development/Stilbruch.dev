@@ -1,6 +1,6 @@
 import { SEND_FORM, REFRESH_FORM, FORM_ERROR } from "../actions/types";
 
-const initialState = {
+export const initialState = {
   formData: {
     firstName: "",
     lastName: "",
@@ -18,7 +18,7 @@ const initialState = {
   formError: false
 };
 
-export default function(state = initialState, action) {
+export function formReducer(state = initialState, action) {
   switch (action.type) {
     case SEND_FORM:
       return {

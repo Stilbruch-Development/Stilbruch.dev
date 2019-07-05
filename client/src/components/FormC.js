@@ -197,7 +197,13 @@ class FormC extends Component {
     }
 
     return (
-      <form className="navChange" id="kontakt" action="/kontakt" method="POST">
+      <form
+        data-testid="FormMain"
+        className="navChange"
+        id="kontakt"
+        action="/kontakt"
+        method="POST"
+      >
         {/* for testing: "/test" */}
         {/* form protection start */}
         <Input
@@ -249,6 +255,7 @@ class FormC extends Component {
           placeholder="Vorname"
           value={this.state.firstName}
           onChange={this.handleChange}
+          data-testid="InputFirstName"
         />
         {errorFirstName}
         <Input

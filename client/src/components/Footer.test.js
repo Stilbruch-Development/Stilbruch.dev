@@ -1,17 +1,15 @@
 import React from "react";
 import { MemoryRouter } from "react-router-dom";
-import { render, fireEvent } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import "jest-dom/extend-expect";
 import Footer from "./Footer";
 
 test("<Footer />", () => {
-  const { getByTestId, debug } = render(
+  const { getByTestId } = render(
     <MemoryRouter>
       <Footer />
     </MemoryRouter>
   );
-
-  debug();
 
   const FooterMain = getByTestId("FooterMain");
 
@@ -22,8 +20,14 @@ test("<Footer />", () => {
   expect(FooterMain).toContainElement(getByTestId("FooterItemDatenschutz"));
   expect(FooterMain).toContainElement(getByTestId("FooterItemImpressum"));
 
-  fireEvent.click(getByTestId("FooterItemKontakt"));
-
-  const lLoc = getByTestId("FooterMain").getBoundingClientRect();
-  console.log(lLoc);
+  expect(getByTestId("FooterLogo")).toHaveAttribute("href", "/#Start");
+  expect(getByTestId("FooterItemKontakt")).toHaveAttribute("href", "/#Kontakt");
+  expect(getByTestId("FooterItemDatenschutz")).toHaveAttribute(
+    "href",
+    "/datenschutz/#top"
+  );
+  expect(getByTestId("FooterItemImpressum")).toHaveAttribute(
+    "href",
+    "/impressum/#top"
+  );
 });
