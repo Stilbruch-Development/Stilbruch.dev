@@ -201,7 +201,8 @@ class FormC extends Component {
         data-testid="FormMain"
         className="navChange"
         id="kontakt"
-        action="/kontakt"
+        action="/test"
+        // action="/kontakt"
         method="POST"
       >
         {/* for testing: "/test" */}
@@ -266,6 +267,7 @@ class FormC extends Component {
           placeholder="Nachname"
           value={this.state.lastName}
           onChange={this.handleChange}
+          data-testid="InputLastName"
         />
         {errorLastName}
         <Input
@@ -275,6 +277,7 @@ class FormC extends Component {
           placeholder="Email"
           value={this.state.email}
           onChange={this.handleChange}
+          data-testid="InputEmail"
         />
         {errorEmail}
         <Textarea
@@ -283,9 +286,14 @@ class FormC extends Component {
           placeholder="Bitte schreibe hier deine Nachricht."
           value={this.state.message}
           onChange={this.handleChange}
+          data-testid="TextareaMessage"
         />
         {errorMessage}
-        <Button onClick={this.handleFormSubmit} type="submit">
+        <Button
+          onClick={this.handleFormSubmit}
+          type="submit"
+          data-testid="ButtonSubmit"
+        >
           <span>Nachricht senden</span>
         </Button>
       </form>

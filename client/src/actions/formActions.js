@@ -3,7 +3,7 @@ import { SEND_FORM, REFRESH_FORM, FORM_ERROR } from "./types";
 
 export const sendForm = form => dispatch => {
   axios
-    .post("/kontakt", form) /* test route: /test */
+    .post("/test", form) /* test route: /test */
     .then(res => dispatch({ type: SEND_FORM, payload: res.data }))
     .catch(function(error) {
       if (error) {
@@ -17,10 +17,18 @@ export const sendForm = form => dispatch => {
     });
 };
 
-export const refreshForm = () => dispatch => {
-  dispatch({ type: REFRESH_FORM });
-};
+// export const refreshForm = () => dispatch => {
+//   dispatch({ type: REFRESH_FORM });
+// };
 
-export const formErrors = errors => dispatch => {
-  dispatch({ type: FORM_ERROR, payload: errors });
-};
+export function refreshForm() {
+  return { type: REFRESH_FORM };
+}
+
+// export const formErrors = errors => dispatch => {
+//   dispatch({ type: FORM_ERROR, payload: errors });
+// };
+
+export function formErrors(errors) {
+  return { type: FORM_ERROR, errors };
+}

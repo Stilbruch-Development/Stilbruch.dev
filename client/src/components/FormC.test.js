@@ -1,4 +1,3 @@
-// counter.test.js
 import React from "react";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
@@ -29,4 +28,12 @@ test("<FormC /> renders", () => {
   expect(FormMain).toBeInTheDocument();
   expect(FormMain).toBeVisible();
   expect(FormMain).toContainElement(getByTestId("InputFirstName"));
+  // expect(container.firstChild).toMatchSnapshot();
+});
+
+test("<FormC /> Submit Button", () => {
+  const { getByTestId } = renderWithRedux(<FormC />);
+
+  const FormMain = getByTestId("FormMain");
+  fireEvent.click(getByTestId("ButtonSubmit"));
 });

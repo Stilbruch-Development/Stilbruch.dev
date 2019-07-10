@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormC /> renders 1`] = `
+<form
+  action="/kontakt"
+  class="navChange"
+  data-testid="FormMain"
+  id="kontakt"
+  method="POST"
+>
+  <input
+    class="displayNone sc-bwzfXH eAykMC"
+    name="firstName1"
+    type="text"
+    value=""
+  />
+  <input
+    class="displayNone sc-bwzfXH eAykMC"
+    name="lastName1"
+    type="text"
+    value=""
+  />
+  <input
+    class="displayNone sc-bwzfXH eAykMC"
+    name="email1"
+    type="email"
+    value=""
+  />
+  <textarea
+    class="displayNone sc-htpNat kDgGqi"
+    name="message1"
+  />
+  <input
+    class="sc-bwzfXH eAykMC"
+    data-testid="InputFirstName"
+    minlength="2"
+    name="firstName"
+    placeholder="Vorname"
+    required=""
+    type="text"
+    value=""
+  />
+  <input
+    class="sc-bwzfXH eAykMC"
+    data-testid="InputLastName"
+    minlength="2"
+    name="lastName"
+    placeholder="Nachname"
+    required=""
+    type="text"
+    value=""
+  />
+  <input
+    class="sc-bwzfXH eAykMC"
+    data-testid="InputEmail"
+    name="email"
+    placeholder="Email"
+    required=""
+    type="email"
+    value=""
+  />
+  <textarea
+    class="sc-htpNat kDgGqi"
+    data-testid="TextareaMessage"
+    name="message"
+    placeholder="Bitte schreibe hier deine Nachricht."
+    required=""
+  />
+  <button
+    class="sc-bdVaJa fJGxSm"
+    data-testid="ButtonSubmit"
+    type="submit"
+  >
+    <span>
+      Nachricht senden
+    </span>
+  </button>
+</form>
+`;
