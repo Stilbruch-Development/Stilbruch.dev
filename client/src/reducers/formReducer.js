@@ -8,11 +8,11 @@ export const initialState = {
     message: ""
   },
   errors: {
-    firstName: "",
-    lastName: "",
-    email: "",
-    message: "",
-    general: ""
+    firstName_error: "",
+    lastName_error: "",
+    email_error: "",
+    message_error: "",
+    general_error: ""
   },
   formSend: false,
   formError: false
@@ -29,6 +29,7 @@ export function formReducer(state = initialState, action) {
     case REFRESH_FORM:
       return {
         ...state,
+        errors: initialState.errors,
         formSend: false,
         formError: false
       };

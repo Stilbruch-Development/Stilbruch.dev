@@ -52,7 +52,7 @@ class FormNotification extends Component {
             Nachricht wurde gesendet, vielen Dank!
           </p>
         </div>
-        <Button buttonBack onClick={this.handleClick}>
+        <Button data-testid="FormSend" buttonBack onClick={this.handleClick}>
           <span>Zurück zur Kontaktform</span>
         </Button>
       </FormSend>

@@ -10,25 +10,17 @@ export const sendForm = form => dispatch => {
         dispatch({
           type: FORM_ERROR,
           payload: {
-            general: `Uups! Etwas ist schief gegangen. Die Nachricht wurde nicht gesendet.`
+            general_error: `Uups! Etwas ist schief gegangen. Die Nachricht wurde nicht gesendet.`
           }
         });
       }
     });
 };
 
-// export const refreshForm = () => dispatch => {
-//   dispatch({ type: REFRESH_FORM });
-// };
-
 export function refreshForm() {
   return { type: REFRESH_FORM };
 }
 
-// export const formErrors = errors => dispatch => {
-//   dispatch({ type: FORM_ERROR, payload: errors });
-// };
-
 export function formErrors(errors) {
-  return { type: FORM_ERROR, errors };
+  return { type: FORM_ERROR, payload: errors };
 }

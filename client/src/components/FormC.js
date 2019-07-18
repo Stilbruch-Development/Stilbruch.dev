@@ -166,33 +166,43 @@ class FormC extends Component {
 
   render() {
     const {
-      firstName,
-      lastName,
-      email,
-      message,
-      general
+      firstName_error,
+      lastName_error,
+      email_error,
+      message_error,
+      general_error
     } = this.props.form.errors;
     let errorFirstName, errorLastName, errorEmail, errorMessage, errorGeneral;
 
     if (this.props.form.formError) {
-      if (general) {
-        errorGeneral = <FormError>{general}</FormError>;
+      if (general_error) {
+        errorGeneral = (
+          <FormError data-testid="General_Error">{general_error}</FormError>
+        );
       }
 
-      if (firstName) {
-        errorFirstName = <FormError>{firstName}</FormError>;
+      if (firstName_error) {
+        errorFirstName = (
+          <FormError data-testid="FirstName_Error">{firstName_error}</FormError>
+        );
       }
 
-      if (lastName) {
-        errorLastName = <FormError>{lastName}</FormError>;
+      if (lastName_error) {
+        errorLastName = (
+          <FormError data-testid="LastName_Error">{lastName_error}</FormError>
+        );
       }
 
-      if (email) {
-        errorEmail = <FormError>{email}</FormError>;
+      if (email_error) {
+        errorEmail = (
+          <FormError data-testid="Email_Error">{email_error}</FormError>
+        );
       }
 
-      if (message) {
-        errorMessage = <FormError>{message}</FormError>;
+      if (message_error) {
+        errorMessage = (
+          <FormError data-testid="Message_Error">{message_error}</FormError>
+        );
       }
     }
 
@@ -208,7 +218,7 @@ class FormC extends Component {
         {/* for testing: "/test" */}
         {/* form protection start */}
         <Input
-          className="displayNone"
+          style={{ display: "none" }}
           type="text"
           name="firstName1"
           ref={c => {
@@ -218,7 +228,7 @@ class FormC extends Component {
           onChange={this.handleChange}
         />
         <Input
-          className="displayNone"
+          style={{ display: "none" }}
           type="text"
           name="lastName1"
           ref={c => {
@@ -228,7 +238,7 @@ class FormC extends Component {
           onChange={this.handleChange}
         />
         <Input
-          className="displayNone"
+          style={{ display: "none" }}
           type="email"
           name="email1"
           ref={c => {
@@ -236,9 +246,10 @@ class FormC extends Component {
           }}
           value={this.state.email1}
           onChange={this.handleChange}
+          data-testid="InputEmail1"
         />
         <Textarea
-          className="displayNone"
+          style={{ display: "none" }}
           name="message1"
           ref={c => {
             this.message1 = c;
