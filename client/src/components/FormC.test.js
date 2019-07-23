@@ -2,7 +2,13 @@ import React from "react";
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";
-import { render, fireEvent, cleanup } from "@testing-library/react";
+import {
+  render,
+  fireEvent,
+  cleanup,
+  waitForDomChange,
+  waitForElement
+} from "@testing-library/react";
 import rootReducer from "../reducers";
 import "jest-dom/extend-expect";
 import userEvent from "@testing-library/user-event";
@@ -75,4 +81,45 @@ test("<FormC /> shows only message_error when clicking submit button with only e
   expect(queryByTestId("LastName_Error")).not.toBeInTheDocument();
   expect(queryByTestId("Email_Error")).not.toBeInTheDocument();
   expect(queryByTestId("Message_Error")).toBeInTheDocument();
+});
+
+test("<BoxK /> shows FormNotification when all form fields are valid", async () => {
+  const {
+    getByTestId,
+    queryByTestId,
+    getByText,
+    debug,
+    container
+  } = renderWithRedux(<FormC />);
+
+  userEvent.type(getByTestId("InputFirstName"), "Michael");
+  userEvent.type(getByTestId("InputLastName"), "Hübner");
+  userEvent.type(getByTestId("InputEmail"), "m.huebner@email.com");
+  userEvent.type(getByTestId("TextareaMessage"), "This is a test!");
+
+  expect(getByTestId("InputEmail")).toHaveAttribute(
+    "value",
+    "m.huebner@email.com"
+  );
+
+  expect(getByTestId("TextareaMessage").value).toBe("This is a test!");
+
+  fireEvent.click(getByTestId("ButtonSubmit"));
+
+  // waitForDomChange({ container })
+  //   .then(() => console.log("DOM changed!"))
+  //   .catch(err => console.log(`Error you need to deal with: ${err}`));
+  // container.append(document.createElement("p"));
+
+  const formSend = await waitForElement(function() {
+    getByTestId("FormSend");
+    debug();
+  });
+
+  expect(formSend).toBeInTheDocument();
+
+  expect(queryByTestId("FirstName_Error")).not.toBeInTheDocument();
+  expect(queryByTestId("LastName_Error")).not.toBeInTheDocument();
+  expect(queryByTestId("Email_Error")).not.toBeInTheDocument();
+  expect(queryByTestId("Message_Error")).not.toBeInTheDocument();
 });

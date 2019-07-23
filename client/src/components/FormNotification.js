@@ -45,14 +45,14 @@ class FormNotification extends Component {
 
   render() {
     return (
-      <FormSend>
+      <FormSend data-testid="FormSend">
         <div>
           <p style={{ marginBottom: "0.5rem" }}>
             {" "}
             Nachricht wurde gesendet, vielen Dank!
           </p>
         </div>
-        <Button data-testid="FormSend" buttonBack onClick={this.handleClick}>
+        <Button buttonBack onClick={this.handleClick}>
           <span>Zurück zur Kontaktform</span>
         </Button>
       </FormSend>

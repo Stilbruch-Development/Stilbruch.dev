@@ -123,6 +123,7 @@ class FormC extends Component {
 
   handleFormSubmit(e) {
     e.preventDefault();
+    console.log("ex handleFormSubmit");
 
     this.props.refreshForm();
 

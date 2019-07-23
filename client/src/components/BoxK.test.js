@@ -34,35 +34,53 @@ function renderWithRedux(
   };
 }
 
-test("<BoxK /> shows FormNotification when all form fields are valid", async () => {
-  const { getByTestId, queryByTestId, debug } = renderWithRedux(<BoxK />);
+// test("<BoxK /> shows FormNotification when all form fields are valid", () => {
+//   const mockFn = jest.fn();
 
-  userEvent.type(getByTestId("InputFirstName"), "Michael");
-  userEvent.type(getByTestId("InputLastName"), "Hübner");
-  userEvent.type(getByTestId("InputEmail"), "m.huebner@email.com");
-  userEvent.type(getByTestId("TextareaMessage"), "This is a test!");
+//   const { getByTestId, queryByTestId, getByText, debug } = renderWithRedux(
+//     <BoxK />
+//   );
 
-  expect(getByTestId("InputEmail")).toHaveAttribute(
-    "value",
-    "m.huebner@email.com"
-  );
+//   userEvent.type(getByTestId("InputFirstName"), "Michael");
+//   userEvent.type(getByTestId("InputLastName"), "Hübner");
+//   userEvent.type(getByTestId("InputEmail"), "m.huebner@email.com");
+//   userEvent.type(getByTestId("TextareaMessage"), "This is a test!");
 
-  expect(getByTestId("TextareaMessage").value).toBe("This is a test!");
+//   expect(getByTestId("InputEmail")).toHaveAttribute(
+//     "value",
+//     "m.huebner@email.com"
+//   );
 
-  debug();
+//   expect(getByTestId("TextareaMessage").value).toBe("This is a test!");
 
-  fireEvent.click(getByTestId("ButtonSubmit"));
+//   fireEvent.click(getByText("Nachricht senden"));
 
-  debug();
+//   expect(queryByTestId("FirstName_Error")).not.toBeInTheDocument();
+//   expect(queryByTestId("LastName_Error")).not.toBeInTheDocument();
+//   expect(queryByTestId("Email_Error")).not.toBeInTheDocument();
+//   expect(queryByTestId("Message_Error")).not.toBeInTheDocument();
+// });
 
-  expect(queryByTestId("FirstName_Error")).not.toBeInTheDocument();
-  expect(queryByTestId("LastName_Error")).not.toBeInTheDocument();
-  expect(queryByTestId("Email_Error")).not.toBeInTheDocument();
-  expect(queryByTestId("Message_Error")).not.toBeInTheDocument();
-
-  debug();
-
-  const FormSend = await waitForElement(() => getByTestId("FormSend"));
-
-  expect(FormSend).toBe(true);
+test("<BoxK /> with new Store", () => {
+  const { getByTestId, getByText, debug } = renderWithRedux(<BoxK />, {
+    initialState: {
+      form: {
+        formData: {
+          firstName: "",
+          lastName: "",
+          email: "",
+          message: ""
+        },
+        errors: {
+          firstName_error: "",
+          lastName_error: "",
+          email_error: "",
+          message_error: "",
+          general_error: ""
+        },
+        formSend: true,
+        formError: false
+      }
+    }
+  });
 });
