@@ -123,7 +123,6 @@ class FormC extends Component {
 
   handleFormSubmit(e) {
     e.preventDefault();
-    console.log("ex handleFormSubmit");
 
     this.props.refreshForm();
 
@@ -212,11 +211,9 @@ class FormC extends Component {
         data-testid="FormMain"
         className="navChange"
         id="kontakt"
-        action="/test"
-        // action="/kontakt"
+        action="/kontakt"
         method="POST"
       >
-        {/* for testing: "/test" */}
         {/* form protection start */}
         <Input
           style={{ display: "none" }}

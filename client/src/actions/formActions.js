@@ -3,7 +3,7 @@ import { SEND_FORM, REFRESH_FORM, FORM_ERROR } from "./types";
 
 export const sendForm = form => dispatch => {
   axios
-    .post("/test", form) /* test route: /test */
+    .post("/kontakt", form)
     .then(res => dispatch({ type: SEND_FORM, payload: res.data }))
     .catch(function(error) {
       if (error) {
