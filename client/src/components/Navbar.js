@@ -43,6 +43,7 @@ export class Navbar extends Component {
 
     const viewportWidth =
       window.innerWidth || document.documentElement.clientWidth;
+
     if (viewportWidth > 600) {
       this.state = { mobileView: false };
     } else {
@@ -50,7 +51,7 @@ export class Navbar extends Component {
     }
   }
 
-  handleResize = e => {
+  handleResize = () => {
     var timeout;
     var viewportWidth =
       window.innerWidth || document.documentElement.clientWidth;
@@ -106,14 +107,18 @@ export class Navbar extends Component {
     });
 
     return (
-      <NavMain data-test="Navbar_Component">
+      <NavMain data-testid="NavbarComponent">
         {this.state.mobileView === false ||
         this.props.navbar.navbarOpen === true ? (
-          <NavLogo navLink="/#Start" data-test="NavLogo_Component" />
+          <NavLogo navLink="/#Start" />
         ) : null}
         {this.state.mobileView === false ||
         this.props.navbar.navbarOpen === true ? (
-          <NavItem head="Entwicklung" navLink="/#Entwicklung" />
+          <NavItem
+            data-testid="NavItemEntwicklung"
+            head="Entwicklung"
+            navLink="/#Entwicklung"
+          />
         ) : null}
         {this.state.mobileView === false ||
         this.props.navbar.navbarOpen === true ? (

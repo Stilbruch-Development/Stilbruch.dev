@@ -14,10 +14,6 @@ app.use(bodyParser.json());
 require("dotenv").config();
 
 /* ++++++++++++++++++++++++++++++ APP ROUTING ++++++++++++++++++++++++++++++ */
-/* test route FormC.js */
-app.post("/test", (req, res) => {
-  res.send({ hello: "world" });
-});
 
 app.post("/kontakt", (req, res) => {
   const newContact = {
@@ -56,11 +52,13 @@ app.post("/kontakt", (req, res) => {
       console.log(error);
     }
     console.log("Message sent: %s", info.messageId);
-    return undefined;
+    return newContact;
   });
 
-  res.redirect("/");
-  return undefined;
+  // res.redirect("/");
+  // return undefined;
+  res.send(newContact);
+  return null;
 });
 
 // Serve static asset if in production
@@ -74,6 +72,6 @@ if (process.env.NODE_ENV === "production") {
 }
 
 /* +++++++++++++++++++++++++++ APP LISTEN +++++++++++++++++++++++++++ */
-app.listen(process.env.PORT || 5000, process.env.ID, () =>
-  console.log("Server started on port 5000 ...")
+app.listen(process.env.PORT || 80, process.env.ID, () =>
+  console.log("Server started on port 80 ...")
 );

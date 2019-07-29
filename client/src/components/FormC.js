@@ -10,8 +10,8 @@ const Fields = css`
   border-radius: 8px;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.2) 5px 10px 20px inset;
-  background: rgba(24, 24, 24, 0.5);
-  color: rgb(255, 0, 0);
+  background: rgba(24, 24, 24, 0.5) !important;
+  color: rgb(255, 0, 0) !important;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
   width: 70rem;
   margin: 0.6rem;

@@ -20,6 +20,7 @@ class NavLogo extends Component {
   render() {
     return (
       <StyledLink
+        data-testid="NavLogo"
         onClick={this.handleClick}
         style={{ minWidth: "10%" }}
         to={this.props.navLink}

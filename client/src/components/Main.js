@@ -15,7 +15,7 @@ const MainFlex = styled.div`
 
 export default function Main() {
   return (
-    <MainFlex data-test="Main_Component">
+    <MainFlex data-testid="MainComponent">
       <Landing />
       <BoxE />
       <BoxP />

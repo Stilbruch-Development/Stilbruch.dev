@@ -11,7 +11,7 @@ const Icon = styled.object`
 
 export default function NavMenu() {
   return (
-    <Icon>
+    <Icon data-testid="NavMenu">
       <NavMenuIcon />
     </Icon>
   );

@@ -2,18 +2,12 @@ import React from "react";
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";
-import {
-  render,
-  fireEvent,
-  cleanup,
-  waitForDomChange,
-  waitForElement,
-  wait
-} from "@testing-library/react";
+import { render, fireEvent, cleanup, wait } from "@testing-library/react";
 import rootReducer from "../reducers";
 import "jest-dom/extend-expect";
 import userEvent from "@testing-library/user-event";
 import BoxK from "./BoxK";
+import "jest-styled-components";
 import axiosMock from "axios";
 
 afterEach(cleanup);
@@ -52,6 +46,18 @@ test("<BoxK /> renders", () => {
   expect(getByTestId("InputEmail1")).not.toBeVisible();
 
   expect(container.firstChild).toMatchSnapshot();
+});
+
+test("<FormC/> Fields render with jest-styled-components", () => {
+  const { getByTestId } = renderWithRedux(<BoxK />);
+
+  expect(getByTestId("InputFirstName")).toHaveStyle(
+    "background: rgba(24, 24, 24, 0.5) !important"
+  );
+  expect(getByTestId("InputFirstName")).toHaveStyleRule(
+    "color",
+    "rgb(255,0,0) !important"
+  );
 });
 
 test("<BoxK /> shows errors when clicking submit button with empty form fields", () => {

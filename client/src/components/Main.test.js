@@ -1,13 +1,39 @@
 import React from "react";
-import Enzyme, { shallow } from "enzyme";
-import { findByTestAttr } from "../test/testUtils";
-import EnzymeAdapter from "enzyme-adapter-react-16";
+import { createStore, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+import { Provider } from "react-redux";
+import { render, cleanup } from "@testing-library/react";
+import rootReducer from "../reducers";
+import "jest-dom/extend-expect";
 import Main from "./Main";
+import "jest-styled-components";
 
-Enzyme.configure({ adapter: new EnzymeAdapter() });
+afterEach(cleanup);
 
-test("Main_Component renders without crashing", () => {
-  const wrapper = shallow(<Main />);
-  const Component = findByTestAttr(wrapper, "Main_Component");
-  expect(Component.length).toBe(1);
+const middleware = [thunk];
+
+function renderWithRedux(
+  ui,
+  {
+    initialState,
+    store = createStore(
+      rootReducer,
+      initialState,
+      applyMiddleware(...middleware)
+    )
+  } = {}
+) {
+  return {
+    ...render(<Provider store={store}>{ui}</Provider>),
+    store
+  };
+}
+
+test("<Main /> renders", () => {
+  const { getByTestId } = renderWithRedux(<Main />);
+
+  const MainComponent = getByTestId("MainComponent");
+
+  expect(MainComponent).toBeInTheDocument();
+  expect(MainComponent).toBeVisible();
 });

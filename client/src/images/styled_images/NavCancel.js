@@ -11,7 +11,7 @@ const Icon = styled.div`
 
 export default function NavCancel() {
   return (
-    <Icon>
+    <Icon data-testid="NavCancel">
       <NavCancelIcon />
     </Icon>
   );
