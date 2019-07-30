@@ -34,8 +34,15 @@ function renderWithRedux(
   };
 }
 
-test("<Navbar /> with new Store: ", () => {
-  const { debug, getByTestId, queryByTestId } = renderWithRedux(<Navbar />, {
+const spy = jest.fn();
+const testWidth = 420;
+
+beforeAll(() => {
+  window.addEventListener("resize", spy);
+});
+
+test("<Navbar /> renders with menu closed and does not fire resize event by default", () => {
+  const { getByTestId, queryByTestId } = renderWithRedux(<Navbar />, {
     initialState: {
       navbar: {
         navbarOpen: false
@@ -46,5 +53,29 @@ test("<Navbar /> with new Store: ", () => {
   expect(getByTestId("NavLogo")).toBeInTheDocument();
   expect(queryByTestId("NavCancel")).not.toBeInTheDocument();
   expect(queryByTestId("NavMenu")).not.toBeInTheDocument();
-  debug();
+
+  expect(spy).not.toHaveBeenCalled();
+  expect(window.innerWidth).not.toBe(testWidth);
+});
+
+describe("When resize event is fired", () => {
+  beforeAll(() => {
+    window.innerWidth = testWidth;
+    window.dispatchEvent(new Event("resize"));
+  });
+
+  test("<Navbar /> with closed Navbar and viewport <600 only NavMenu is shown", () => {
+    const { debug, getByTestId, queryByTestId } = renderWithRedux(<Navbar />, {
+      initialState: {
+        navbar: {
+          navbarOpen: false
+        }
+      }
+    });
+    expect(spy).toHaveBeenCalled();
+    expect(window.innerWidth).toBe(testWidth);
+    expect(getByTestId("NavMenu")).toBeInTheDocument();
+    expect(queryByTestId("NavLogo")).not.toBeInTheDocument();
+    debug();
+  });
 });
