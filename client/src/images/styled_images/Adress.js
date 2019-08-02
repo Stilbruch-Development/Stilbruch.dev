@@ -29,7 +29,7 @@ const Logo = styled.object`
 
 export default function Adress() {
   return (
-    <Logo>
+    <Logo data-testid="Adress">
       <AdressLogo />
     </Logo>
   );

@@ -9,7 +9,7 @@ export default function Privacy() {
     <TermsMain
       className="impressum navChange"
       id="top"
-      data-test="Privacy_Component"
+      data-testid="PrivacyComponent"
     >
       <h1>Datenschutzerklärung</h1>
       <MainText className="impressumMain regText">

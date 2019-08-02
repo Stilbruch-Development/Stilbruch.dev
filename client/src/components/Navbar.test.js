@@ -65,7 +65,7 @@ describe("When resize event is fired", () => {
   });
 
   test("<Navbar /> with closed Navbar and viewport <600 only NavMenu is shown", () => {
-    const { debug, getByTestId, queryByTestId } = renderWithRedux(<Navbar />, {
+    const { getByTestId, queryByTestId } = renderWithRedux(<Navbar />, {
       initialState: {
         navbar: {
           navbarOpen: false
@@ -76,6 +76,18 @@ describe("When resize event is fired", () => {
     expect(window.innerWidth).toBe(testWidth);
     expect(getByTestId("NavMenu")).toBeInTheDocument();
     expect(queryByTestId("NavLogo")).not.toBeInTheDocument();
-    debug();
+  });
+
+  test("<Navbar /> with opened Navbar and viewport <600 close button is shown", () => {
+    const { getByTestId } = renderWithRedux(<Navbar />, {
+      initialState: {
+        navbar: {
+          navbarOpen: true
+        }
+      }
+    });
+    expect(spy).toHaveBeenCalled();
+    expect(window.innerWidth).toBe(testWidth);
+    expect(getByTestId("NavCancel")).toBeInTheDocument();
   });
 });

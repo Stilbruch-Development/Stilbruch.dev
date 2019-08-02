@@ -1,10 +1,12 @@
 import React from "react";
 import { MemoryRouter } from "react-router-dom";
-import { render } from "@testing-library/react";
+import { render, cleanup } from "@testing-library/react";
 import "jest-dom/extend-expect";
 import Footer from "./Footer";
 
-test("<Footer />", () => {
+afterEach(cleanup);
+
+test("<Footer /> renders", () => {
   const { getByTestId } = render(
     <MemoryRouter>
       <Footer />

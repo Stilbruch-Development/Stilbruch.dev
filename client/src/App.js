@@ -39,9 +39,9 @@ const CookieWrap = styled.div`
 
 export default function App() {
   return (
-    <Provider store={store} data-test="App_Component">
+    <Provider store={store}>
       <Router>
-        <div>
+        <div data-testid="AppComponent">
           <GlobalStyle />
           <Navbar />
           <Switch>

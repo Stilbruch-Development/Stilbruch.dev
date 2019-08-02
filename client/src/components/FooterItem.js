@@ -27,12 +27,15 @@ const StyledLink = styled(Link)`
 
 export default class FooterItem extends Component {
   render() {
+    const scroll = function(element) {
+      return element.scrollIntoView({ behavior: "instant", block: "start" });
+    };
     return (
       <StyledLink
         to={this.props.link}
-        scroll={el =>
-          el.scrollIntoView({ behavior: "instant", block: "start" })
-        }
+        scroll={el => {
+          scroll(el);
+        }}
         data-testid={this.props.dataTestId}
       >
         {this.props.head}
