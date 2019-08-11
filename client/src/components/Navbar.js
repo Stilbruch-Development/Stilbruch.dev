@@ -51,7 +51,7 @@ export class Navbar extends Component {
     }
   }
 
-  handleResize = () => {
+  handleResize() {
     var timeout;
     var viewportWidth =
       window.innerWidth || document.documentElement.clientWidth;
@@ -71,7 +71,7 @@ export class Navbar extends Component {
         }
       }, 66);
     }
-  };
+  }
 
   componentDidMount() {
     window.addEventListener("resize", this.handleResize, false);
