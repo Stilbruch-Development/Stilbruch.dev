@@ -23,16 +23,16 @@ export default function Terms() {
           Die Betreibung der Webseite sowie weitere damit ggf. verbundener
           Web-Applikationen/ Webseiten erfolgt ausschließlich privat ohne
           gewerblichen Nutzen oder Gewinnerziehlungsabsicht. Angebotene
-          Leistungen oder Projekte in der Webentwicklung entstehen als Hobby in
-          meiner verfügbaren Freizeit, sind unentgeltlich und ebenfalls ohne
-          gewerblichen Nutzen oder Gewinnerziehlungsabsicht. Hieraus entstehen
-          keinerlei Haftungsansprüche.
+          Leistungen oder Projekte entstehen als Hobby in meiner verfügbaren
+          Freizeit, sind unentgeltlich und ebenfalls ohne gewerblichen Nutzen
+          oder Gewinnerziehlungsabsicht. Die Nutzung erfolgt freiwillig und ohne
+          Gewähr auf Funktionalität. Es entstehen keinerlei Haftungsansprüche.
         </p>
         <p>
           Für die Erstellung von Web-Applikationen oder Webseiten wird 'Open
-          Source'-Software (z.B. jQuery oder Node.js) verwendet, deren
-          Verwendung im Rahmen einer 'Open-Source'-Lizenz frei ist und keiner
-          gesonderten Erwähnung bedarf (z.B. im Rahmen einer&nbsp;
+          Source'-Software (z.B. Node.js) verwendet, deren Verwendung im Rahmen
+          einer 'Open-Source'-Lizenz frei ist und keiner gesonderten Erwähnung
+          bedarf (z.B. im Rahmen einer&nbsp;
           <a
             href="https://de.wikipedia.org/wiki/MIT-Lizenz"
             target="_blank"

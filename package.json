@@ -1,6 +1,6 @@
 {
   "name": "homepage",
-  "version": "1.0.0",
+  "version": "0.2.5",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Stilbruch-Design/Homepage.git"
+    "url": "git+https://github.com/Stilbruch-Design/Stilbruch.dev.git"
   },
   "author": "stilbruch.design",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Stilbruch-Design/Homepage/issues"
+    "url": "https://github.com/Stilbruch-Design/Stilbruch.dev/issues"
   },
-  "homepage": "https://github.com/Stilbruch-Design/Homepage#readme",
+  "homepage": "https://github.com/Stilbruch-Design/Stilbruch.dev#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "concurrently": "^4.1.0",

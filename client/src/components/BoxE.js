@@ -72,8 +72,8 @@ export default function BoxE() {
         <Item>Redux</Item>
         <Item>MongoDB</Item>
         <Item>Jest</Item>
-        <Item>React Native</Item>
-        <Item>VS Code</Item>
+        <Item>Hooks</Item>
+        <Item>Electron</Item>
       </Entwicklung>
     </MyFlex>
   );

@@ -58,11 +58,11 @@ export default function BoxS() {
       <FlexMainItem>
         <MainBox>
           {
-            "Als selbst erlernter Entwickler versuche ich den Problemen meines ärztlichen Alltages mit Hilfe von Programmcode und intelligenten Software-Tools zu begegnen. Funktionalität und Zuverlässigkeit sind mir dabei wichtiger als Komplexität und Design. Meine Webapplikationen reduzieren und erleichtern konventionelle und repetitive Arbeitsprozesse in der Medizin. Das spart Zeit, verbessert die Patientenversorgung und macht einfach mehr Spaß. Die Verbindung konservativer Medizin mit den Möglichkeiten moderner Webentwicklung muss daher kein"
+            "Als Hobby-Entwickler habe ich Spaß daran, den Problemen meines ärztlichen Alltages mit Hilfe von Programmcode und intelligenten Software-Tools zu begegnen. Meine Webapplikationen sollen dabei die Möglichkeit bieten, konventionelle und repetitive Arbeitsprozesse in der Medizin zu reduzieren und zu erleichtern. Das kann wertvolle Zeit sparen, die Patientenversorgung verbessern und auch einfach mehr Spaß machen. Dabei sind mir Funktionalität und Zuverlässigkeit meiner Anwendungen wichtiger als Komplexität und schickes Design. Die Verbindung meines Berufes, der Medizin, mit meinem Hobby, der Softwareentwicklung stellt für mich kein "
           }
           <StilbruchLogo />
-          {" sein."}
-          <Signature>-- Dr. M. Hübner</Signature>
+          {" dar."}
+          <Signature>-- Dr. med. M. Hübner</Signature>
         </MainBox>
       </FlexMainItem>
     </MyFlex>

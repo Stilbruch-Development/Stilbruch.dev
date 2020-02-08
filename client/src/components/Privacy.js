@@ -622,7 +622,7 @@ export default function Privacy() {
         <h2>Aktualität und Änderung der Datenschutzerklärung</h2>
         <p>
           Diese Datenschutzerklärung ist aktuell gültig und hat den Stand
-          September 2018.
+          Februar 2020.
         </p>
         <p>
           Durch die Weiterentwicklung unserer Internetseiten und Angebote oder
@@ -632,7 +632,7 @@ export default function Privacy() {
           unter
         </p>
         <p>
-          <Link to="/datenschutz">https://stilbruch.design/datenschutz</Link>
+          <Link to="/datenschutz">https://stilbruch.dev/datenschutz</Link>
         </p>
         <p>von Ihnen abgerufen und ausgedruckt werden.</p>
       </MainText>
