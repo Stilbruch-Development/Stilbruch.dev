@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import FooterLogo from "./FooterLogo";
 import FooterItem from "./FooterItem";
+import FooterLogo from "./FooterLogo"
 
 const FooterMain = styled.div`
   display: flex;
@@ -16,7 +16,7 @@ export default class Footer extends Component {
   render() {
     return (
       <FooterMain data-testid="FooterMain">
-        <FooterLogo dataTestId="FooterLogo" link="/#Start" />
+        < FooterLogo dataTestId="FooterLogo" link="#Start"/>
         <FooterItem
           dataTestId="FooterItemKontakt"
           head="│ Kontakt "

@@ -21,7 +21,7 @@ export default function Terms() {
         </p>
         <p>
           Die Betreibung der Webseite sowie weitere damit ggf. verbundener
-          Web-Applikationen/ Webseiten erfolgt ausschließlich privat ohne
+          Web-Applikationen erfolgt ausschließlich privat und ohne
           gewerblichen Nutzen oder Gewinnerziehlungsabsicht. Angebotene
           Leistungen oder Projekte entstehen als Hobby in meiner verfügbaren
           Freizeit, sind unentgeltlich und ebenfalls ohne gewerblichen Nutzen
@@ -40,7 +40,7 @@ export default function Terms() {
           >
             'MIT-Lizenz'
           </a>
-          ). Des Weiteren wird Bildmaterial verwendet welches ebenfalls unter
+          ). Wird Bildmaterial verwendet, dann ebenfalls nur wenn dieses unter
           einer freien Lizenz beliebig verwendet werden darf, auch ohne
           gesonderte Nennung der Urheber (z.B.&nbsp;
           <a
@@ -50,7 +50,7 @@ export default function Terms() {
           >
             Unsplash.com
           </a>
-          ). Auch hieraus entsteht keinerlei Haftungsanspruch.
+          ).
         </p>
       </MainText>
     </TermsMain>

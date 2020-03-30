@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import MainLogo from "../images/styled_images/MainLogo";
+// import MainLogo from "../images/styled_images/MainLogo";
 
 const LandingMain = styled.div`
   height: 100vh;
@@ -9,14 +9,18 @@ const LandingMain = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #ff0000;
+  font-size: 12rem;
+  letter-spacing: 2.5rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
 `;
 
 const LandingSub = styled.div`
   color: #ff0000;
   font-size: 4rem;
-  letter-spacing: 0.8rem;
+  letter-spacing: 1.5rem;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
-  margin: 3rem;
+  margin: 5rem;
 
   // phone
   @media (max-width: 600px) {
@@ -39,8 +43,11 @@ export default class Landing extends Component {
   render() {
     return (
       <LandingMain id="Start" data-testid="LandingComponent">
-        <MainLogo />
+        VisionX
         <LandingSub className="navChange">Webentwicklung</LandingSub>
+        {/* <div className="navChange" style={{ width: "1%", height: "10%" }}>
+          <MainLogo />
+        </div> */}
       </LandingMain>
     );
   }

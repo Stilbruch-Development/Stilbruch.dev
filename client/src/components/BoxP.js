@@ -68,12 +68,12 @@ export default function BoxP() {
           <StaRLogo />
         </ProjectImage>
         <Lable>Standards der Radiologie</Lable>
+        <p>Mehr Informationen auf
         <Lable2
           href="https://github.com/Stilbruch-Development/StaR"
           target="_blank"
-        >
-          Mehr Informationen auf GitHub
-        </Lable2>
+        >GitHub
+        </Lable2></p>
       </FlexMainItem>
     </MyFlex>
   );

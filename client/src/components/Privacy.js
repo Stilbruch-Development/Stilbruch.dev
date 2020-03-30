@@ -20,7 +20,7 @@ export default function Privacy() {
           Daten sowie Ihre Rechte aus dem Datenschutzgesetzen geben. Eine
           Nutzung meiner Internetseiten ist grundsätzlich ohne Eingabe
           personenbezogener Daten möglich. Sofern Sie besondere Funktionen z.B.
-          im Rahmen von Web-Applikationen wie Radblocs.com in Anspruch nehmen
+          im Rahmen von Web-Applikationen in Anspruch nehmen
           möchten, ist teils eine Verarbeitung personenbezogener Daten
           erforderlich. Ist die Verarbeitung personenbezogener Daten
           erforderlich und besteht für eine solche Verarbeitung keine
@@ -632,7 +632,7 @@ export default function Privacy() {
           unter
         </p>
         <p>
-          <Link to="/datenschutz">https://stilbruch.dev/datenschutz</Link>
+          <Link to="/datenschutz">https://visionx.dev/datenschutz</Link>
         </p>
         <p>von Ihnen abgerufen und ausgedruckt werden.</p>
       </MainText>

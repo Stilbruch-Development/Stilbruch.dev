@@ -90,7 +90,7 @@ class CookieBanner extends Component {
     return (
       <CookieWrap>
         <h1>
-          Stilbruch.dev nutzt Cookies um die Benutzerfreundlichkeit zu
+          VisionX.dev nutzt Cookies um die Benutzerfreundlichkeit zu
           verbessern.
         </h1>
         <Link className="link" to="/datenschutz">

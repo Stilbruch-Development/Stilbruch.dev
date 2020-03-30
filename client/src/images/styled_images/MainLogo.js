@@ -1,16 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-import { ReactComponent as StilbruchLogo } from "../stilbruchLogo.svg";
+import { ReactComponent as VisionXLogo } from "../VisionX.svg";
 
 const Logo = styled.object`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+
+  canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+  }
 
   svg {
-    width: 80rem;
+    width: 4rem;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 1));
   }
 
@@ -35,7 +41,8 @@ const Logo = styled.object`
 export default function MainLogo() {
   return (
     <Logo>
-      <StilbruchLogo className="navChange" />
+      <canvas></canvas>
+      <VisionXLogo className="navChange" />
     </Logo>
   );
 }

@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { ReactComponent as TLogo } from "../tLogo.svg";
+import { ReactComponent as VXLogo } from "../VisionX.svg";
 
 const Logo = styled.object`
+
   svg {
-    margin-top: 1rem;
-    margin-right: 2rem;
-    height: 6rem;
+    height: 4rem;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
   }
 
@@ -31,7 +30,7 @@ const Logo = styled.object`
 export default function FooterLogo() {
   return (
     <Logo>
-      <TLogo />
+      <VXLogo />
     </Logo>
   );
 }

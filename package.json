@@ -1,6 +1,6 @@
 {
-  "name": "homepage",
-  "version": "0.2.5",
+  "name": "visionx",
+  "version": "0.0.3",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/Stilbruch-Design/Stilbruch.dev.git"
   },
-  "author": "stilbruch.design",
+  "author": "VisionX - Development",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Stilbruch-Design/Stilbruch.dev/issues"

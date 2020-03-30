@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { ReactComponent as TLogo } from "../tLogo.svg";
+import { ReactComponent as VXLogo } from "../VisionX.svg";
 
 const Logo = styled.object`
   svg {
-    height: 1.2em;
-    margin-top: 1.3rem;
+    height: 1em;
+    margin-top: 1rem;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 1));
   }
 
@@ -31,7 +31,7 @@ const Logo = styled.object`
 export default function NavLogo() {
   return (
     <Logo>
-      <TLogo />
+      <VXLogo />
     </Logo>
   );
 }

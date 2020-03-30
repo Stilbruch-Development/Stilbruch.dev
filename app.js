@@ -21,7 +21,7 @@ app.post("/kontakt", (req, res) => {
     lastName: req.body.lastName,
     email: req.body.email,
     text: req.body.message,
-    subject: "Kontakt von Stilbruch.dev"
+    subject: "Kontakt von VisionX.dev"
   };
 
   const message = `<h1>New message from the contact form:</h1><h3 style="font-weight: normal">First Name: <p style="font-weight: bold; font-size: 1.3em; display: inline">${newContact.firstName}</p></h3><h3 style="font-weight: normal">Last Name: <p style="font-weight: bold; font-size: 1.3em; display: inline">${newContact.lastName}</p></h3><h3 style="font-weight: normal">E-Mail: <p style="font-weight: bold; font-size: 1.3em; display: inline">${newContact.email}</p></h3><h3 style="font-weight: normal">Message: <p style="font-weight: bold; font-size: 1.3em;">${newContact.text}</p></h3>`;

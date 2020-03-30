@@ -27,7 +27,7 @@ class App extends Component {
   setCookies() {
     //Accept_Cookies_Stilbruch.dev Cookie
     const cookies = new Cookies();
-    cookies.set("Accept_Cookies_Stilbruch.dev", true, {
+    cookies.set("Accept_Cookies_VisionX", true, {
       path: "/",
       maxAge: 15768000
     });
@@ -39,8 +39,7 @@ class App extends Component {
 
   checkCookie() {
     const cookies = new Cookies();
-    const acceptCookie = cookies.get("Accept_Cookies_Stilbruch.dev");
-    console.log(acceptCookie);
+    const acceptCookie = cookies.get("Accept_Cookies_VisionX");
     return acceptCookie;
   }
 

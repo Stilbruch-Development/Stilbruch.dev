@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import StilbruchLogo from "../images/styled_images/StilbruchLogo";
 import MyFlex from "./styled_components/MyFlex";
 import FlexHeader from "./styled_components/FlexHeader";
 import FlexMainItem from "./styled_components/FlexMainItem";
@@ -31,7 +30,7 @@ const MainBox = styled.span`
 const Signature = styled.span`
   padding: 0;
   display: block;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-style: italic;
   text-align: right;
 
@@ -58,11 +57,9 @@ export default function BoxS() {
       <FlexMainItem>
         <MainBox>
           {
-            "Als Hobby-Entwickler habe ich Spaß daran, den Problemen meines ärztlichen Alltages mit Hilfe von Programmcode und intelligenten Software-Tools zu begegnen. Meine Webapplikationen sollen dabei die Möglichkeit bieten, konventionelle und repetitive Arbeitsprozesse in der Medizin zu reduzieren und zu erleichtern. Das kann wertvolle Zeit sparen, die Patientenversorgung verbessern und auch einfach mehr Spaß machen. Dabei sind mir Funktionalität und Zuverlässigkeit meiner Anwendungen wichtiger als Komplexität und schickes Design. Die Verbindung meines Berufes, der Medizin, mit meinem Hobby, der Softwareentwicklung stellt für mich kein "
+            "Während meiner ärtztlichen Tätigeit musste ich leider immer wieder feststellen, wie umständlich die Software war mit der ich tagtäglich arbeitete. Änderungsvorschläge an die, mit zu vielen Restriktionen belegten IT-Mitarbeitern in den Krankenhäusern sowie an die teils unflexiblen Sowftware-Hersteller, konnten nur träge, wenn überhaupt umgesetzt werden. Daher entschloss ich mich vor einiger Zeit, das Progammieren in meiner Freizeit selber zu erlernen, um in eigener Regie den Problemen meines ärztlichen Alltages entgegen zu können. Da die IT-Systeme mit denen ich arbeite meist sehr beschränkte Zugriffsmöglichkeiten boten, aber immer in einem ausreichendem Umpfang einen Browser mit Zugriff auf das Internet bereit stellten, fiel die Wahl zunächst auf die Webentwicklung, also das Javascript-Universum. Aus den zahlreichen Ideen meinen persönlichen Arbeitsaltag zu verbessern, entstand so das Hobby-Projekt VisionX. Die damit verbundenen und von der herkömmlichen IT-Infrastruktur unabhängigen Applikationen, sollen die Möglichkeit bieten konventionelle und repetitive Arbeitsprozesse zu reduzieren und zu erleichtern, sie sollen selbstverständlich sicher und in Einglang mit den geltenden Datenschutzbestimmungen sein und zu guter Letzt noch jede Menge Spaß machen. Für einen einzelnen stelle diese Eigenschaften eine große Herausforderung dar. Daher setze ich die Schwerpunkte meiner Anwendungen auf Funktionalität, Zuverlässigkeit und Sicherheit. Vollständigkeit und Komplexität oder ein schickes Design sind mir dabei weniger wichtig. Allerdings, über Unterstützung und Verbesserungsvorschläge in jeglicher Form, freue ich mich jederzeit, zumal ich versuche alle Entwicklungen als \"Open-Source-Code\" jedem zur Verfügung zu stellen."
           }
-          <StilbruchLogo />
-          {" dar."}
-          <Signature>-- Dr. med. M. Hübner</Signature>
+          <Signature>-- M. Hübner</Signature>
         </MainBox>
       </FlexMainItem>
     </MyFlex>
