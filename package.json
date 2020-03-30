@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Stilbruch-Design/Stilbruch.dev.git"
+    "url": "https://github.com/VisionX-Development/VisionX.dev.git"
   },
   "author": "VisionX - Development",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Stilbruch-Design/Stilbruch.dev/issues"
+    "url": "https://github.com/VisionX-Development/VisionX.dev.git/issues"
   },
-  "homepage": "https://github.com/Stilbruch-Design/Stilbruch.dev#readme",
+  "homepage": "https://www.visionx.dev",
   "dependencies": {
     "body-parser": "^1.19.0",
     "concurrently": "^4.1.0",

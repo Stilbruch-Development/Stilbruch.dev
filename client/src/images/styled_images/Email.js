@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { ReactComponent as AdressLogo } from "../adress.svg";
+import { ReactComponent as EmailLogo } from "../visionxEmail.svg";
 
 const Logo = styled.object`
   svg {
-    width: 30rem;
+    width: 50rem;
     height: 100%;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 1));
   }
@@ -27,10 +27,10 @@ const Logo = styled.object`
   /* >1800px = wide screen */
 `;
 
-export default function Adress() {
+export default function Email() {
   return (
     <Logo data-testid="Adress">
-      <AdressLogo />
+      <EmailLogo />
     </Logo>
   );
 }

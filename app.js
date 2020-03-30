@@ -29,7 +29,7 @@ app.post("/kontakt", (req, res) => {
   // create reusable transporter object using the default SMTP transport
   const transporter = nodemailer.createTransport({
     host: process.env.NODEMAILER_HOST,
-    port: 465,
+    port: 587,
     secure: true, // true for 465, false for other ports
     auth: {
       user: process.env.NODEMAILER_USER,
@@ -39,8 +39,8 @@ app.post("/kontakt", (req, res) => {
 
   // setup email data
   const mailOptions = {
-    from: '"Kontaktform Stilbruch.dev" <info@stilbruch.dev>', // sender address
-    to: "info@stilbruch.dev", // list of receivers
+    from: '"Kontaktform VisionX.dev" <info@visionx.dev>', // sender address
+    to: "m.huebner@email.com", // list of receivers
     subject: newContact.subject, // Subject line
     text: newContact.message, // plain text body
     html: message // html body
@@ -72,6 +72,6 @@ if (process.env.NODE_ENV === "production") {
 }
 
 /* +++++++++++++++++++++++++++ APP LISTEN +++++++++++++++++++++++++++ */
-app.listen(process.env.PORT || 80, process.env.ID, () =>
-  console.log("Server started on port 80 ...")
+app.listen(process.env.PORT || 5000, process.env.ID, () =>
+  console.log("Server started on port 5000 ...")
 );
