@@ -33,7 +33,7 @@ class App extends Component {
     });
 
     //Google Analytics Cookies
-    ReactGA.initialize("UA-126126427-1");
+    ReactGA.initialize("UA-162433404-1");
     ReactGA.pageview(window.location.pathname + window.location.search);
   }
 

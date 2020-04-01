@@ -70,7 +70,7 @@ export default function BoxP() {
         <Lable>Standards der Radiologie</Lable>
         <p>Mehr Informationen auf
         <Lable2
-          href="https://github.com/Stilbruch-Development/StaR"
+          href="https://github.com/VisionX-Development/StaR"
           target="_blank"
         >GitHub
         </Lable2></p>
