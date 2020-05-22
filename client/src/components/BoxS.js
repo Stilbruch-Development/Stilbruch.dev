@@ -57,7 +57,7 @@ export default function BoxS() {
       <FlexMainItem>
         <MainBox>
           {
-            "Während meiner ärztlichen Tätigkeit musste ich immer wieder feststellen, wie umständlich die Software war mit der ich tagtäglich arbeitete. Daher entschloss ich mich vor einiger Zeit, die Applikationen die ich nutzen wollte selber zu programmieren. So entstand das Hobby-Projekt VisionX."
+            "VisionX ist ein Hobby-Projekt das gedacht ist, die Arbeit in der klinischen Radiologie durch maßgeschneiderte Software zu unterstützen. Bei weitergehendem Interesse dazu, würde ich mich über eine Anfrage an die unten genannte Kontaktadresse freuen."
           }
           <Signature>-- M. Hübner</Signature>
         </MainBox>
