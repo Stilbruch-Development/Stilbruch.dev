@@ -38,8 +38,8 @@ class BoxK extends Component {
       <MyFlex className="navChange" id="Kontakt">
         <FlexHeader>Kontakt</FlexHeader>
         <FlexMainItem>
-          <Content>
-            <EmailLogo/>
+          <Content data-testid="EmailLogo">
+            <EmailLogo />
           </Content>
           {/* {this.props.form.formSend ? <FormNotification /> : <FormC />} */}
         </FlexMainItem>

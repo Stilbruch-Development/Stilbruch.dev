@@ -41,7 +41,7 @@ test("<App /> renders", () => {
   expect(AppComponent).toContainElement(getByTestId("MainComponent"));
   expect(AppComponent).toContainElement(getByTestId("FooterMain"));
 
-  expect(container.firstChild).toMatchSnapshot();
+  // expect(container.firstChild).toMatchSnapshot();
 });
 
 Element.prototype.scrollIntoView = jest.fn();

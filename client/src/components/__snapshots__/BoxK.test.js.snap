@@ -1,135 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BoxK /> renders 1`] = `
-.c5 {
-  margin: 2rem;
-  border: 1px solid #ff0000;
-  border-radius: 8px;
-  box-shadow: 5px 10px 20px rgba(0,0,0,0.5);
-  background: rgba(24,24,24,0.2);
-  color: rgb(255,0,0);
-  font-size: 3rem;
-  font-family: inherit;
-  text-shadow: 5px 5px 10px rgba(0,0,0,1);
-  width: 70rem;
-  height: 5rem;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 1rem 0 1rem 0;
-}
-
-.c5:active {
-  outline: none;
-  padding: 1.2rem 0 0.8rem 0;
-  box-shadow: 5px 10px 20px rgba(0,0,0,0.1) !important;
-  text-shadow: 5px 5px 10px rgba(0,0,0,0) !important;
-}
-
-.c5:focus {
-  outline: none;
-}
-
-.c5:hover {
-  box-shadow: 5px 10px 20px rgba(0,0,0,0.8);
-  background: rgba(24,24,24,0.5);
-  cursor: pointer;
-}
-
-.c3 {
-  border: 1px solid #ff0000;
-  border-radius: 8px;
-  box-shadow: 5px 10px 20px rgba(0,0,0,0.2), rgba(0,0,0,0.2) 5px 10px 20px inset;
-  background: rgba(24,24,24,0.5) !important;
-  color: rgb(255,0,0) !important;
-  text-shadow: 5px 5px 10px rgba(0,0,0,1);
-  width: 70rem;
-  margin: 0.6rem;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-size: 2.5rem;
-  height: 4.5rem;
-  padding: 0.2em 1em;
-  text-align: center;
-}
-
-.c3:focus {
-  color: rgb(255,0,0);
-  border: 2px solid rgb(255,0,0);
-  outline: none;
-}
-
-.c3::-webkit-input-placeholder {
-  color: rgba(255,0,0,0.9);
-  text-align: center;
-}
-
-.c3::-moz-placeholder {
-  color: rgba(255,0,0,0.9);
-  text-align: center;
-}
-
-.c3:-ms-input-placeholder {
-  color: rgba(255,0,0,0.9);
-  text-align: center;
-}
-
-.c3::placeholder {
-  color: rgba(255,0,0,0.9);
-  text-align: center;
-}
-
-.c4 {
-  border: 1px solid #ff0000;
-  border-radius: 8px;
-  box-shadow: 5px 10px 20px rgba(0,0,0,0.2), rgba(0,0,0,0.2) 5px 10px 20px inset;
-  background: rgba(24,24,24,0.5) !important;
-  color: rgb(255,0,0) !important;
-  text-shadow: 5px 5px 10px rgba(0,0,0,1);
-  width: 70rem;
-  margin: 0.6rem;
-  box-sizing: border-box;
-  font-family: inherit;
-  height: 15rem;
-  font-size: 2rem;
-  padding: 20px;
-  text-align: left;
-}
-
-.c4:focus {
-  color: rgb(255,0,0);
-  border: 2px solid rgb(255,0,0);
-  outline: none;
-}
-
-.c4::-webkit-input-placeholder {
-  color: rgba(255,0,0,0.9);
-  text-align: center;
-}
-
-.c4::-moz-placeholder {
-  color: rgba(255,0,0,0.9);
-  text-align: center;
-}
-
-.c4:-ms-input-placeholder {
-  color: rgba(255,0,0,0.9);
-  text-align: center;
-}
-
-.c4::placeholder {
-  color: rgba(255,0,0,0.9);
-  text-align: center;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -206,26 +77,30 @@ exports[`<BoxK /> renders 1`] = `
   min-width: 90%;
 }
 
-@media (max-width:600px) {
-  .c5 {
-    font-size: 6rem;
-    height: 9rem;
-  }
+.c4 svg {
+  width: 50rem;
+  height: 100%;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,1));
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,1));
 }
 
-@media (max-width:600px) {
-  .c3 {
-    font-size: 6rem;
-    height: 8.5rem;
-    margin: 1rem;
-  }
-}
-
-@media (max-width:600px) {
-  .c4 {
-    height: 30rem;
-    font-size: 5rem;
-  }
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
 }
 
 @media (max-width:600px) {
@@ -261,6 +136,12 @@ exports[`<BoxK /> renders 1`] = `
   }
 }
 
+@media (max-width:600px) {
+  .c4 svg {
+    width: 35rem;
+  }
+}
+
 <div
   class="navChange c0"
   id="Kontakt"
@@ -268,91 +149,24 @@ exports[`<BoxK /> renders 1`] = `
   <div
     class="c1"
   >
-    Kontaktform
+    Kontakt
   </div>
   <div
     class="c2"
   >
-    <form
-      action="/kontakt"
-      class="navChange"
-      data-testid="FormMain"
-      id="kontakt"
-      method="POST"
+    <div
+      class="c3"
+      data-testid="EmailLogo"
     >
-      <input
-        class="c3"
-        name="firstName1"
-        style="display: none;"
-        type="text"
-        value=""
-      />
-      <input
-        class="c3"
-        name="lastName1"
-        style="display: none;"
-        type="text"
-        value=""
-      />
-      <input
-        class="c3"
-        data-testid="InputEmail1"
-        name="email1"
-        style="display: none;"
-        type="email"
-        value=""
-      />
-      <textarea
+      <object
         class="c4"
-        name="message1"
-        style="display: none;"
-      />
-      <input
-        class="c3"
-        data-testid="InputFirstName"
-        minlength="2"
-        name="firstName"
-        placeholder="Vorname"
-        required=""
-        type="text"
-        value=""
-      />
-      <input
-        class="c3"
-        data-testid="InputLastName"
-        minlength="2"
-        name="lastName"
-        placeholder="Nachname"
-        required=""
-        type="text"
-        value=""
-      />
-      <input
-        class="c3"
-        data-testid="InputEmail"
-        name="email"
-        placeholder="Email"
-        required=""
-        type="email"
-        value=""
-      />
-      <textarea
-        class="c4"
-        data-testid="TextareaMessage"
-        name="message"
-        placeholder="Bitte schreibe hier deine Nachricht."
-        required=""
-      />
-      <button
-        class="c5"
-        data-testid="ButtonSubmit"
-        type="submit"
+        data-testid="Adress"
       >
-        <span>
-          Nachricht senden
-        </span>
-      </button>
-    </form>
+        <svg>
+          visionxEmail.svg
+        </svg>
+      </object>
+    </div>
   </div>
 </div>
 `;
