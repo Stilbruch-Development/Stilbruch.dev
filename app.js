@@ -21,7 +21,7 @@ app.post("/kontakt", (req, res) => {
     lastName: req.body.lastName,
     email: req.body.email,
     text: req.body.message,
-    subject: "Kontakt von VisionX.dev"
+    subject: "Kontakt von VisionX.dev",
   };
 
   const message = `<h1>New message from the contact form:</h1><h3 style="font-weight: normal">First Name: <p style="font-weight: bold; font-size: 1.3em; display: inline">${newContact.firstName}</p></h3><h3 style="font-weight: normal">Last Name: <p style="font-weight: bold; font-size: 1.3em; display: inline">${newContact.lastName}</p></h3><h3 style="font-weight: normal">E-Mail: <p style="font-weight: bold; font-size: 1.3em; display: inline">${newContact.email}</p></h3><h3 style="font-weight: normal">Message: <p style="font-weight: bold; font-size: 1.3em;">${newContact.text}</p></h3>`;
@@ -33,8 +33,8 @@ app.post("/kontakt", (req, res) => {
     secure: true, // true for 465, false for other ports
     auth: {
       user: process.env.NODEMAILER_USER,
-      pass: process.env.NODEMAILER_PASS
-    }
+      pass: process.env.NODEMAILER_PASS,
+    },
   });
 
   // setup email data
@@ -43,7 +43,7 @@ app.post("/kontakt", (req, res) => {
     to: "m.huebner@email.com", // list of receivers
     subject: newContact.subject, // Subject line
     text: newContact.message, // plain text body
-    html: message // html body
+    html: message, // html body
   };
 
   // send mail with defined transport object
