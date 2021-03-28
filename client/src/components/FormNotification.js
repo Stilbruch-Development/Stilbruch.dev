@@ -60,11 +60,8 @@ class FormNotification extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  form: state.form
+const mapStateToProps = (state) => ({
+  form: state.form,
 });
 
-export default connect(
-  mapStateToProps,
-  { refreshForm }
-)(FormNotification);
+export default connect(mapStateToProps, { refreshForm })(FormNotification);

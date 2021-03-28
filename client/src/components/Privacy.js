@@ -20,12 +20,11 @@ export default function Privacy() {
           Daten sowie Ihre Rechte aus dem Datenschutzgesetzen geben. Eine
           Nutzung meiner Internetseiten ist grundsätzlich ohne Eingabe
           personenbezogener Daten möglich. Sofern Sie besondere Funktionen z.B.
-          im Rahmen von Web-Applikationen in Anspruch nehmen
-          möchten, ist teils eine Verarbeitung personenbezogener Daten
-          erforderlich. Ist die Verarbeitung personenbezogener Daten
-          erforderlich und besteht für eine solche Verarbeitung keine
-          gesetzliche Grundlage, hole ich generell eine Einwilligung von Ihnen
-          ein.
+          im Rahmen von Web-Applikationen in Anspruch nehmen möchten, ist teils
+          eine Verarbeitung personenbezogener Daten erforderlich. Ist die
+          Verarbeitung personenbezogener Daten erforderlich und besteht für eine
+          solche Verarbeitung keine gesetzliche Grundlage, hole ich generell
+          eine Einwilligung von Ihnen ein.
         </p>
         <p>
           Die Verarbeitung von personenbezogener Daten, beispielsweise Ihres

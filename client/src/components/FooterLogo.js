@@ -14,7 +14,7 @@ export default class FooterLogo extends Component {
   render() {
     return (
       <StyledLink to={this.props.link} data-testid={this.props.dataTestId}>
-          <VXLogo />
+        <VXLogo />
       </StyledLink>
     );
   }

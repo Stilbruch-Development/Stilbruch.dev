@@ -82,7 +82,7 @@ export class Navbar extends Component {
   }
 
   render() {
-    window.addEventListener("load", function() {
+    window.addEventListener("load", function () {
       const body = document.querySelector("body");
       const navbar = document.querySelector(NavMain);
 
@@ -138,11 +138,8 @@ export class Navbar extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  navbar: state.navbar
+const mapStateToProps = (state) => ({
+  navbar: state.navbar,
 });
 
-export default connect(
-  mapStateToProps,
-  { switchNav, closeNav }
-)(Navbar);
+export default connect(mapStateToProps, { switchNav, closeNav })(Navbar);

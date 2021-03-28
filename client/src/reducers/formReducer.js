@@ -5,17 +5,17 @@ export const initialState = {
     firstName: "",
     lastName: "",
     email: "",
-    message: ""
+    message: "",
   },
   errors: {
     firstName_error: "",
     lastName_error: "",
     email_error: "",
     message_error: "",
-    general_error: ""
+    general_error: "",
   },
   formSend: false,
-  formError: false
+  formError: false,
 };
 
 export function formReducer(state = initialState, action) {
@@ -24,21 +24,21 @@ export function formReducer(state = initialState, action) {
       return {
         ...state,
         formData: action.payload,
-        formSend: true
+        formSend: true,
       };
     case REFRESH_FORM:
       return {
         ...state,
         errors: initialState.errors,
         formSend: false,
-        formError: false
+        formError: false,
       };
     case FORM_ERROR:
       return {
         ...state,
         errors: action.payload,
         formSend: false,
-        formError: true
+        formError: true,
       };
     default:
       return state;

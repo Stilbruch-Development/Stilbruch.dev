@@ -21,7 +21,7 @@ function renderWithRedux(
       rootReducer,
       initialState,
       applyMiddleware(...middleware)
-    )
+    ),
   } = {}
 ) {
   return {
@@ -30,7 +30,7 @@ function renderWithRedux(
         <Router>{ui}</Router>
       </Provider>
     ),
-    store
+    store,
   };
 }
 
@@ -45,9 +45,9 @@ test("<Navbar /> renders with menu closed and does not fire resize event by defa
   const { getByTestId, queryByTestId } = renderWithRedux(<Navbar />, {
     initialState: {
       navbar: {
-        navbarOpen: false
-      }
-    }
+        navbarOpen: false,
+      },
+    },
   });
 
   expect(getByTestId("NavLogo")).toBeInTheDocument();
@@ -68,9 +68,9 @@ describe("When resize event is fired", () => {
     const { getByTestId, queryByTestId } = renderWithRedux(<Navbar />, {
       initialState: {
         navbar: {
-          navbarOpen: false
-        }
-      }
+          navbarOpen: false,
+        },
+      },
     });
     expect(spy).toHaveBeenCalled();
     expect(window.innerWidth).toBe(testWidth);
@@ -82,9 +82,9 @@ describe("When resize event is fired", () => {
     const { getByTestId } = renderWithRedux(<Navbar />, {
       initialState: {
         navbar: {
-          navbarOpen: true
-        }
-      }
+          navbarOpen: true,
+        },
+      },
     });
     expect(spy).toHaveBeenCalled();
     expect(window.innerWidth).toBe(testWidth);

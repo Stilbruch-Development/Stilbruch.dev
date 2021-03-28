@@ -20,12 +20,12 @@ function renderWithRedux(
       rootReducer,
       initialState,
       applyMiddleware(...middleware)
-    )
+    ),
   } = {}
 ) {
   return {
     ...render(<Provider store={store}>{ui}</Provider>),
-    store
+    store,
   };
 }
 

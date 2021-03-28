@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { ReactComponent as VXLogo } from "../VisionX.svg";
 
 const Logo = styled.object`
-
   svg {
     height: 4rem;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));

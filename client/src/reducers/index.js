@@ -4,5 +4,5 @@ import navReducer from "./navReducer";
 
 export default combineReducers({
   form: formReducer,
-  navbar: navReducer
+  navbar: navReducer,
 });

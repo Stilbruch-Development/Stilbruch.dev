@@ -24,7 +24,7 @@ class NavLogo extends Component {
         onClick={this.handleClick}
         style={{ minWidth: "10%" }}
         to={this.props.navLink}
-        scroll={el => el.scrollIntoView({ behavior: "smooth", block: "end" })}
+        scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "end" })}
       >
         <NavLogoSVG />
       </StyledLink>
@@ -32,12 +32,9 @@ class NavLogo extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   form: state.form,
-  navbar: state.navbar
+  navbar: state.navbar,
 });
 
-export default connect(
-  mapStateToProps,
-  { refreshForm, closeNav }
-)(NavLogo);
+export default connect(mapStateToProps, { refreshForm, closeNav })(NavLogo);

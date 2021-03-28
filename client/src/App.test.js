@@ -21,17 +21,17 @@ function renderWithRedux(
       rootReducer,
       initialState,
       applyMiddleware(...middleware)
-    )
+    ),
   } = {}
 ) {
   return {
     ...render(<Provider store={store}>{ui}</Provider>),
-    store
+    store,
   };
 }
 
 test("<App /> renders", () => {
-  const { getByTestId, container } = renderWithRedux(<App />);
+  const { getByTestId } = renderWithRedux(<App />);
 
   const AppComponent = getByTestId("AppComponent");
 

@@ -2,13 +2,13 @@ import React from "react";
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";
-import { render, fireEvent, cleanup, wait } from "@testing-library/react";
+import { render, cleanup } from "@testing-library/react";
 import rootReducer from "../reducers";
 import "jest-dom/extend-expect";
-import userEvent from "@testing-library/user-event";
+// import userEvent from "@testing-library/user-event";
 import BoxK from "./BoxK";
 import "jest-styled-components";
-import axiosMock from "axios";
+// import axiosMock from "axios";
 
 afterEach(cleanup);
 
@@ -22,12 +22,12 @@ function renderWithRedux(
       rootReducer,
       initialState,
       applyMiddleware(...middleware)
-    )
+    ),
   } = {}
 ) {
   return {
     ...render(<Provider store={store}>{ui}</Provider>),
-    store
+    store,
   };
 }
 

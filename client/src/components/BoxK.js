@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import MyFlex from "./styled_components/MyFlex";
 import FlexHeader from "./styled_components/FlexHeader";
 import FlexMainItem from "./styled_components/FlexMainItem";
-import EmailLogo from "../images/styled_images/Email"
+import EmailLogo from "../images/styled_images/Email";
 import styled from "styled-components";
 
 const Content = styled.div`
@@ -48,11 +48,8 @@ class BoxK extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  form: state.form
+const mapStateToProps = (state) => ({
+  form: state.form,
 });
 
-export default connect(
-  mapStateToProps,
-  {}
-)(BoxK);
+export default connect(mapStateToProps, {})(BoxK);

@@ -21,11 +21,11 @@ export default function Terms() {
         </p>
         <p>
           Die Betreibung der Webseite sowie weitere damit ggf. verbundener
-          Web-Applikationen erfolgt ausschließlich privat und ohne
-          gewerblichen Nutzen oder Gewinnerziehlungsabsicht. Angebotene
-          Leistungen oder Projekte entstehen als Hobby in meiner verfügbaren
-          Freizeit, sind unentgeltlich und ebenfalls ohne gewerblichen Nutzen
-          oder Gewinnerziehlungsabsicht. Die Nutzung erfolgt freiwillig und ohne
+          Web-Applikationen erfolgt ausschließlich privat und ohne gewerblichen
+          Nutzen oder Gewinnerziehlungsabsicht. Angebotene Leistungen oder
+          Projekte entstehen als Hobby in meiner verfügbaren Freizeit, sind
+          unentgeltlich und ebenfalls ohne gewerblichen Nutzen oder
+          Gewinnerziehlungsabsicht. Die Nutzung erfolgt freiwillig und ohne
           Gewähr auf Funktionalität. Es entstehen keinerlei Haftungsansprüche.
         </p>
         <p>

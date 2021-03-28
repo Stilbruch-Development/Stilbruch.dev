@@ -17,7 +17,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      showCookieBanner: true
+      showCookieBanner: true,
     };
     this.setCookies = this.setCookies.bind(this);
     this.checkCookie = this.checkCookie.bind(this);
@@ -29,7 +29,7 @@ class App extends Component {
     const cookies = new Cookies();
     cookies.set("Accept_Cookies_VisionX", true, {
       path: "/",
-      maxAge: 15768000
+      maxAge: 15768000,
     });
 
     //Google Analytics Cookies

@@ -34,7 +34,7 @@ const Button = styled.button`
     cursor: pointer;
   }
 
-  ${props =>
+  ${(props) =>
     props.buttonBack &&
     css`
       background: rgba(24, 24, 24, 0.3);
@@ -47,7 +47,7 @@ const Button = styled.button`
     font-size: 6rem;
     height: 9rem;
 
-    ${props =>
+    ${(props) =>
       props.buttonBack &&
       css`
         width: 70vw;

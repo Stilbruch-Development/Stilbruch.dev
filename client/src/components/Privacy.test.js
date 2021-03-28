@@ -20,7 +20,7 @@ function renderWithRedux(
       rootReducer,
       initialState,
       applyMiddleware(...middleware)
-    )
+    ),
   } = {}
 ) {
   return {
@@ -29,7 +29,7 @@ function renderWithRedux(
         <Router>{ui}</Router>
       </Provider>
     ),
-    store
+    store,
   };
 }
 

@@ -35,7 +35,7 @@ export default function MainLogo() {
           width: "100%",
           paddingBottom: "100%",
           height: "1px",
-          overflow: "visible"
+          overflow: "visible",
         }}
       />
     </Logo>

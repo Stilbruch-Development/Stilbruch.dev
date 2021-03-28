@@ -76,11 +76,8 @@ class NavMenu extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  navbar: state.navbar
+const mapStateToProps = (state) => ({
+  navbar: state.navbar,
 });
 
-export default connect(
-  mapStateToProps,
-  { refreshForm, switchNav }
-)(NavMenu);
+export default connect(mapStateToProps, { refreshForm, switchNav })(NavMenu);

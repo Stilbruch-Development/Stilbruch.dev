@@ -21,7 +21,7 @@ class NavItem extends Component {
       <StyledLink
         onClick={this.handleClick}
         to={this.props.navLink}
-        scroll={el =>
+        scroll={(el) =>
           el.scrollIntoView({ behavior: "smooth", block: "center" })
         }
       >
@@ -31,12 +31,9 @@ class NavItem extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   form: state.form,
-  navbar: state.navbar
+  navbar: state.navbar,
 });
 
-export default connect(
-  mapStateToProps,
-  { refreshForm, closeNav }
-)(NavItem);
+export default connect(mapStateToProps, { refreshForm, closeNav })(NavItem);

@@ -90,8 +90,7 @@ class CookieBanner extends Component {
     return (
       <CookieWrap>
         <h1>
-          VisionX.dev nutzt Cookies um die Benutzerfreundlichkeit zu
-          verbessern.
+          VisionX.dev nutzt Cookies um die Benutzerfreundlichkeit zu verbessern.
         </h1>
         <Link className="link" to="/datenschutz">
           Infos zum Datenschutz

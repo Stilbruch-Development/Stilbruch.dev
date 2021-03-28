@@ -115,7 +115,7 @@ class FormC extends Component {
       email: "",
       email1: "",
       message: "",
-      message1: ""
+      message1: "",
     };
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -134,10 +134,10 @@ class FormC extends Component {
       firstName: this.state.firstName,
       lastName: this.state.lastName,
       email: this.state.email,
-      message: this.state.message
+      message: this.state.message,
     };
 
-    const validate = data => {
+    const validate = (data) => {
       const { errors, isValid } = validateForm(data);
 
       if (!isValid) {
@@ -151,7 +151,7 @@ class FormC extends Component {
         firstName: form.firstName,
         lastName: form.lastName,
         email: form.email,
-        message: form.message
+        message: form.message,
       });
     } else {
       const errors = validate(form);
@@ -170,7 +170,7 @@ class FormC extends Component {
       lastName_error,
       email_error,
       message_error,
-      general_error
+      general_error,
     } = this.props.form.errors;
     let errorFirstName, errorLastName, errorEmail, errorMessage, errorGeneral;
 
@@ -219,7 +219,7 @@ class FormC extends Component {
           style={{ display: "none" }}
           type="text"
           name="firstName1"
-          ref={c => {
+          ref={(c) => {
             this.firstName1 = c;
           }}
           value={this.state.firstName1}
@@ -229,7 +229,7 @@ class FormC extends Component {
           style={{ display: "none" }}
           type="text"
           name="lastName1"
-          ref={c => {
+          ref={(c) => {
             this.lastName1 = c;
           }}
           value={this.state.lastName1}
@@ -239,7 +239,7 @@ class FormC extends Component {
           style={{ display: "none" }}
           type="email"
           name="email1"
-          ref={c => {
+          ref={(c) => {
             this.email1 = c;
           }}
           value={this.state.email1}
@@ -249,7 +249,7 @@ class FormC extends Component {
         <Textarea
           style={{ display: "none" }}
           name="message1"
-          ref={c => {
+          ref={(c) => {
             this.message1 = c;
           }}
           value={this.state.message1}
@@ -310,11 +310,10 @@ class FormC extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  form: state.form
+const mapStateToProps = (state) => ({
+  form: state.form,
 });
 
-export default connect(
-  mapStateToProps,
-  { sendForm, formErrors, refreshForm }
-)(FormC);
+export default connect(mapStateToProps, { sendForm, formErrors, refreshForm })(
+  FormC
+);
